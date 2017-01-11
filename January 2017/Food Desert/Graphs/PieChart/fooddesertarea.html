@@ -1,0 +1,122 @@
+<html>
+<head></head>
+<body>
+
+<div id="pieChart"></div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+<script src="d3pie.min.js"></script>
+<script>
+var pie = new d3pie("pieChart", {
+	"header": {
+		"title": {
+			"text": "Food Deserts by DC Ward",
+			"fontSize": 24,
+			"font": "open sans"
+		},
+		"subtitle": {
+			"text": "Total Area (Square Miles)",
+			"color": "#999999",
+			"fontSize": 12,
+			"font": "open sans"
+		},
+		"titleSubtitlePadding": 9
+	},
+	"footer": {
+		"color": "#999999",
+		"fontSize": 10,
+		"font": "open sans",
+		"location": "bottom-left"
+	},
+	"size": {
+		"canvasWidth": 590,
+		"pieOuterRadius": "83%"
+	},
+	"data": {
+		"sortOrder": "value-desc",
+		"content": [
+			{
+				"label": "Ward 8",
+				"value": 6.36,
+				"color": "#7e3838"
+			},
+			{
+				"label": "Ward 7",
+				"value": 2.38,
+				"color": "#7e6538"
+			},
+			{
+				"label": "Ward 5",
+				"value": 0.87,
+				"color": "#7c7e38"
+			},
+			{
+				"label": "Ward 6",
+				"value": 0.38,
+				"color": "#587e38"
+			},
+			{
+				"label": "Ward 4",
+				"value": 0.19,
+				"color": "#387e45"
+			},
+			{
+				"label": "Ward 1",
+				"value": 0.17,
+				"color": "#387e6a"
+			},
+			{
+				"label": "Ward 2",
+				"value": 0.13,
+				"color": "#386a7e"
+			},
+			{
+				"label": "Ward 3",
+				"value": 0,
+				"color": "#38507e"
+			}
+		]
+	},
+	"labels": {
+		"outer": {
+			"format": "label-value1",
+			"pieDistance": 32
+		},
+		"inner": {
+			"hideWhenLessThanPercentage": 3
+		},
+		"mainLabel": {
+			"fontSize": 11
+		},
+		"percentage": {
+			"color": "#ffffff",
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#adadad",
+			"fontSize": 11
+		},
+		"lines": {
+			"enabled": true
+		},
+		"truncation": {
+			"enabled": true
+		}
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"speed": 500,
+			"size": 15
+		}
+	},
+	"misc": {
+		"gradient": {
+			"enabled": true,
+			"percentage": 85
+		}
+	}
+});
+</script>
+
+</body>
+</html>
