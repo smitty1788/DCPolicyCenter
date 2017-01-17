@@ -75,10 +75,10 @@ d3.csv("travel.csv", function(d) {
     return {
       name: d["name"],
       "Homicides per 1000 people": +d["Homicide_Rate"],
-      "% Holding a Bachelors Degree": +d["bachelors"],
-      "% Recieving SNAP": +d["SNAP"],
-      "Median Household Income ($)": +d["income"],
-	  "% Never Married": +d["Never_Married"]
+      "% Holding Only HS Diploma": +d["hs"],
+      "Unemployement Rate": +d["unemploy"],
+      "Median Household Value ($10k)": +d["value"],
+	  "% African American": +d["paa"]
     };
   }, function(error, data) {
     
