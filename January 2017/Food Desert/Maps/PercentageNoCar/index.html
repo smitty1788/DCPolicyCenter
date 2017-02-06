@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Percentage of Households with No Car</title>
+  <title>Percent of Households with No Car</title>
   <link rel="stylesheet" type="text/css" href="css/map.css" />
   <link rel="stylesheet" type="text/css" href="css/color.css" />
   <link rel="stylesheet" type="text/css" href="css/tip.css" />
@@ -28,14 +28,12 @@
 </head>
 
 <body style="text-align:center">
-<h1>Percentage of Households with No Car</h1>
+<h1>Percent of Households with No Car</h1>
   <div id="map"></div>
   <div id="template" style="display: none">
     <!--Tooltip template-->
 <table>
-<tr><td><strong>Percentage of Households with No Car:</strong></td><td>{Percent_NO}%</td></tr>
-<tr><td><strong>Total Households with No Car:</strong></td><td>{NO_CARS}</td></tr>
-<tr><td><strong>Total Households:</strong></td><td>{TOTAL_POP_}</td></tr>
+<tr><td><strong>Percent of Households with No Car: </strong></td><td>{Percent_NO}%</td></tr>
 </table>
   </div>
 
@@ -47,7 +45,7 @@
     var _data = void 0;
 
     //Projection
-   var projection = d3.geo.miller()
+    var projection = d3.geo.miller()
       .center([154, 38])
       .scale(1000)
       .translate([width / 2, height / 2]);
@@ -85,20 +83,24 @@
     //Vector polygons
     var vectors0 = vectors.append("g");
     var vector0 = void 0;
+    var vectors1 = vectors.append("g");
+    var vector1 = void 0;
 
 
     //Download
     queue(2)
-      .defer(d3.json, "json/BGData.json")
+      .defer(d3.json, "json/BGDATASET.json")
+      .defer(d3.json, "json/Ward2012.json")
       .defer(d3.csv, "data/info.csv")
       .await(ready);
 
     //Load map when downloaded
-    function ready(error, json0, data) {
+    function ready(error, json0, json1, data) {
       if (error) return console.error(error);
 	  
       //Polygon features
       var object0 = json0;
+      var object1 = json1;
 
 
       // Refine projection
@@ -118,6 +120,13 @@
         .attr("d", path)
         .attr("class", function (d) { return d.properties.d3Css; })
         .on("click", function (d) { return showTip(d.properties.OBJECTID); });
+
+      vector1 = vectors1.selectAll("path").data(object1.features);
+      vector1.enter()
+        .append("path")
+        .attr("id", function (d) { return d.properties.OBJECTID; })
+        .attr("d", path)
+        .attr("class", function (d) { return d.properties.d3Css; });
 
 
     
@@ -164,7 +173,8 @@
     function onZoom() {
       hideTip();
       vectors.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-      vector0.style("stroke-width", 0.46 / d3.event.scale);
+      vector0.style("stroke-width", 0.26 / d3.event.scale);
+      vector1.style("stroke-width", 1.0 / d3.event.scale);
 
     }
   
