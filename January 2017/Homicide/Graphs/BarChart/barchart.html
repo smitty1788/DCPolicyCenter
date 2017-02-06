@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Total Homicides by Year and Method</title>
+  <title>Total Homicides by Year</title>
   <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <style type="text/css">
   svg {
-    font: 10px sans-serif;
+    font: 10px "ProximaNova";
     shape-rendering: crispEdges;
   }
 
@@ -48,11 +48,18 @@ var svg = d3.select("body")
 
 var data = [
 
-  { year: "2012", gun: "57", knife: "19", other: "13" },
-  { year: "2013", gun: "81", knife: "11", other: "12" },
-  { year: "2014", gun: "71", knife: "18", other: "16" },
-  { year: "2015", gun: "119", knife: "24", other: "17" },
-  { year: "2016", gun: "105", knife: "12", other: "18" },
+	{ year: "2005", gun: "3.36"},
+	{ year: "2006", gun: "2.90"},
+	{ year: "2007", gun: "3.07"},
+	{ year: "2008", gun: "3.15"},
+	{ year: "2009", gun: "2.40"},
+	{ year: "2010", gun: "2.18"},
+	{ year: "2011", gun: "1.74"},
+	{ year: "2012", gun: "1.39"},
+	{ year: "2013", gun: "1.60"},
+	{ year: "2014", gun: "1.59"},
+	{ year: "2015", gun: "2.41"},
+	{ year: "2016", gun: "1.98"},
 ];
 
 var parse = d3.time.format("%Y").parse;
@@ -75,7 +82,7 @@ var y = d3.scale.linear()
   .domain([0, d3.max(dataset, function(d) {  return d3.max(d, function(d) { return d.y0 + d.y; });  })])
   .range([height, 0]);
 
-var colors = ["b33040", "#d25c4d", "#f2b447"];
+var colors = ["#E8272C", "#d25c4d", "#f2b447"];
 
 
 // Define and draw axes
@@ -94,22 +101,29 @@ var xAxis = d3.svg.axis()
 svg.append("g")
   .attr("class", "y axis")
   .call(yAxis);
-
-svg.append("g")
-  .attr("class", "x axis")
-  .attr("transform", "translate(0," + height + ")")
-  .call(xAxis);
 	
 svg.append("text")
-        .attr("x", (width / 2))             
-        .attr("y", 0 - (margin.top / 2))
-        .attr("text-anchor", "middle")  
-        .style("font-size", "16px") 
-        .style("text-decoration", "underline")  
-        .text("Total Homicides by Year and Method");	
-	
-	
+	.attr("transform", "rotate(-90)")
+	.attr("y", 0 - margin.left)
+	.attr("x",0 - (height / 2))
+	.attr("dy", "1em")
+	.style("text-anchor", "middle")
+	.style("font-size", "12px")
+     .text("Homicides per 10,000");
 
+svg.append("g")
+	.attr("class", "x axis")
+	.attr("transform", "translate(0," + height + ")")
+    .call(xAxis);
+	
+svg.append("text")
+	.attr("x", (width / 2))             
+	.attr("y", 0 - (margin.top / 2))
+	.attr("text-anchor", "middle")  
+	.style("font-size", "16px")
+	.style("font-weight", "bold")
+	.style("text-decoration", "underline")  
+    .text("Total Homicides by Year");	
 
 // Create groups for each series, rects for each segment 
 var groups = svg.selectAll("g.cost")
@@ -137,31 +151,7 @@ var rect = groups.selectAll("rect")
 
 
 // Draw legend
-var legend = svg.selectAll(".legend")
-  .data(colors)
-  .enter().append("g")
-  .attr("class", "legend")
-  .attr("transform", function(d, i) { return "translate(30," + i * 19 + ")"; });
- 
-legend.append("rect")
-  .attr("x", width - 18)
-  .attr("width", 18)
-  .attr("height", 18)
-  .style("fill", function(d, i) {return colors.slice().reverse()[i];});
- 
-legend.append("text")
-  .attr("x", width + 5)
-  .attr("y", 9)
-  .attr("dy", ".35em")
-  .style("text-anchor", "start")
-  .text(function(d, i) { 
-    switch (i) {
-      case 0: return "Homicides by Other";
-      case 1: return "Homicides by Knife";
-      case 2: return "Homicides by Gun";
-      
-    }
-  });
+
 
 
 // Prep the tooltip bits, initial display is hidden
