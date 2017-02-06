@@ -1,4 +1,4 @@
-﻿/*Legend styling*/
+/*Legend styling*/
 .legendouter {
   stroke: #000;	  
   stroke-width: 0.8;
@@ -12,6 +12,13 @@
 }
 .legend text { 
     fill: #000;
+	font-family: 'ProximaNova';
+     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot');
+     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot?iefix') format('eot'),
+          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.woff') format('woff'),
+          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.ttf') format('truetype'),
+     font-weight: normal;
+     font-style: normal;
     font-size: smaller; 
 }
 .legend text.left { text-anchor: start; }

@@ -1,5 +1,15 @@
 /*Basic map styles*/
+
+ 
+
 h1{
+  font-family: 'ProximaNova';
+     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot');
+     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot?iefix') format('eot'),
+          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.woff') format('woff'),
+          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.ttf') format('truetype'),
+     font-weight: normal;
+     font-style: normal;	
   font-size: larger;
 }
 #mapSvg {
