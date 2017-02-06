@@ -33,6 +33,7 @@
   <div id="template" style="display: none">
     <!--Tooltip template-->
 <table>
+<tr><td><strong>Neighborhood Cluster:</strong></td><td>{N_Name}</td></tr>
 <tr><td><strong>Homicides in 2015:</strong></td><td>{Homicide_3}</td></tr>
 </table>
   </div>
@@ -83,20 +84,24 @@
     //Vector polygons
     var vectors0 = vectors.append("g");
     var vector0 = void 0;
+    var vectors1 = vectors.append("g");
+    var vector1 = void 0;
 
 
     //Download
     queue(2)
-      .defer(d3.json, "json/HomicideCTcopy.json")
+      .defer(d3.json, "json/HomicideCT.json")
+      .defer(d3.json, "json/NLines.json")
       .defer(d3.csv, "data/info.csv")
       .await(ready);
 
     //Load map when downloaded
-    function ready(error, json0, data) {
+    function ready(error, json0, json1, data) {
       if (error) return console.error(error);
 	  
       //Polygon features
       var object0 = json0;
+      var object1 = json1;
 
 
       // Refine projection
@@ -116,6 +121,13 @@
         .attr("d", path)
         .attr("class", function (d) { return d.properties.d3Css; })
         .on("click", function (d) { return showTip(d.properties.OBJECTID); });
+
+      vector1 = vectors1.selectAll("path").data(object1.features);
+      vector1.enter()
+        .append("path")
+        .attr("id", function (d) { return d.properties.OBJECTID; })
+        .attr("d", path)
+        .attr("class", function (d) { return d.properties.d3Css; });
 
 
     
@@ -162,7 +174,8 @@
     function onZoom() {
       hideTip();
       vectors.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-      vector0.style("stroke-width", 0.26 / d3.event.scale);
+      vector0.style("stroke-width", 0.5 / d3.event.scale);
+      vector1.style("stroke-width", 2.0 / d3.event.scale);
 
     }
   
