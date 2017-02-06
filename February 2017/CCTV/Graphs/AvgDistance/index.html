@@ -1,0 +1,59 @@
+<head>
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<style type="text/css">
+      body {
+          font-family: 'ProximaNova';
+          -webkit-text-size-adjust: 100%;
+          -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+      }
+  </style>
+<body>
+  
+  <div id="myDiv" style="width: 580px; height: 520px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+  <script>
+    var trace1 = {
+  x: ['All Crime', 'Assualt', 'Burglary', 'Homicide', 'Motor Vehicle Theft', 'Robbery', 'Sex Abuse', 'Theft'],
+  y: [220.7, 223.9, 249.3, 234.1, 260.3, 221.8, 227.9, 213.8],
+  name: 'Control',
+  error_y: {
+    type: 'data',
+    array: [151.4, 158.1, 160.6, 202.2, 174.9, 143.1, 148.3, 147.3],
+    visible: true
+  },
+  type: 'bar'
+};
+
+var data = [trace1];
+var layout = {barmode: 'group'};
+var layout = {
+  title: 'Average Distance of Crime Incident from CCTV',
+		titlefont: {
+      family: 'ProximaNova',
+      size: 24,
+	  Weight: 'heavy',		
+      color: '#000000'
+    },
+  xaxis: {
+    title: '',
+    titlefont: {
+      family: 'ProximaNova',
+      size: 18,
+      color: '#7f7f7f'
+    }
+  },
+  yaxis: {
+    title: 'Distance (Meters)',
+    titlefont: {
+      family: 'ProximaNova',
+      size: 14,
+      color: '#7f7f7f'
+    }
+  }
+};
+
+Plotly.newPlot('myDiv', data, layout)
+  </script>
+</body>
