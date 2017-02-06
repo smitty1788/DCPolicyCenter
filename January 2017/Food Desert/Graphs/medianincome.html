@@ -5,8 +5,24 @@
     <meta charset="utf-8">
     <title>Median Household Income by Ward</title>
     <style>
+		@font-face {
+    font-family: 'ProximaNova';
+     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot');
+     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot?iefix') format('eot'),
+          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.woff') format('woff'),
+          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.ttf') format('truetype'),
+     font-weight: normal;
+     font-style: normal;
+ }
     .axis {
-        font: 10px sans-serif;
+        font-size: 10px ;
+		font-family: 'ProximaNova';
+     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot');
+     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot?iefix') format('eot'),
+          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.woff') format('woff'),
+          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.ttf') format('truetype'),
+     font-weight: normal;
+     font-style: normal;
     }
     .axis path, .axis line {
         fill: none;
@@ -61,7 +77,9 @@ var svg = d3.select("body").append("svg")
         .attr("x", (width / 2))             
         .attr("y", 0 - (margin.top / 2))
         .attr("text-anchor", "middle")  
-        .style("font-size", "16px") 
+        .style("font-size", "18px") 
+		.style("font-family","ProximaNova")
+		.style("font-weight","bold")
         .style("text-decoration", "underline")  
         .text("Median Household Income by Ward");
 
@@ -119,6 +137,7 @@ d3.tsv("Ward_Summary.txt", type, function(error, data) {
         });
 
     bars.append("title")
+		.style("font-family","ProximaNova")
         .text(function(d) {
             return "Median Household Income: $" + d.Median_Income;
         });

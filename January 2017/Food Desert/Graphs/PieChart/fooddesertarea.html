@@ -10,91 +10,91 @@
 var pie = new d3pie("pieChart", {
 	"header": {
 		"title": {
-			"text": "Food Deserts by DC Ward",
+			"text": "Food Deserts in DC by Ward",
 			"fontSize": 24,
-			"font": "open sans"
+			"font": "ProximaNova"
 		},
 		"subtitle": {
-			"text": "Total Area (Square Miles)",
+			"text": "Percentage of All Food Deserts",
 			"color": "#999999",
 			"fontSize": 12,
-			"font": "open sans"
+			"font": "ProximaNova"
 		},
 		"titleSubtitlePadding": 9
 	},
 	"footer": {
 		"color": "#999999",
 		"fontSize": 10,
-		"font": "open sans",
+		"font": "ProximaNova",
 		"location": "bottom-left"
 	},
 	"size": {
 		"canvasWidth": 590,
-		"pieOuterRadius": "83%"
+		"pieOuterRadius": "90%"
 	},
 	"data": {
 		"sortOrder": "value-desc",
 		"content": [
 			{
-				"label": "Ward 8",
-				"value": 6.36,
-				"color": "#7e3838"
-			},
-			{
-				"label": "Ward 7",
-				"value": 2.38,
-				"color": "#7e6538"
-			},
-			{
-				"label": "Ward 5",
-				"value": 0.87,
-				"color": "#7c7e38"
-			},
-			{
-				"label": "Ward 6",
-				"value": 0.38,
-				"color": "#587e38"
-			},
-			{
-				"label": "Ward 4",
-				"value": 0.19,
-				"color": "#387e45"
-			},
-			{
 				"label": "Ward 1",
 				"value": 0.17,
-				"color": "#387e6a"
+				"color": "#f30000"
 			},
 			{
 				"label": "Ward 2",
 				"value": 0.13,
-				"color": "#386a7e"
+				"color": "#0600f3"
 			},
 			{
 				"label": "Ward 3",
 				"value": 0,
-				"color": "#38507e"
+				"color": "#00b109"
+			},
+			{
+				"label": "Ward 4",
+				"value": 0.19172,
+				"color": "#67f200"
+			},
+			{
+				"label": "Ward 5",
+				"value": 0.854604,
+				"color": "#ff7e00"
+			},
+			{
+				"label": "Ward 6",
+				"value": 0.396183,
+				"color": "#8fe4fa"
+			},
+			{
+				"label": "Ward 7",
+				"value": 2.381565,
+				"color": "#ff5300"
+			},
+			{
+				"label": "Ward 8",
+				"value": 3.544199,
+				"color": "#3854d1"
 			}
 		]
 	},
 	"labels": {
 		"outer": {
-			"format": "label-value1",
 			"pieDistance": 32
 		},
 		"inner": {
 			"hideWhenLessThanPercentage": 3
 		},
 		"mainLabel": {
-			"fontSize": 11
+			"fontSize": 16
 		},
 		"percentage": {
 			"color": "#ffffff",
+			"fontSize": 12,
 			"decimalPlaces": 0
 		},
 		"value": {
 			"color": "#adadad",
-			"fontSize": 11
+			"fontSize": 17
 		},
 		"lines": {
 			"enabled": true
@@ -105,14 +105,15 @@ var pie = new d3pie("pieChart", {
 	},
 	"effects": {
 		"pullOutSegmentOnClick": {
-			"speed": 500,
-			"size": 15
+			"effect": "linear",
+			"speed": 400,
+			"size": 8
 		}
 	},
 	"misc": {
 		"gradient": {
 			"enabled": true,
-			"percentage": 85
+			"percentage": 100
 		}
 	}
 });
