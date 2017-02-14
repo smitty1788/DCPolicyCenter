@@ -1,0 +1,133 @@
+<html>
+<head></head>
+<body>
+
+<div id="pieChart"></div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+<script src="d3pie.min.js"></script>
+<script>
+var pie = new d3pie("pieChart", {
+	"header": {
+		"title": {
+			"text": "Who is Affected by Proposed Metro Bus Cuts?",
+			"fontSize": 24,
+			"font": "ProximaNova"
+		},
+		"subtitle": {
+			"text": "Those Affected by Industry ( Total: 3713 +/- 254)",
+			"color": "#999999",
+			"fontSize": 12,
+			"font": "ProximaNova"
+		},
+		"titleSubtitlePadding": 9
+	},
+	"footer": {
+		"color": "#999999",
+		"fontSize": 10,
+		"font": "ProximaNova",
+		"location": "bottom-left"
+	},
+	"size": {
+		"canvasWidth": 700,
+		"pieInnerRadius": "70%",
+		"pieOuterRadius": "90%"
+	},
+	"data": {
+		"sortOrder": "value-desc",
+		"content": [
+			{
+				"label": "Office Business/Science/Arts",
+				"value": 2508,
+				"color": "#f30000"
+			},
+			{
+				"label": "Service",
+				"value": 300,
+				"color": "#0600f3"
+			},
+			{
+				"label": "Sales",
+				"value": 652,
+				"color": "#00b109"
+			},
+			{
+				"label": "Construction",
+				"value": 149,
+				"color": "#14e4b4"
+			},
+			{
+				"label": "Production/Transportation",
+				"value": 101,
+				"color": "#0fe7fb"
+			},
+			{
+				"label": "Military",
+				"value": 58,
+				"color": "#67f200"
+			},
+			{
+				"label": "Agriculture",
+				"value": 4,
+				"color": "#ff7e00"
+			},
+			{
+				"label": "Manufacturing",
+				"value": 56,
+				"color": "#8fe4fa"
+			},
+			{
+				"label": "Retail",
+				"value": 153,
+				"color": "#ff5300"
+			},
+			{
+				"label": "Food Service",
+				"value": 242,
+				"color": "#640000"
+			}
+		]
+	},
+	"labels": {
+		"outer": {
+			"pieDistance": 32
+		},
+		"inner": {
+			"hideWhenLessThanPercentage": 1
+		},
+		"mainLabel": {
+			"fontSize": 11
+		},
+		"percentage": {
+			"color": "#ffffff",
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#adadad",
+			"fontSize": 11
+		},
+		"lines": {
+			"enabled": true
+		},
+		"truncation": {
+			"enabled": true
+		}
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"effect": "elastic",
+			"speed": 400,
+			"size": 8
+		}
+	},
+	"misc": {
+		"gradient": {
+			"enabled": true,
+			"percentage": 100
+		}
+	}
+});
+</script>
+
+</body>
+</html>

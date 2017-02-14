@@ -1,0 +1,103 @@
+<html>
+<head></head>
+<body>
+
+<div id="pieChart"></div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+<script src="d3pie.min.js"></script>
+<script>
+var pie = new d3pie("pieChart", {
+	"header": {
+		"title": {
+			"text": "Who is Affected by Proposed Metro Bus Cuts?",
+			"fontSize": 24,
+			"font": "ProximaNova"
+		},
+		"subtitle": {
+			"text": "Those Affected by Race ( Total: 3713 +/- 254)",
+			"color": "#999999",
+			"fontSize": 12,
+			"font": "ProximaNova"
+		},
+		"titleSubtitlePadding": 9
+	},
+	"footer": {
+		"color": "#999999",
+		"fontSize": 10,
+		"font": "open sans",
+		"location": "bottom-left"
+	},
+	"size": {
+		"canvasWidth": 590,
+		"pieInnerRadius": "70%",
+		"pieOuterRadius": "90%"
+	},
+	"data": {
+		"sortOrder": "value-desc",
+		"content": [
+			{
+				"label": "White",
+				"value": 2183,
+				"color": "#f30000"
+			},
+			{
+				"label": "African American",
+				"value": 638,
+				"color": "#0600f3"
+			},
+			{
+				"label": "Hispanic/Latin",
+				"value": 438,
+				"color": "#00b109"
+			},
+			{
+				"label": "Asian",
+				"value": 623,
+				"color": "#14e4b4"
+			}
+		]
+	},
+	"labels": {
+		"outer": {
+			"pieDistance": 32
+		},
+		"inner": {
+			"hideWhenLessThanPercentage": 3
+		},
+		"mainLabel": {
+			"fontSize": 11
+		},
+		"percentage": {
+			"color": "#ffffff",
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#adadad",
+			"fontSize": 11
+		},
+		"lines": {
+			"enabled": true
+		},
+		"truncation": {
+			"enabled": true
+		}
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"effect": "elastic",
+			"speed": 400,
+			"size": 8
+		}
+	},
+	"misc": {
+		"gradient": {
+			"enabled": true,
+			"percentage": 100
+		}
+	}
+});
+</script>
+
+</body>
+</html>
