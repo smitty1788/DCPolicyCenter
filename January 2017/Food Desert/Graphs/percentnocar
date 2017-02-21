@@ -3,26 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Median Household Income by Ward</title>
+    <title>Bar Chart with Manipulation</title>
     <style>
-		@font-face {
-    font-family: 'ProximaNova';
-     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot');
-     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot?iefix') format('eot'),
-          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.woff') format('woff'),
-          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.ttf') format('truetype'),
-     font-weight: normal;
-     font-style: normal;
- }
     .axis {
-        font-size: 10px ;
-		font-family: 'ProximaNova';
-     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot');
-     src: url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.eot?iefix') format('eot'),
-          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.woff') format('woff'),
-          url('/fonts/proximanova_regular/ProximaNova-Reg-webfont.ttf') format('truetype'),
-     font-weight: normal;
-     font-style: normal;
+        font: 10px sans-serif;
     }
     .axis path, .axis line {
         fill: none;
@@ -41,10 +25,10 @@
 </body>
 <script>
 var margin = {
-    top: 30,
+    top: 20,
     right: 20,
-    bottom: 40,
-    left: 45
+    bottom: 30,
+    left: 40
 },
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -59,37 +43,26 @@ var x = d3.scale.linear()
 var xAxis = d3.svg.axis()
     .scale(x)
     .orient("bottom")
-    .ticks(10);
+    .ticks(10, "%");
 
 var yAxis = d3.svg.axis()
     .scale(y)
     .orient("left");
 
-var color = d3.scale.ordinal()
-  .range(["#6D7D8C"]);
+var color = d3.scale.category20c();
 
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-	
-	svg.append("text")
-        .attr("x", (width / 2))             
-        .attr("y", 0 - (margin.top / 2))
-        .attr("text-anchor", "middle")  
-        .style("font-size", "18px") 
-		.style("font-family","ProximaNova")
-		.style("font-weight","bold")
-        .style("text-decoration", "underline")  
-        .text("Median Household Income by Ward");
 
-d3.tsv("Ward_Summary.txt", type, function(error, data) {
+d3.tsv("data.tsv", type, function(error, data) {
     x.domain([0, d3.max(data, function(d) {
-        return d.Median_Income;
+        return d.frequency;
     })]);
     y.domain(data.map(function(d) {
-        return d.Ward;
+        return d.letter;
     }));
 
     svg.append("g")
@@ -99,9 +72,9 @@ d3.tsv("Ward_Summary.txt", type, function(error, data) {
         .append("text")
         .attr("transform", "rotate(0)")
         .attr("y", 6)
-        .attr("dy", "2.5em")
+        .attr("dy", "1.91em")
         .style("text-anchor", "start")
-        .text("Median Household Income ($)");
+        .text("Frequency");
 
     svg.append("g")
         .attr("class", "y axis")
@@ -114,12 +87,14 @@ d3.tsv("Ward_Summary.txt", type, function(error, data) {
         .attr("class", "bar");
     
     bars.attr("y", function(d) {
-        return y(d.Ward);
+        return y(d.letter);
     })
         .attr("height", y.rangeBand())
-        .attr("x", 0)
+        .attr("x", 0)//function(d) {
+            //return x(d.frequency);
+        //})
         .attr("width", function(d) {
-            return x(d.Median_Income);
+            return x(d.frequency);
         })
         .attr("fill", function(d, i) {
             return color(i);
@@ -129,7 +104,7 @@ d3.tsv("Ward_Summary.txt", type, function(error, data) {
         })
         .on("mouseover", function() {
             d3.select(this)
-            	.attr("fill", "#E8272C");
+            	.attr("fill", "red");
         })
         .on("mouseout", function(d, i) {
             d3.select(this).attr("fill", function() {
@@ -138,15 +113,14 @@ d3.tsv("Ward_Summary.txt", type, function(error, data) {
         });
 
     bars.append("title")
-		.style("font-family","ProximaNova")
         .text(function(d) {
-            return "Median Household Income: $" + d.Median_Income;
+            return d.letter;
         });
 
 });
 
 function type(d) {
-    d.Median_Income = +d.Median_Income;
+    d.frequency = +d.frequency;
     return d;
 }
 </script>

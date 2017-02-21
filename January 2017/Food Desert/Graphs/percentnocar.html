@@ -27,7 +27,7 @@
 var margin = {
     top: 30,
     right: 20,
-    bottom: 30,
+    bottom: 40,
     left: 45
 },
     width = 960 - margin.left - margin.right,
@@ -49,7 +49,8 @@ var yAxis = d3.svg.axis()
     .scale(y)
     .orient("left");
 
-var color = d3.scale.category20c();
+var color = d3.scale.ordinal()
+  .range(["#6D7D8C"]);
 
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -82,7 +83,7 @@ d3.tsv("Ward_Summary.txt", type, function(error, data) {
         .append("text")
         .attr("transform", "rotate(0)")
         .attr("y", 6)
-        .attr("dy", "1.91em")
+        .attr("dy", "2.5em")
         .style("text-anchor", "start")
 		.style("font-family","sans-serif")
         .text("Percent of Housholds with No Car");
@@ -113,7 +114,7 @@ d3.tsv("Ward_Summary.txt", type, function(error, data) {
         })
         .on("mouseover", function() {
             d3.select(this)
-            	.attr("fill", "red");
+            	.attr("fill", "#E8272C");
         })
         .on("mouseout", function(d, i) {
             d3.select(this).attr("fill", function() {
