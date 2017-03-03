@@ -1,0 +1,11 @@
+letter	frequency
+Maryland	863033
+District of Columbia	685273
+Virginia	534748
+Pennsylvania	36056
+New York	28302
+Florida	27661
+New Jersey	25755
+North Carolina	25404
+Texas	14136
+Georgia	12080

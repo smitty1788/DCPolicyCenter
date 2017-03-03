@@ -1,0 +1,11 @@
+letter	frequency
+1200 H St NE	9770
+1200 G St NW	9207
+1600 Columbia Rd NW	8615
+1600 N St NW	8519
+700 K St NW	8423
+400 8th St NW	8145
+1700 G St NW	7564
+1000 Vermont Ave NW	7538
+1000 Thomas Jefferson St NW	6946
+1000 Constitution Ave NW	6521

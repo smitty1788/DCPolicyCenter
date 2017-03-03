@@ -1,0 +1,11 @@
+letter	frequency
+Expired Meter	260933
+Fail to Display Meter Reciept	254733
+Disobeying Offical Sign	178982
+Time Limit (Residential Area) w/o Permit	154187
+Street Cleaning	151728
+PM Rush Hour Zone	123790
+Failure to Display Current Tags	102983
+No Parking Anytime	90012
+Loading Zone	76013
+Failure to Secure DC Tags	67981
