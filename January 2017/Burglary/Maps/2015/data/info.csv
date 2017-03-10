@@ -1,180 +1,180 @@
-Burglary_3,OBJECTID
-11.0,1
-1.0,2
-22.0,3
-14.0,4
-2.0,5
-1.0,6
-8.0,7
-5.0,8
-11.0,9
-6.0,10
-16.0,11
-1.0,12
-3.0,13
-0.0,14
-13.0,15
-2.0,16
-18.0,17
-11.0,18
-1.0,19
-3.0,20
-7.0,21
-0.0,22
-10.0,23
-25.0,24
-14.0,25
-6.0,26
-13.0,27
-9.0,28
-10.0,29
-7.0,30
-21.0,31
-18.0,32
-20.0,33
-12.0,34
-15.0,35
-7.0,36
-2.0,37
-4.0,38
-13.0,39
-23.0,40
-9.0,41
-15.0,42
-19.0,43
-17.0,44
-8.0,45
-17.0,46
-8.0,47
-22.0,48
-18.0,49
-32.0,50
-31.0,51
-22.0,52
-7.0,53
-5.0,54
-10.0,55
-6.0,56
-7.0,57
-11.0,58
-8.0,59
-8.0,60
-7.0,61
-4.0,62
-13.0,63
-20.0,64
-25.0,65
-5.0,66
-3.0,67
-33.0,68
-10.0,69
-18.0,70
-4.0,71
-9.0,72
-1.0,73
-24.0,74
-9.0,75
-24.0,76
-20.0,77
-14.0,78
-3.0,79
-1.0,80
-6.0,81
-3.0,82
-5.0,83
-9.0,84
-14.0,85
-10.0,86
-1.0,87
-10.0,88
-9.0,89
-22.0,90
-5.0,91
-0.0,92
-5.0,93
-43.0,94
-21.0,95
-17.0,96
-27.0,97
-23.0,98
-11.0,99
-40.0,100
-24.0,101
-23.0,102
-17.0,103
-19.0,104
-16.0,105
-18.0,106
-18.0,107
-37.0,108
-18.0,109
-42.0,110
-11.0,111
-33.0,112
-32.0,113
-20.0,114
-16.0,115
-22.0,116
-16.0,117
-24.0,118
-14.0,119
-15.0,120
-12.0,121
-6.0,122
-3.0,123
-11.0,124
-7.0,125
-8.0,126
-15.0,127
-18.0,128
-10.0,129
-28.0,130
-20.0,131
-21.0,132
-49.0,133
-28.0,134
-5.0,135
-23.0,136
-7.0,137
-17.0,138
-7.0,139
-38.0,140
-18.0,141
-40.0,142
-8.0,143
-36.0,144
-20.0,145
-6.0,146
-3.0,147
-8.0,148
-18.0,149
-9.0,150
-11.0,151
-9.0,152
-9.0,153
-15.0,154
-13.0,155
-6.0,156
-13.0,157
-7.0,158
-22.0,159
-9.0,160
-18.0,161
-7.0,162
-15.0,163
-16.0,164
-14.0,165
-26.0,166
-6.0,167
-5.0,168
-5.0,169
-8.0,170
-8.0,171
-33.0,172
-8.0,173
-25.0,174
-21.0,175
-10.0,176
-15.0,177
-3.0,178
-49.0,179
+N_Name,Burglary_3,OBJECTID
+Brightwood Park Crestwood Petworth,7,30
+Brightwood Park Crestwood Petworth,21,31
+Brightwood Park Crestwood Petworth,18,32
+Brightwood Park Crestwood Petworth,20,33
+Brightwood Park Crestwood Petworth,12,34
+Brightwood Park Crestwood Petworth,15,35
+Brightwood Park Crestwood Petworth,7,36
+Brightwood Park Crestwood Petworth,4,38
+Brightwood Park Crestwood Petworth,13,39
+Brightwood Park Crestwood Petworth,23,40
+Brightwood Park Crestwood Petworth,9,41
+Brookland Brentwood Langdon,23,136
+Brookland Brentwood Langdon,38,140
+Brookland Brentwood Langdon,18,141
+Capitol Hill Lincoln Park,3,82
+Capitol Hill Lincoln Park,5,83
+Capitol Hill Lincoln Park,9,84
+Capitol Hill Lincoln Park,14,85
+Capitol Hill Lincoln Park,10,86
+Capitol Hill Lincoln Park,1,87
+Capitol Hill Lincoln Park,10,88
+Capitol Hill Lincoln Park,9,89
+Capitol View Marshall Heights Benning Heights,18,109
+Capitol View Marshall Heights Benning Heights,16,164
+Capitol View Marshall Heights Benning Heights,14,165
+Capitol View Marshall Heights Benning Heights,26,166
+Capitol View Marshall Heights Benning Heights,6,167
+Capitol View Marshall Heights Benning Heights,5,168
+Cathedral Heights McLean Gardens Glover Park,11,9
+Cathedral Heights McLean Gardens Glover Park,6,10
+Cathedral Heights McLean Gardens Glover Park,2,16
+Cleveland Park Woodley Park Mass Ave Heights,2,5
+Cleveland Park Woodley Park Mass Ave Heights,1,6
+Cleveland Park Woodley Park Mass Ave Heights,8,7
+Cleveland Park Woodley Park Mass Ave Heights,5,8
+Colonial Village Shepherd Park N Portal,25,24
+Columbia Heights Mt. Pleasant Park View,15,42
+Columbia Heights Mt. Pleasant Park View,19,43
+Columbia Heights Mt. Pleasant Park View,17,44
+Columbia Heights Mt. Pleasant Park View,8,45
+Columbia Heights Mt. Pleasant Park View,17,46
+Columbia Heights Mt. Pleasant Park View,8,47
+Columbia Heights Mt. Pleasant Park View,22,48
+Columbia Heights Mt. Pleasant Park View,18,49
+Columbia Heights Mt. Pleasant Park View,7,53
+Columbia Heights Mt. Pleasant Park View,5,54
+Columbia Heights Mt. Pleasant Park View,10,55
+Congress Heights Bellevue Washington Highlands,5,93
+Congress Heights Bellevue Washington Highlands,15,154
+Congress Heights Bellevue Washington Highlands,13,155
+Congress Heights Bellevue Washington Highlands,6,156
+Congress Heights Bellevue Washington Highlands,13,157
+Congress Heights Bellevue Washington Highlands,7,158
+Congress Heights Bellevue Washington Highlands,22,159
+Congress Heights Bellevue Washington Highlands,9,160
+Congress Heights Bellevue Washington Highlands,18,161
+Congress Heights Bellevue Washington Highlands,33,172
+Deanwood Burrville Lincoln Heights,32,113
+Deanwood Burrville Lincoln Heights,20,114
+Deanwood Burrville Lincoln Heights,16,115
+Deanwood Burrville Lincoln Heights,22,116
+Deanwood Burrville Lincoln Heights,16,117
+Douglass Shipley Terrace,21,95
+Douglass Shipley Terrace,17,96
+Douglass Shipley Terrace,40,100
+Downtown Chinatown Penn MV Square N Capitol St,5,66
+Downtown Chinatown Penn MV Square N Capitol St,3,67
+Downtown Chinatown Penn MV Square N Capitol St,14,78
+Downtown Chinatown Penn MV Square N Capitol St,3,79
+Downtown Chinatown Penn MV Square N Capitol St,5,169
+Dupont Circle Connecticut Avenue/K Street,7,61
+Dupont Circle Connecticut Avenue/K Street,4,62
+Dupont Circle Connecticut Avenue/K Street,9,75
+Dupont Circle Connecticut Avenue/K Street,24,76
+Dupont Circle Connecticut Avenue/K Street,21,175
+Eastland Gardens Kenilworth,9,150
+Edgewood Bloomingdale Truxton Circle Eckington,32,50
+Edgewood Bloomingdale Truxton Circle Eckington,31,51
+Edgewood Bloomingdale Truxton Circle Eckington,25,65
+Edgewood Bloomingdale Truxton Circle Eckington,18,128
+Edgewood Bloomingdale Truxton Circle Eckington,10,129
+Edgewood Bloomingdale Truxton Circle Eckington,7,137
+Edgewood Bloomingdale Truxton Circle Eckington,17,138
+Edgewood Bloomingdale Truxton Circle Eckington,7,139
+Fairfax Village Hillcrest Summit Park,16,105
+Fairfax Village Hillcrest Summit Park,18,106
+Friendship Heights AU Park Tenleytown,13,15
+Friendship Heights AU Park Tenleytown,18,17
+Georgetown Burleith/Hillandale,11,1
+Georgetown Burleith/Hillandale,1,2
+Georgetown Burleith/Hillandale,22,3
+Georgetown Burleith/Hillandale,14,4
+Hawthorne Barnaby Woods Chevy Chase,7,21
+Hawthorne Barnaby Woods Chevy Chase,0,22
+Hawthorne Barnaby Woods Chevy Chase,10,23
+Historic Anacostia,23,102
+Historic Anacostia,17,103
+Howard University Le Droit Park Cardozo/Shaw,22,52
+Howard University Le Droit Park Cardozo/Shaw,13,63
+Howard University Le Droit Park Cardozo/Shaw,20,64
+Ivy City Arboretum Trinidad Carver Langston,28,130
+Ivy City Arboretum Trinidad Carver Langston,20,131
+Ivy City Arboretum Trinidad Carver Langston,21,132
+Ivy City Arboretum Trinidad Carver Langston,49,133
+Ivy City Arboretum Trinidad Carver Langston,28,134
+Kalorama Heights Adams Morgan Lanier Heights,6,56
+Kalorama Heights Adams Morgan Lanier Heights,7,57
+Kalorama Heights Adams Morgan Lanier Heights,11,58
+Kalorama Heights Adams Morgan Lanier Heights,8,59
+Kalorama Heights Adams Morgan Lanier Heights,8,60
+Lamond Riggs Fort Totten Pleasant Hill,8,143
+Lamond Riggs Fort Totten Pleasant Hill,6,146
+Lamond Riggs Fort Totten Pleasant Hill,3,147
+Lamond Riggs Fort Totten Pleasant Hill,8,148
+Mayfair Hillbrook Mahaning Heights,33,112
+Mayfair Hillbrook Mahaning Heights,11,151
+N Michigan Park Michigan Park University Heights,36,144
+N Michigan Park Michigan Park University Heights,20,145
+N Michigan Park Michigan Park University Heights,18,149
+Near Southeast Navy Yard,22,90
+Near Southeast Navy Yard,5,91
+No Cluster,2,37
+No Cluster,1,80
+No Cluster,0,92
+No Cluster,15,177
+NoMa Union Station Stanton Park Kingman Park,24,118
+NoMa Union Station Stanton Park Kingman Park,14,119
+NoMa Union Station Stanton Park Kingman Park,15,120
+NoMa Union Station Stanton Park Kingman Park,12,121
+NoMa Union Station Stanton Park Kingman Park,6,122
+NoMa Union Station Stanton Park Kingman Park,3,123
+NoMa Union Station Stanton Park Kingman Park,11,124
+NoMa Union Station Stanton Park Kingman Park,7,125
+NoMa Union Station Stanton Park Kingman Park,8,126
+NoMa Union Station Stanton Park Kingman Park,15,127
+NoMa Union Station Stanton Park Kingman Park,25,174
+North Cleveland Park Forest Hills Van Ness,11,18
+North Cleveland Park Forest Hills Van Ness,1,19
+North Cleveland Park Forest Hills Van Ness,3,20
+River Terrace Benning Greenway Fort Dupont,37,108
+River Terrace Benning Greenway Fort Dupont,42,110
+River Terrace Benning Greenway Fort Dupont,9,152
+River Terrace Benning Greenway Fort Dupont,9,153
+Shaw Logan Circle,33,68
+Shaw Logan Circle,10,69
+Shaw Logan Circle,18,70
+Shaw Logan Circle,4,71
+Shaw Logan Circle,9,72
+Shaw Logan Circle,1,73
+Shaw Logan Circle,24,74
+Sheridan Barry Farm Buena Vista,43,94
+Sheridan Barry Farm Buena Vista,27,97
+Sheridan Barry Farm Buena Vista,23,98
+Southwest/Waterfront Fort McNair Buzzard Point,6,81
+Southwest/Waterfront Fort McNair Buzzard Point,8,170
+Southwest/Waterfront Fort McNair Buzzard Point,8,173
+Southwest/Waterfront Fort McNair Buzzard Point,3,178
+Spring Valley Palisades Wesley Heights Foxhall,16,11
+Spring Valley Palisades Wesley Heights Foxhall,1,12
+Spring Valley Palisades Wesley Heights Foxhall,3,13
+Spring Valley Palisades Wesley Heights Foxhall,0,14
+Takoma Brightwood Manor Park,14,25
+Takoma Brightwood Manor Park,6,26
+Takoma Brightwood Manor Park,13,27
+Takoma Brightwood Manor Park,9,28
+Takoma Brightwood Manor Park,10,29
+Takoma Brightwood Manor Park,8,171
+Twining Fairlawn Fort Davis Park Dupont Park,19,104
+Twining Fairlawn Fort Davis Park Dupont Park,18,107
+Twining Fairlawn Fort Davis Park Dupont Park,11,111
+Twining Fairlawn Fort Davis Park Dupont Park,7,162
+Twining Fairlawn Fort Davis Park Dupont Park,15,163
+West End Foggy Bottom GWU,20,77
+West End Foggy Bottom GWU,10,176
+Woodland/Fort Stanton Garfield Heights Knox Hill,11,99
+Woodland/Fort Stanton Garfield Heights Knox Hill,24,101
+Woodridge Fort Lincoln Gateway,5,135
+Woodridge Fort Lincoln Gateway,40,142
+Woodridge Fort Lincoln Gateway,49,179
