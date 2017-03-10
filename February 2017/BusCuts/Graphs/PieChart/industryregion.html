@@ -20,7 +20,7 @@
 	<body>
 
 		<div id="pieChart"></div>
-		<div class="source" id="source">Source: US Census Bureau</div>	
+		<div class="source" id="source">Source: U.S. Census Bureau</div>	
 		<div class="logo" id="logo"><img src="https://s31.postimg.org/jcaqdyy57/dcpolicycentersmall.png"> </div>	
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
@@ -29,12 +29,12 @@
 			var pie = new d3pie("pieChart", {
 				"header": {
 					"title": {
-						"text": "Who is Affected by Proposed Metro Bus Cuts?",
+						"text": "Industry of Bus Users in the Metro Region",
 						"fontSize": 24,
 						"font": "ProximaNova"
 					},
 					"subtitle": {
-						"text": "Those Affected by Industry ( Total: 3713 +/- 254)",
+						"text": "",
 						"color": "#999999",
 						"fontSize": 12,
 						"font": "ProximaNova"
@@ -57,52 +57,52 @@
 					"content": [
 						{
 							"label": "Office Business/Science/Arts",
-							"value": 2508,
+							"value": 272152,
 							"color": "#BECCDA"
 						},
 						{
 							"label": "Service",
-							"value": 300,
+							"value": 55448,
 							"color": "#D16D3B"
 						},
 						{
 							"label": "Sales",
-							"value": 652,
+							"value": 72512,
 							"color": "#527394"
 						},
 						{
 							"label": "Construction",
-							"value": 149,
+							"value": 10614,
 							"color": "#E2C886"
 						},
 						{
 							"label": "Production/Transportation",
-							"value": 101,
+							"value": 16662,
 							"color": "#B16379"
 						},
 						{
 							"label": "Military",
-							"value": 58,
+							"value": 4690,
 							"color": "#8BCFC5"
 						},
 						{
 							"label": "Agriculture",
-							"value": 4,
+							"value": 1203,
 							"color": "#6D7D8C"
 						},
 						{
 							"label": "Manufacturing",
-							"value": 56,
+							"value": 6973,
 							"color": "#8fe4fa"
 						},
 						{
 							"label": "Retail",
-							"value": 153,
+							"value": 21722,
 							"color": "#ff5300"
 						},
 						{
 							"label": "Food Service",
-							"value": 242,
+							"value": 34713,
 							"color": "#640000"
 						}
 					]
@@ -112,7 +112,7 @@
 						"pieDistance": 32
 					},
 					"inner": {
-						"hideWhenLessThanPercentage": 1
+						"hideWhenLessThanPercentage": 3
 					},
 					"mainLabel": {
 						"fontSize": 11
