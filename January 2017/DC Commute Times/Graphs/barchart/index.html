@@ -2,175 +2,175 @@
 <meta charset="utf-8">
 <style>
 
-body {
-  font: 10px 'ProximaNova';
-}
+	body {
+		font: 10px 'ProximaNova';
+	}
 
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
+	.axis path,
+	.axis line {
+		fill: none;
+		stroke: #000;
+		shape-rendering: crispEdges;
+	}
 
-.bar {
-  fill: #BECCDA;
-}
+	.bar {
+		fill: #BECCDA;
+	}
 
-.bar:hover {
-  fill: #E8272C ;
-}
+	.bar:hover {
+		fill: #E8272C ;
+	}
 
-.x.axis path {
-  display: none;
-}
+	.x.axis path {
+		display: none;
+	}
 
-.d3-tip {
-  line-height: 1;
-  font-weight: bold;
-  padding: 12px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  border-radius: 2px;
-}
+	.d3-tip {
+		line-height: 1;
+		font-weight: bold;
+		padding: 12px;
+		background: rgba(0, 0, 0, 0.8);
+		color: #fff;
+		border-radius: 2px;
+	}
 
-/* Creates a small triangle extender for the tooltip */
-.d3-tip:after {
-  box-sizing: border-box;
-  display: inline;
-  font-size: 10px;
-  width: 100%;
-  line-height: 1;
-  color: rgba(0, 0, 0, 0.8);
-  content: "\25BC";
-  position: absolute;
-  text-align: center;
-}
+	/* Creates a small triangle extender for the tooltip */
+	.d3-tip:after {
+		box-sizing: border-box;
+		display: inline;
+		font-size: 10px;
+		width: 100%;
+		line-height: 1;
+		color: rgba(0, 0, 0, 0.8);
+		content: "\25BC";
+		position: absolute;
+		text-align: center;
+	}
 
-/* Style northward tooltips differently */
-.d3-tip.n:after {
-  margin: -1px 0 0 0;
-  top: 100%;
-  left: 0;
-}
+	/* Style northward tooltips differently */
+	.d3-tip.n:after {
+		margin: -1px 0 0 0;
+		top: 100%;
+		left: 0;
+	}
 </style>
 <body>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
-<script>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="./tooltip.js"></script>
+	<script>
 
-var margin = {top: 40, right: 20, bottom: 140, left: 40},
-    width = 960 - margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom;
+		var margin = {top: 40, right: 20, bottom: 140, left: 40},
+			width = 780 - margin.left - margin.right,
+			height = 500 - margin.top - margin.bottom;
 
-var formatPercent = d3.format("");
+		var formatPercent = d3.format("");
 
-var x = d3.scale.ordinal()
-    .rangeRoundBands([0, width], .1);
+		var x = d3.scale.ordinal()
+		.rangeRoundBands([0, width], .1);
 
-var y = d3.scale.linear()
-    .range([height, 0]);
+		var y = d3.scale.linear()
+		.range([height, 0]);
 
-var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom");
+		var xAxis = d3.svg.axis()
+		.scale(x)
+		.orient("bottom");
 
-var yAxis = d3.svg.axis()
-    .scale(y)
-    .orient("left")
-    .tickFormat(formatPercent);
+		var yAxis = d3.svg.axis()
+		.scale(y)
+		.orient("left")
+		.tickFormat(formatPercent);
 
-var tip = d3.tip()
-  .attr('class', 'd3-tip')
-  .offset([-10, 0])
-  .html(function(d) {
-	  return "<strong>Percent of Commuters:</strong> <span style='color:#FFFFFF'>" + d.frequency + "%"  ;
-  })
+		var tip = d3.tip()
+		.attr('class', 'd3-tip')
+		.offset([-10, 0])
+		.html(function(d) {
+			return "<strong>Percent of Commuters:</strong> <span style='color:#FFFFFF'>" + d.frequency + "%"  ;
+		})
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+		var svg = d3.select("body").append("svg")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
+		.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-svg.call(tip);
+		svg.call(tip);
 
-d3.tsv("data.txt", type, function(error, data) {
-  x.domain(data.map(function(d) { return d.letter; }));
-  y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
+		d3.tsv("data.txt", type, function(error, data) {
+			x.domain(data.map(function(d) { return d.letter; }));
+			y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
 
-  svg.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(xAxis)
-        .selectAll("text")	
-            .style("text-anchor", "end")
-            .attr("dx", "-.8em")
-            .attr("dy", ".15em")
-            .attr("transform", function(d) {return "rotate(-65)"});
+			svg.append("g")
+				.attr("class", "x axis")
+				.attr("transform", "translate(0," + height + ")")
+				.call(xAxis)
+				.selectAll("text")	
+				.style("text-anchor", "end")
+				.attr("dx", "-.8em")
+				.attr("dy", ".15em")
+				.attr("transform", function(d) {return "rotate(-65)"});
 
-  svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
-      .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-  	  .style("font-size", "12px")
-      .style("text-anchor", "end")
-      .text("Percent of Commuters");
+			svg.append("g")
+				.attr("class", "y axis")
+				.call(yAxis)
+				.append("text")
+				.attr("transform", "rotate(-90)")
+				.attr("y", 6)
+				.attr("dy", ".71em")
+				.style("font-size", "12px")
+				.style("text-anchor", "end")
+				.text("Percent of Commuters");
 
-  svg.selectAll(".bar")
-      .data(data)
-    .enter().append("rect")
-      .attr("class", "bar")
-      .attr("x", function(d) { return x(d.letter); })
-      .attr("width", x.rangeBand())
-      .attr("y", function(d) { return y(d.frequency); })
-      .attr("height", function(d) { return height - y(d.frequency); })
-      .on('mouseover', tip.show)
-      .on('mouseout', tip.hide)
-  
-  svg.append("text")      // text label for the x axis
-        .attr("x", 480 )
-        .attr("y", 500 )
-  		.style("font-size", "12px")
-        .style("text-anchor", "middle")
-        .text("Commute Time to Work (Minutes)");
-	
-  svg.append("text")
-        .attr("x", (width / 2))             
-        .attr("y", 0 - (margin.top / 2))
-        .attr("text-anchor", "middle")  
-        .style("font-size", "16px") 
-        .style("text-decoration", "underline")
-  		.style("font-weight", "bold")
-        .text("Commute Times of District Residents");	
-	
-	svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-     
-    .append("text")
-      .attr("class", "label")
-      .attr("x", 90)
-      .attr("y", 80)
-      .style("text-anchor", "end")
-      .text("Source: US Census Bureau");
-	
-	var imgs = svg
-            .append("svg:image")
-            .attr("xlink:href", "https://s27.postimg.org/h3xjrsnrn/dcpolicycenter.png")
-            .attr("x", width - 80)
-            .attr("y", height + 50)
-            .attr("width", "100")
-            .attr("height", "100");
+			svg.selectAll(".bar")
+				.data(data)
+				.enter().append("rect")
+				.attr("class", "bar")
+				.attr("x", function(d) { return x(d.letter); })
+				.attr("width", x.rangeBand())
+				.attr("y", function(d) { return y(d.frequency); })
+				.attr("height", function(d) { return height - y(d.frequency); })
+				.on('mouseover', tip.show)
+				.on('mouseout', tip.hide)
 
-});
+			svg.append("text")      // text label for the x axis
+				.attr("x", 480 )
+				.attr("y", 500 )
+				.style("font-size", "12px")
+				.style("text-anchor", "middle")
+				.text("Commute Time to Work (Minutes)");
 
-function type(d) {
-  d.frequency = +d.frequency;
-  return d;
-}
+			svg.append("text")
+				.attr("x", (width / 2))             
+				.attr("y", 0 - (margin.top / 2))
+				.attr("text-anchor", "middle")  
+				.style("font-size", "16px") 
+				.style("text-decoration", "underline")
+				.style("font-weight", "bold")
+				.text("Commute Times of District Residents");	
+
+			svg.append("g")
+				.attr("class", "x axis")
+				.attr("transform", "translate(0," + height + ")")
+
+				.append("text")
+				.attr("class", "label")
+				.attr("x", 90)
+				.attr("y", 80)
+				.style("text-anchor", "end")
+				.text("Source: US Census Bureau");
+
+			var imgs = svg
+			.append("svg:image")
+			.attr("xlink:href", "https://s27.postimg.org/h3xjrsnrn/dcpolicycenter.png")
+			.attr("x", width - 80)
+			.attr("y", height + 50)
+			.attr("width", "100")
+			.attr("height", "100");
+
+		});
+
+		function type(d) {
+			d.frequency = +d.frequency;
+			return d;
+		}
 
 </script>
