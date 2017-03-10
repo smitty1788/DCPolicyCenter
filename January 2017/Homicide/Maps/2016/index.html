@@ -8,11 +8,11 @@
   <link rel="stylesheet" type="text/css" href="css/tip.css" />
   <link rel="stylesheet" type="text/css" href="css/legend.css" />
   <link rel="stylesheet" type="text/css" href="css/c3.min.css" />
-  <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script src="http://d3js.org/topojson.v1.min.js"></script>
-  <script src="http://d3js.org/queue.v1.min.js"></script>
-  <script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
-  <script src="http://underscorejs.org/underscore-min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <script src="https://d3js.org/queue.v1.min.js"></script>
+  <script src="https://d3js.org/d3.geo.projection.v0.min.js"></script>
+  <script src="https://underscorejs.org/underscore-min.js"></script>
   <script src="js/d3.geo.zoom.js"></script>
   <script src="js/map.tip.js"></script>
   <script src="js/map.legend.js"></script>
@@ -24,12 +24,28 @@
           -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
       }
+	   #source {
+			position: relative;
+			top: 98%;
+			left: -270px;
+			font-size: 10px;
+	  }
+		
+	  #logo {
+			position: relative;
+			top: 80%;
+			left: 275px;
+			font-size: 10px;
+	  	}
   </style>
 </head>
 
 <body style="text-align:center">
 <h1>Homicides in 2016</h1>
   <div id="map"></div>
+  <div class="source" id="source">Source: D.C. Open Data</div>
+  <div class="logo" id="logo"><img src="https://s31.postimg.org/jcaqdyy57/dcpolicycentersmall.png"></div>	
+</div>	
   <div id="template" style="display: none">
     <!--Tooltip template-->
 <table>
@@ -42,8 +58,8 @@
 
   <script>
     //Basic settings
-    var width = 800;
-    var height = 600;
+    var width = 640;
+    var height = 480;
     var _data = void 0;
 
     //Projection

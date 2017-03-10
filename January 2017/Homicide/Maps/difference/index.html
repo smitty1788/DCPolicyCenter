@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Homicides in 2015</title>
+  <title>Increase(+)/Decrease(-) of Homicide from 2015 to 2016</title>
   <link rel="stylesheet" type="text/css" href="css/map.css" />
   <link rel="stylesheet" type="text/css" href="css/color.css" />
   <link rel="stylesheet" type="text/css" href="css/tip.css" />
@@ -19,12 +19,13 @@
   <script src="js/c3.min.js"></script>
   <style type="text/css">
       body {
-          font-family: sans-serif;
+          font-family: 'ProximaNova';
           -webkit-text-size-adjust: 100%;
           -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
       }
-	   #source {
+	  
+	  #source {
 			position: relative;
 			top: 98%;
 			left: -270px;
@@ -36,12 +37,12 @@
 			top: 80%;
 			left: 275px;
 			font-size: 10px;
-	  	}
+	  	}	
   </style>
 </head>
 
 <body style="text-align:center">
-<h1>Homicides in 2015</h1>
+<h1>Increase(+)/Decrease(-) of Homicide from 2015 to 2016</h1>
   <div id="map"></div>
   <div class="source" id="source">Source: D.C. Open Data</div>
   <div class="logo" id="logo"><img src="https://s31.postimg.org/jcaqdyy57/dcpolicycentersmall.png"></div>	
@@ -50,6 +51,8 @@
     <!--Tooltip template-->
 <table>
 <tr><td><strong>Neighborhood Cluster:</strong></td><td>{N_Name}</td></tr>
+<tr><td><strong>Increase(+)/Decrease(-): </strong></td><td>{difference}%</td></tr>
+<tr><td><strong>Homicides in 2016:</strong></td><td>{Homicide_2}</td></tr>
 <tr><td><strong>Homicides in 2015:</strong></td><td>{Homicide_3}</td></tr>
 </table>
   </div>
