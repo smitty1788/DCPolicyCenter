@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+	.bar--positive {
+		fill: #527394;
+	}
+
+	.bar--negative {
+		fill: #B16379;
+	}
+
+	.axis text {
+		font: 11px "ProximaNova";
+
+
+	}
+
+	.axis path,
+	.axis line {
+		fill: none;
+		stroke: #000;
+		shape-rendering: crispEdges;
+	}
+
+	.bar:hover {
+		fill: #E8272C ;
+	}
+
+	.x.axis path {
+		display: none;
+	}
+
+	.d3-tip {
+		line-height: 1;
+		font-weight: bold;
+		padding: 12px;
+		background: rgba(0, 0, 0, 0.8);
+		color: #fff;
+		border-radius: 2px;
+	}
+
+	/* Creates a small triangle extender for the tooltip */
+	.d3-tip:after {
+		box-sizing: border-box;
+		display: inline;
+		font-size: 10px;
+		width: 100%;
+		line-height: 1;
+		color: rgba(0, 0, 0, 0.8);
+		content: "\25BC";
+		position: absolute;
+		text-align: center;
+	}
+
+	/* Style northward tooltips differently */
+	.d3-tip.n:after {
+		margin: -1px 0 0 0;
+		top: 100%;
+		left: 0;
+	}
+</style>
+<body>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="./tooltip.js"></script>
+	<script>
+
+		var margin = {top: 60, right: 20, bottom: 80, left: 190},
+			width = 780 - margin.left - margin.right,
+			height = 650 - margin.top - margin.bottom;
+
+		var x = d3.scale.linear()
+		.range([0, width]);
+
+		var y = d3.scale.ordinal()
+		.rangeRoundBands([0, height], 0.1);
+
+		var xAxis = d3.svg.axis()
+		.scale(x)
+		.orient("bottom")
+
+
+
+		var yAxis = d3.svg.axis()
+		.scale(y)
+		.orient("left")
+		.tickSize(00)
+		.tickPadding(120);
+
+		var tip = d3.tip()
+		.attr('class', 'd3-tip')
+		.offset([0, 0])
+		.html(function(d) {
+			return "<strong>Change in % with Degree:</strong> <span style='color:#FFFFFF'>"+ d.value + " %";
+		})
+
+
+
+
+		var svg = d3.select("body").append("svg")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
+		.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+		svg.call(tip);
+
+		d3.csv("data.csv", type, function(error, data) {
+			x.domain(d3.extent(data, function(d) { return d.value; })).nice();
+			y.domain(data.map(function(d) { return d.name; }));
+
+			svg.selectAll(".bar")
+				.data(data)
+				.enter().append("rect")
+				.attr("class", function(d) { return "bar bar--" + (d.value < 0 ? "negative" : "positive"); })
+				.attr("x", function(d) { return x(Math.min(0, d.value)); })
+				.attr("y", function(d) { return y(d.name); })
+				.attr("width", function(d) { return Math.abs(x(d.value) - x(0)); })
+				.attr("height", y.rangeBand())
+				.on('mouseover', tip.show)
+				.on('mouseout', tip.hide);
+
+			svg.append("g")
+				.attr("class", "x axis")
+				.attr("transform", "translate(0," + height + ")")
+				.call(xAxis);
+
+			svg.append("g")
+				.attr("class", "y axis")
+				.attr("transform", "translate(" + x(0) + ",0)")
+				.call(yAxis);
+
+			// Add Title
+			svg.append("text")
+				.attr("x", 60)             
+				.attr("y", -40)
+				.attr("text-anchor", "middle")  
+				.style("font-size", "16px")
+				.style("font-weight", "bold")
+				.text("Historic Anacostia increasing in percentage with Bachelor's or higher");
+
+			// Add Title
+			svg.append("text")
+				.attr("x", 33)             
+				.attr("y", -25)
+				.attr("text-anchor", "middle")  
+				.style("font-size", "13px")
+				.style("font-weight", "bold")
+				.text("Percent Change of Population Holding Bachelor's or Higher, 2009 to 2015");
+
+			// Add Logo
+			var imgs = svg
+			.append("svg:image")
+			.attr("xlink:href", "https://s27.postimg.org/h3xjrsnrn/dcpolicycenter.png")
+			.attr("x", width - 80)
+			.attr("y", height + 0)
+			.attr("width", "100")
+			.attr("height", "100");
+
+			// Add source
+
+			svg.append("g")
+				.attr("class", "x axis")
+				.append("text")
+				.attr("class", "label")
+				.style("font-size", "10")
+				.attr("x", 30)
+				.attr("y", 570)
+				.style("text-anchor", "end")
+				.text("Source: American Community Survey (09 - 15)");
+		});
+
+		function type(d) {
+			d.value = +d.value;
+			return d;
+		}
+
+</script>

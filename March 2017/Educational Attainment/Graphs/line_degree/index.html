@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+	.axis--x path {
+		display: none;
+	}
+
+	.line {
+		fill: none;
+		stroke: steelblue;
+		stroke-width: 1.5px;
+	}
+
+</style>
+<svg width="760" height="500"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+	var svg = d3.select("svg"),
+		margin = {top: 60, right: 130, bottom: 100, left: 70},
+		width = svg.attr("width") - margin.left - margin.right,
+		height = svg.attr("height") - margin.top - margin.bottom,
+		g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	var parseTime = d3.timeParse("%Y");
+
+	var x = d3.scaleTime().range([0, width]),
+		y = d3.scaleLinear().range([height, 0]),
+		z = d3.scaleOrdinal()
+	.range(["#6D7D8C", "#D16D3B", "#527394", "#B16379", "#8BCFC5", "#E2C886"]);
+
+
+
+
+	var line = d3.line()
+	.curve(d3.curveCardinal)
+	.x(function(d) { return x(d.date); })
+	.y(function(d) { return y(d.count); });
+
+	d3.csv("data.csv", type, function(error, data) {
+		if (error) throw error;
+
+		var cities = data.columns.slice(1).map(function(id) {
+			return {
+				id: id,
+				values: data.map(function(d) {
+					return {date: d.date, count: d[id]};
+				})
+			};
+		});
+
+		x.domain(d3.extent(data, function(d) { return d.date; }));
+
+		y.domain([
+			d3.min(cities, function(c) { return d3.min(c.values, function(d) { return d.count; }); }),
+			d3.max(cities, function(c) { return d3.max(c.values, function(d) { return d.count; }); })
+		]);
+
+		z.domain(cities.map(function(c) { return c.id; }));
+
+		g.append("g")
+			.attr("class", "axis axis--x")
+			.attr("transform", "translate(0," + height + ")")
+			.call(d3.axisBottom(x)
+				  .tickFormat(d3.timeFormat("%Y"))
+				 );
+
+
+		//Add Y-axis
+		g.append("g")
+			.attr("class", "axis axis--y")
+			.call(d3.axisLeft(y))
+			.append("text")
+			.attr("transform", "rotate(-90)")
+			.attr("y", -55)
+			.attr("dy", "0.71em")
+			.attr("fill", "#000")
+			.text("Total, Field of First Degree");
+
+
+
+		// Add Title
+		svg.append("text")
+			.attr("x", 150)             
+			.attr("y", 20)
+			.attr("text-anchor", "middle")  
+			.style("font-size", "16px")
+			.style("font-weight", "bold")
+			.text("Degrees in Social Science on the Rise");
+
+		// Add Title
+		svg.append("text")
+			.attr("x", 165)             
+			.attr("y", 35)
+			.attr("text-anchor", "middle")  
+			.style("font-size", "12px") 
+			.style("font-weight", "bold")
+			.text("Field of First Degree in Washington, D.C., 2009 to 2015");
+
+		// Add Logo
+		var imgs = svg
+		.append("svg:image")
+		.attr("xlink:href", "https://s27.postimg.org/h3xjrsnrn/dcpolicycenter.png")
+		.attr("x", width + 40)
+		.attr("y", height + 60)
+		.attr("width", "100")
+		.attr("height", "100");
+
+		// Add source
+		svg.append("g")
+			.attr("class", "x axis")
+			.append("text")
+			.attr("class", "label")
+			.style("font-size", "10")
+			.attr("x", 230)
+			.attr("y", 450)
+			.style("text-anchor", "end")
+			.text("Source: American Community Survey (09 - 15)");
+
+		var city = g.selectAll(".city")
+		.data(cities)
+		.enter().append("g")
+		.attr("class", "city");
+
+		city.append("path")
+			.attr("class", "line")
+			.attr("d", function(d) { return line(d.values); })
+			.style("stroke", function(d) { return z(d.id); });
+
+		city.append("text")
+			.datum(function(d) { return {id: d.id, value: d.values[d.values.length - 1]}; })
+			.attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.count) + ")"; })
+			.attr("x", 0)
+			.attr("dy", "0em")
+			.style("font", "10px sans-serif")
+			.text(function(d) { return d.id; });
+	});
+
+	function type(d, _, columns) {
+		d.date = parseTime(d.date);
+		for (var i = 1, n = 
+			 columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
+		return d;
+	}
+
+</script>
