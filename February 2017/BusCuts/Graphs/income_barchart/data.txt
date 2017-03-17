@@ -1,0 +1,7 @@
+income	Potentially affected bus riders	All bus riders in metro area
+"Less than $25,000"	18	43
+"$25,000 to $35,000K"	6	15
+"$35,000 to $50,000"	10	10
+"$50,000 to $65,000"	10	8
+"$65,000 to $75,000"	6	3
+"$75,000 or more"	50	21

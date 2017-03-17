@@ -41,7 +41,7 @@
 
 		var keys = data.columns.slice(1);
 
-		x0.domain(data.map(function(d) { return d.race; }));
+		x0.domain(data.map(function(d) { return d.industry; }));
 		x1.domain(keys).rangeRound([0, x0.bandwidth()]);
 		y.domain([0, d3.max(data, function(d) { return d3.max(keys, function(key) { return d[key]; }); })]).nice();
 
@@ -51,7 +51,7 @@
 		.selectAll("g")
 		.data(data)
 		.enter().append("g")
-		.attr("transform", function(d) { return "translate(" + x0(d.race) + ",0)"; })
+		.attr("transform", function(d) { return "translate(" + x0(d.industry) + ",0)"; })
 		.selectAll("rect")
 		.data(function(d) { return keys.map(function(key) { return {key: key, value: d[key]}; }); })
 		.enter();
@@ -75,17 +75,19 @@
 			.attr("transform", "translate(0," + height + ")")
 			.call(d3.axisBottom(x0));
 
+
+
 		g.append("g")
 			.attr("class", "axis")
 			.call(d3.axisLeft(y).ticks(null, "s"))
 			.append("text")
-			.attr("x", -150)
+			.attr("x", -160)
 			.attr("dy", "-2.7em")
 			.attr("transform", "rotate(-90)")
 			.attr("fill", "#000")
 			.attr("font-weight", "bold")
 			.attr("text-anchor", "start")
-			.text("Percent of Bus Riders by Race");
+			.text("Percent of Bus Riders by Industry");
 
 		svg.append("text")      // text label for the x axis
 			.attr("x", width/1.7 )
@@ -93,7 +95,7 @@
 			.style("font-size", "12px")
 			.style("text-anchor", "middle")
 			.attr("font-weight", "bold")
-			.text("Race");
+			.text("Industry");
 
 		svg.append("text")
 			.attr("x", (width / 1.7))             
@@ -109,7 +111,7 @@
 			.attr("text-anchor", "middle")  
 			.style("font-size", "16px")
 			.style("font-weight", "bold")
-			.text("compared with all bus riders, by race");
+			.text("compared with all bus riders, by industry");
 
 
 
@@ -145,14 +147,14 @@
 		.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
 		legend.append("rect")
-			.attr("x", width - 50)
+			.attr("x", width - 100)
 			.attr("y", height - 350)
 			.attr("width", 19)
 			.attr("height", 19)
 			.attr("fill", z);
 
 		legend.append("text")
-			.attr("x", width - 56)
+			.attr("x", width - 106)
 			.attr("y", height - 342)
 			.attr("dy", "0.32em")
 			.text(function(d) { return d; });
