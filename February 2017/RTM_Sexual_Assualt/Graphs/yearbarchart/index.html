@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Total Homicides by Year</title>
+  <title>Total Sexual Assualts by Year</title>
   <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <style type="text/css">
   svg {
@@ -33,8 +33,8 @@
 
 var margin = {top: 50, right: 160, bottom: 50, left: 30};
 
-var width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+var width = 780 - margin.left - margin.right,
+    height = 420 - margin.top - margin.bottom;
 
 var svg = d3.select("body")
   .append("svg")
@@ -82,7 +82,7 @@ var y = d3.scale.linear()
   .domain([0, d3.max(dataset, function(d) {  return d3.max(d, function(d) { return d.y0 + d.y; });  })])
   .range([height, 0]);
 
-var colors = ["#E8272C", "#d25c4d", "#f2b447"];
+var colors = ["#BECCDA", "#d25c4d", "#f2b447"];
 
 
 // Define and draw axes
@@ -123,7 +123,7 @@ svg.append("text")
 	.style("font-size", "16px")
 	.style("font-weight", "bold")
 	.style("text-decoration", "underline")  
-    .text("Sexual Assualt Rates by Year");	
+    .text("Sexual Assualt Rates in Washington, D.C. by Year");	
 	
 svg.append("g")
       .attr("class", "x axis")
