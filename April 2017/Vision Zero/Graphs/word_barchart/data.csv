@@ -1,0 +1,11 @@
+word,All,Bike,Car,Pedestrian
+lane,657,449,186,22
+bike,494,476,9,9
+car,373,200,119,54
+turn,322,108,175,39
+traffic,311,102,159,50
+street,291,111,105,75
+need,238,108,74,56
+driver,219,78,116,25
+pedestrian,217,37,31,149
+cross,206,45,32,129

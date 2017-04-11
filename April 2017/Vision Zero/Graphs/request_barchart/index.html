@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<style>
+
+	.axis .domain {
+		display: none;
+	}
+
+
+
+</style>
+<svg width="780" height="600"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+	var svg = d3.select("svg"),
+		margin = {top: 80, right: 20, bottom: 60, left: 60},
+		width = +svg.attr("width") - margin.left - margin.right,
+		height = +svg.attr("height") - margin.top - margin.bottom - 180,
+		g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	var x0 = d3.scaleBand()
+	.rangeRound([0, width])
+	.paddingInner(0.1);
+
+	var x1 = d3.scaleBand()
+	.padding(0.05);
+
+	var y = d3.scaleLinear()
+	.rangeRound([height, 0]);
+
+	var z = d3.scaleOrdinal()
+	.range(["#527394", "#8BCFC5", "#B16379", "#D16D3B"]);
+
+
+
+	d3.csv("data.csv", function(d, i, columns) {
+		for (var i = 1, n = columns.length; i < n; ++i) d[columns[i]] = +d[columns[i]];
+		return d;
+	}, function(error, data) {
+		if (error) throw error;
+
+		var keys = data.columns.slice(1);
+
+		x0.domain(data.map(function(d) { return d.REQUESTTYPE; }));
+		x1.domain(keys).rangeRound([0, x0.bandwidth()]);
+		y.domain([0, d3.max(data, function(d) { return d3.max(keys, function(key) { return d[key]; }); })]).nice();
+
+
+
+		var rectG = g.append("g")
+		.selectAll("g")
+		.data(data)
+		.enter().append("g")
+		.attr("transform", function(d) { return "translate(" + x0(d.REQUESTTYPE) + ",0)"; })
+		.selectAll("rect")
+		.data(function(d) { return keys.map(function(key) { return {key: key, value: d[key]}; }); })
+		.enter();
+
+		rectG.append("rect")
+			.attr("x", function(d) { return x1(d.key); })
+			.attr("y", function(d) { return y(d.value); })
+			.attr("width", x1.bandwidth())
+			.attr("height", function(d) { return height - y(d.value); })
+			.attr("fill", function(d) { return z(d.key); });
+
+		rectG.append("text")
+			.text(function(d){return d.value;})
+			.attr("x", function(d) { return x1(d.key) + (x1.bandwidth()/2); })
+			.attr("y", function(d) { return y(d.value) - 5; })
+			.style("text-anchor", "middle")
+			.style("font-size", "8");
+
+		g.append("g")
+			.attr("class", "axis")
+			.attr("transform", "translate(0," + height + ")")
+			.call(d3.axisBottom(x0))
+			.selectAll("text")	
+			.style("text-anchor", "end")
+			.attr("dx", "-1em")
+			.attr("dy", "-0.5em")
+			.attr("transform", "rotate(-60)");
+
+		g.append("g")
+			.attr("class", "axis")
+			.call(d3.axisLeft(y).ticks(null, "s"))
+			.append("text")
+			.attr("x", -30)
+			.attr("dy", "-3.2em")
+			.attr("transform", "rotate(-90)")
+			.attr("fill", "#000")
+			.attr("font-weight", "bold")
+			.attr("text-anchor", "end")
+			.text("Total Safety Requests");
+
+		svg.append("text")      // text label for the x axis
+			.attr("x", width/1.7 )
+			.attr("y", 480 )
+			.style("font-size", "12px")
+			.style("text-anchor", "middle")
+			.attr("font-weight", "bold")
+			.text("Reason for Safety Request");
+
+		svg.append("text")
+			.attr("x", 50)             
+			.attr("y", -5 + (margin.top / 2))
+			.attr("text-anchor", "start")  
+			.style("font-size", "16px")
+			.style("font-weight", "bold")
+			.text("Speeding is the largest saftey concern of those submitting requests");
+
+		svg.append("text")
+			.attr("x", 50)             
+			.attr("y", 15 + (margin.top / 2))
+			.attr("text-anchor", "start")  
+			.style("font-size", "13px")
+			.style("font-weight", "bold")
+			.text("Top 10 safety request types, June 2015 to March 2017");
+
+
+
+		// add logo 
+
+		var imgs = svg
+		.append("svg:image")
+		.attr("xlink:href", "https://s27.postimg.org/h3xjrsnrn/dcpolicycenter.png")
+		.attr("x", width - 40)
+		.attr("y", height + 165)
+		.attr("width", "100")
+		.attr("height", "100");
+
+
+
+		svg.append("g")
+			.attr("class", "x axis")
+			.append("text")
+			.attr("class", "label")
+			.style("font-size", "10px")
+			.attr("x", 50)
+			.attr("y", 510)
+			.style("text-anchor", "start")
+			.text("Source: D.C. Open Data (2015 - 2017)");
+
+		var legend = g.append("g")
+		.attr("font-family", "sans-serif")
+		.attr("font-size", 10)
+		.attr("text-anchor", "end")
+		.selectAll("g")
+		.data(keys.slice())
+		.enter().append("g")
+		.attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+		legend.append("rect")
+			.attr("x", width - 40)
+			.attr("y", height - 320)
+			.attr("width", 19)
+			.attr("height", 19)
+			.attr("fill", z);
+
+		legend.append("text")
+			.attr("x", width - 46)
+			.attr("y", height - 312)
+			.attr("dy", "0.32em")
+			.text(function(d) { return d; });
+	});
+
+</script>

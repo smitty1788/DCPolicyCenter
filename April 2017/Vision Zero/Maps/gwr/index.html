@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Where in D.C. has greater than expected safety requests <br> Geographic weighted regression of total Vision Zero safety request</title>
+  <link rel="stylesheet" type="text/css" href="css/map.css" />
+  <link rel="stylesheet" type="text/css" href="css/color.css" />
+  <link rel="stylesheet" type="text/css" href="css/tip.css" />
+  <link rel="stylesheet" type="text/css" href="css/legend.css" />
+  <link rel="stylesheet" type="text/css" href="css/c3.min.css" />
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script src="http://d3js.org/queue.v1.min.js"></script>
+  <script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
+  <script src="http://underscorejs.org/underscore-min.js"></script>
+  <script src="js/d3.geo.zoom.js"></script>
+  <script src="js/map.tip.js"></script>
+  <script src="js/map.legend.js"></script>
+  <script src="js/c3.min.js"></script>
+  <style type="text/css">
+      body {
+				font-family: 'ProximaNova';
+				-webkit-text-size-adjust: 100%;
+				-ms-text-size-adjust: 100%;
+				text-size-adjust: 100%;
+			}
+			#source {
+				position: relative;
+				top: 98%;
+				left: -210px;
+				font-size: 10px;
+			}
+
+			#logo {
+				position: relative;
+				top: 80%;
+				left: 275px;
+				font-size: 10px;
+			}
+  </style>
+</head>
+
+<body style="text-align:center">
+<h1>Where in D.C. has greater than expected safety requests?</h1>
+	<h2>Geographic weighted regression of total Vision Zero safety request</h2>
+  <div id="map"></div>
+	<div class="source" id="source">Source: D.C. Open Data (2015 - 2017), ACS (2015)</div>
+		<div class="logo" id="logo"><img src="https://s31.postimg.org/jcaqdyy57/dcpolicycentersmall.png"></div>
+  <div id="template" style="display: none">
+    <!--Tooltip template-->
+
+  </div>
+
+
+  <script>
+    //Basic settings
+    var width = 640;
+    var height = 600;
+    var _data = void 0;
+
+    //Projection
+    var projection = d3.geo.miller()
+      .center([154, 38])
+      .scale(1000)
+      .translate([width / 2, height / 2]);
+    var path = d3.geo.path().projection(projection);
+	    
+    //Map container
+    var svg = d3.select("#map")
+      .append("svg")
+      .attr("id", "mapSvg")
+      .attr("width", width)
+      .attr("height", height)
+      .on("click", hideTip)
+      .append("g");
+      
+    svg.call(d3.behavior.zoom()
+      .scaleExtent([1, 40])
+      .on("zoom", onZoom));
+	
+    //Vector group
+    var vectors = svg.append("g")
+      .attr("class", "polygon");
+      
+    //Overlay
+    vectors.append("rect")
+      .attr("class", "overlay")
+      .attr("width", width)
+      .attr("height", height);
+
+    //Define 'div' for tooltips
+    var tip = d3.tip()
+      .attr("class", "d3-tip")
+      .direction("c");
+    vectors.call(tip);
+
+    //Vector polygons
+    var vectors0 = vectors.append("g");
+    var vector0 = void 0;
+    var vectors1 = vectors.append("g");
+    var vector1 = void 0;
+
+
+    //Download
+    queue(2)
+      .defer(d3.json, "json/GWR.json")
+      .defer(d3.json, "json/nlines.json")
+      .defer(d3.csv, "data/info.csv")
+      .await(ready);
+
+    //Load map when downloaded
+    function ready(error, json0, json1, data) {
+      if (error) return console.error(error);
+	  
+      //Polygon features
+      var object0 = json0;
+      var object1 = json1;
+
+
+      // Refine projection
+      var b, s, t;
+      projection.scale(1).translate([0, 0]);
+      var b = path.bounds(object0);
+      var s = .95 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height);
+      var t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
+      projection.scale(s).translate(t);
+
+      //Add all vector features
+      path.pointRadius(1.0);
+      vector0 = vectors0.selectAll("path").data(object0.features);
+      vector0.enter()
+        .append("path")
+        .attr("id", function (d) { return d.properties.OBJECTID; })
+        .attr("d", path)
+        .attr("class", function (d) { return d.properties.d3Css; })
+        .on("click", function (d) { return showTip(d.properties.OBJECTID); });
+
+      vector1 = vectors1.selectAll("path").data(object1.features);
+      vector1.enter()
+        .append("path")
+        .attr("id", function (d) { return d.properties.OBJECTID; })
+        .attr("d", path)
+        .attr("class", function (d) { return d.properties.d3Css; });
+
+
+    
+      _data = data;
+
+      
+      var legend = d3.legend(svg)
+        .csv("data/legend.csv")
+        .position(3)
+        .shape(RECT);
+      svg.call(legend);
+    }
+
+    // Show a tool tip for the selected element
+    function showTip(id) {
+      var obj = _.findWhere(_data, {OBJECTID: id.toString()});
+      tip.html(info(obj))
+        .show();
+
+        
+      
+      d3.event.stopPropagation();
+    }
+    
+    // Get the tool tip data from the template
+    function info(obj) {
+      var template = document.getElementById("template").innerHTML;
+      
+      Object.keys(obj).forEach(function(key){
+        template = template.replace("{" + key + "}", obj[key]);
+      });
+    
+      return template;
+    }
+    
+    // Hide the tooltip
+    function hideTip() {
+      tip.hide();
+    }
+
+
+  
+    // Zoom/pan 
+    function onZoom() {
+      hideTip();
+      vectors.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+      vector0.style("stroke-width", 0.5 / d3.event.scale);
+      vector1.style("stroke-width", 2.0 / d3.event.scale);
+
+    }
+  
+ </script>
+</body>
+</html>

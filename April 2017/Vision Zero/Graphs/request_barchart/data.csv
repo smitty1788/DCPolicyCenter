@@ -1,0 +1,11 @@
+REQUESTTYPE,Total,Bike,Car,Pedestrian
+Speeding,839,181,109,549
+Failure to stop for pedestrians,719,37,16,666
+Other Driving Issue,619,145,336,137
+Other Biking Issue,592,567,12,12
+Other Walking Issue,350,17,8,325
+Red light running,349,94,45,209
+Poor visibility,282,57,124,101
+Stop sign running,250,49,32,169
+Double parking,240,151,60,29
+Jaywalking,175,26,86,63
