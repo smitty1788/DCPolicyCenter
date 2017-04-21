@@ -1,0 +1,11 @@
+letter	frequency	percent
+Downtown/Penn/Mt Vernon Sq	7	
+Union Station/Stanton/Kingman Park	7	
+Cathedral/Glover Park	7	
+Kalorama/Adams Morgan/Lanier	5	
+Cap Hill/Lincoln Park	5	
+Ivy City/Trinidad	4	
+Dupont Circle/Connecticut Ave	4	
+Southwest/Buzzard Point	4	
+Columbia Hgts/Mt Pleasant	4	
+LeDroit/Cardozo/Shaw	3	

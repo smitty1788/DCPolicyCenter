@@ -1,0 +1,11 @@
+letter	frequency	Physical_Activity
+Seattle	13.6	608660
+Portland	15.4	583776
+Denver	16.7	600158
+Colorado Springs	17	416427
+Raleigh	18.6	403892
+Aurora	19.9	325078
+San Francisco	20.1	805235
+Albuquerque	20.4	545852
+"Washington, D.C."	20.5	601723
+Charlotte	20.51	731424
