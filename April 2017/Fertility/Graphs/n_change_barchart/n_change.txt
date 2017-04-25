@@ -1,0 +1,11 @@
+name	Change	br_2015	br_2009
+"SW Waterfront, Buzzard Pt"	616.5	52.7	7.3
+"Fairfax Village, Hillcrest"	315.1	41.4	9.9
+"Woodridge, Ft Lincoln, Gateway"	238.9	44.9	13.2
+"Dupont Cir, Conn Ave"	117.0	29.9	13.8
+"Shaw, Logan Circle"	114.5	44.3	20.6
+"Near SE, Navy Yard"	98.4	51.9	26.1
+"Mayfair, Hillbrook"	91.9	91.5	47.6
+"Capitol View, Marshall Hts"	89.7	53.9	28.4
+Historic Anacostia	82.3	66.2	36.3
+"Colonial Village, Shepherd Park"	81.9	91.5	50.2
