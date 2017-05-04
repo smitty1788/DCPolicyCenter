@@ -1,0 +1,218 @@
+subhood,Percent,avgfare,id
+Parkside,0.009,20.40,7
+Gov Fleet Parking,0.005,13.37,9
+Pope Branch Park,0.000,13.24,23
+Whitehaven Parkway,0.009,15.26,30
+Mass. Ave. Heights,0.026,12.46,35
+GWU-MV,0.004,14.96,37
+DHS,0.004,14.17,39
+Southwest Federal Center,3.961,9.11,48
+Southwest Waterfront,1.701,10.25,49
+Hains Point,0.001,14.95,50
+Washington Hebrew Congregation Cemetery,0.001,20.40,53
+Joint Base Anacostia Bolling Naval Research Laboratory,0.013,20.90,60
+Pepco Benning Road Plant,0.000,20.08,61
+Washington Monument Grounds,0.354,8.12,73
+Rock Creek and  Potomac Parkway,0.143,9.26,76
+Pleasant Plains,0.231,10.64,77
+Park Place/Cloisters,0.039,12.53,80
+North Portal Estates,0.003,20.11,85
+NoMa,3.214,9.55,88
+National Mall,2.279,8.42,93
+Michigan Park,0.043,16.36,99
+McMillan Reservoir,0.011,10.23,102
+McLean Gardens,0.087,15.33,103
+Logan Circle,5.015,7.25,107
+Lamond Riggs,0.018,17.77,112
+Lafayette Square,0.227,7.39,113
+Ivy City,0.051,12.56,118
+Hillandale,0.039,13.72,122
+Glover-Archbold Parkway,0.138,14.31,127
+Ft. McNair,0.016,12.35,133
+Federal Triangle,1.426,7.73,142
+Fairfax Village,0.007,18.96,144
+Eckington,0.432,10.28,147
+Eastland Gardens,0.008,21.51,149
+Dalecarlia Reservoir,0.005,20.65,154
+Congressional Cemetery,0.002,14.13,158
+Cathedral Heights,0.409,13.93,164
+Burrville,0.007,21.04,169
+Anacostia River,0.002,22.38,182
+Woodland,0.008,18.75,190
+Soapstone Valley Park,0.000,0.00,206
+Sibley Hospital,0.040,19.08,208
+Rock Creek Park (south),0.098,12.44,212
+Brentwood Railyard,0.000,0.00,11
+Fort Totten Park,0.000,0.00,12
+Fort Slocum Park,0.001,17.25,13
+Capitol View,0.019,21.30,1
+Fort Circle Parkland,0.003,17.46,2
+Barry Farm,0.016,15.51,3
+Mt. Vernon Square,1.270,7.10,14
+St. Elizabeths Hospital West,0.001,17.85,4
+St. Elizabeths Hospital East,0.004,18.45,5
+Mahaning Heights/Central Northeast,0.041,17.94,6
+Northwest One,0.216,8.58,8
+Ivy City Railyard,0.021,12.05,10
+McMillan Sand Filtration Site,0.010,10.78,15
+Fort Mahan Park,0.001,18.97,16
+Northeast Boundary,0.014,21.91,17
+Stronghold,0.031,10.92,18
+Catholic University and other Catholic Institutions,0.166,13.52,19
+Stadium/Armory Area,0.023,14.42,20
+Poplar Point,0.002,16.86,21
+Fort Davis Park,0.000,20.65,22
+Dupont Park,0.001,17.13,24
+Pinehurst Parkway,0.001,21.93,25
+Washington Heights,1.106,9.22,65
+Waterfront Georgetown,2.968,9.81,26
+West Village Georgetown,1.823,10.99,27
+North Michigan Park,0.027,17.76,86
+East Village Georgetown,1.545,9.65,28
+Potomac Heights,0.022,18.07,31
+C&O Canal Park,0.015,13.36,29
+Normanstone Parkway,0.000,8.97,32
+Woodland-Normanstone Terrace,0.111,11.75,33
+Dumbarton Oaks Park,0.000,0.00,34
+Battery Kemble Park,0.002,17.80,36
+Colony Hill,0.013,14.65,38
+Berkley/Foxhall Crescents,0.108,15.15,40
+Fort Davis,0.009,19.40,41
+Civic Betterment,0.003,20.83,42
+Benning Ridge,0.026,19.75,43
+Woodlawn/Payne Cemetery,0.000,0.00,44
+Fort Chaplin Park,0.007,18.07,45
+Benning Heights/Simple City,0.006,19.84,46
+Barney Circle,0.016,14.21,47
+Shepherd Parkway,0.006,19.44,51
+Riggs Park,0.027,18.52,56
+Oxon Run Parkway,0.006,20.99,52
+Pleasant Hills,0.025,14.80,57
+Shipley Terrace,0.034,20.07,54
+Washington Highlands,0.042,20.85,55
+National Cathedral Grounds,0.013,13.40,94
+Near Northeast,2.040,10.21,58
+Bellevue,0.035,19.67,59
+Anacostia Boat Clubs,0.000,15.09,62
+Anacostia River Islands,0.001,16.19,63
+Strivers Section,0.830,8.74,64
+Reed-Cooke,1.055,9.86,66
+Kingman Park/Rosedale,0.222,12.72,67
+Barnard Hill Park,0.000,0.00,68
+Queens Chapel,0.006,17.32,69
+Penn Branch section of Dupont Park,0.006,17.57,70
+Fort Stanton Park,0.005,16.41,71
+Fort Totten,0.032,15.43,72
+Observatory Circle,0.224,12.59,83
+West Potomac Park,0.875,10.06,74
+Tidal Basin,0.007,10.64,75
+Old Soldiers Home,0.072,13.38,82
+Petworth,0.499,14.17,78
+Park View,0.269,11.78,79
+Northwest Rectangle,1.966,8.47,84
+Palisades,0.137,13.93,81
+North Cleveland Park,0.418,14.93,87
+Near South East,1.128,12.27,89
+Bloomingdale,0.524,9.60,177
+Naylor Gardens,0.012,18.95,90
+Navy Yard,0.013,13.51,91
+National Zoological Park,0.350,11.89,92
+National Arboretum,0.004,15.64,95
+Mt. Vernon Triangle,1.195,7.41,96
+Mt. Pleasant,0.864,11.62,97
+Mt. Olivet Cemetery,0.006,13.90,98
+Melvin C. Hazen Park,0.001,14.51,100
+Downtown,-1000.000,7.55,101
+Kalorama Triangle,1.694,9.52,117
+Mayfair,0.006,18.99,104
+Marshall Heights,0.038,20.12,105
+Manor Park,0.048,17.16,106
+Ledroit Park,0.310,9.20,108
+Lanier Heights,0.351,10.60,109
+Langston Golf Course,0.004,12.62,110
+Langdon,0.107,14.80,111
+Knox Hill,0.004,20.32,114
+Howard University,0.149,10.11,119
+Hillcrest,0.010,19.32,120
+Kent,0.063,17.70,115
+Kenilworth Aquatic Gardens,0.000,29.17,116
+Hillbrook,0.016,21.05,121
+Hawthorne,0.003,23.63,123
+Greenway,0.032,17.06,124
+Good Hope,0.005,17.97,125
+Glover Park,0.643,13.44,126
+Glenwood/St. Mary's Cemeteries,0.021,10.16,128
+Georgetown University,0.121,12.42,129
+Benning,0.025,17.57,178
+Gateway,0.013,15.46,130
+Garfield Heights,0.014,19.63,131
+Gallaudet University,0.063,11.88,132
+Friendship Heights,0.181,19.35,134
+Foxhall Village,0.049,12.69,135
+Fort Stanton,0.008,20.12,136
+Fort Lincoln,0.018,17.90,137
+Walter Reed Medical Center,0.009,18.19,194
+Fort Dupont Park,0.005,21.30,138
+Fort Dupont,0.027,18.34,139
+Foggy Bottom,3.738,8.63,141
+Forest Hills,0.300,15.16,140
+Dupont Circle,10.557,8.19,151
+Fairlawn,0.049,15.77,143
+Ellipse,0.180,7.91,145
+Edgewood,0.196,11.77,146
+Kenilworth,0.004,21.77,148
+Douglas,0.027,17.30,152
+East Potomac Park,0.023,13.35,150
+Deanwood,0.032,20.66,153
+DC Village,0.004,24.74,155
+D.C. General Hospital and Prison,0.000,14.73,156
+Buzzard Point,0.036,12.63,168
+Crestwood,0.082,13.81,157
+Congress Heights,0.056,19.54,159
+Burleith,0.196,13.11,170
+Columbia Heights,2.969,10.39,160
+Colonial Village,0.010,20.72,161
+Cleveland Park,0.551,13.22,162
+Chevy Chase,0.296,18.67,163
+Buena Vista,0.040,16.15,171
+Carver Langston,0.208,12.32,165
+Capitol Hill,5.438,11.10,166
+Capital City Market,0.096,11.45,167
+Brookland,0.181,14.10,172
+Brightwood Park,0.031,16.21,173
+Brightwood,0.180,16.72,174
+Brentwood,0.126,12.89,175
+Blue Plains,0.000,23.59,176
+Randle Highlands,0.015,16.37,217
+Woodridge,0.079,15.92,179
+Barnaby Woods,0.017,21.85,180
+Arboretum,0.040,15.08,181
+The Capitol Grounds,8.632,9.63,202
+Anacostia Park,0.002,16.48,183
+Rock Creek Cemetery,0.000,14.51,215
+Anacostia,0.054,15.67,184
+American University Park,0.206,17.43,185
+American University,0.054,16.09,186
+16th Street Heights,0.657,13.31,187
+Wesley Heights,0.189,15.37,188
+Woodley Park,1.610,11.54,189
+White House Grounds,0.696,7.50,191
+West End,3.279,8.65,192
+Washington Hospital Center,0.054,13.45,193
+Wakefield,0.263,15.86,195
+University Heights,0.049,15.28,196
+Union Station,2.651,10.05,197
+U Street,4.274,8.59,198
+Twining,0.018,17.40,199
+Truxton Circle,0.303,8.89,200
+Trinidad,0.196,11.89,201
+Tenleytown,0.149,17.48,203
+Takoma,0.078,19.23,204
+River Terrace,0.031,13.91,216
+Spring Valley,0.080,17.69,205
+Skyland,0.020,17.03,207
+Sheridan-Kalorama,0.851,9.46,209
+Shepherd Park,0.028,19.98,210
+Shaw,3.018,7.49,211
+Rock Creek Park (north),0.004,19.56,213
+Rock Creek Gardens,0.004,21.90,214

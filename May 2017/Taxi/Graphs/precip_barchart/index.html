@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+	body {
+		font: 10px 'ProximaNova';
+	}
+
+	.axis path,
+	.axis line {
+		fill: none;
+		stroke: #000;
+		shape-rendering: crispEdges;
+	}
+
+	.bar {
+		fill: #BECCDA;
+	}
+
+	.bar:hover {
+		fill: #E8272C ;
+	}
+
+	.x.axis path {
+		display: none;
+	}
+
+	.d3-tip {
+		line-height: 1;
+		font-weight: bold;
+		padding: 12px;
+		background: rgba(0, 0, 0, 0.8);
+		color: #fff;
+		border-radius: 2px;
+	}
+
+	/* Creates a small triangle extender for the tooltip */
+	.d3-tip:after {
+		box-sizing: border-box;
+		display: inline;
+		font-size: 10px;
+		width: 100%;
+		line-height: 1;
+		color: rgba(0, 0, 0, 0.8);
+		content: "\25BC";
+		position: absolute;
+		text-align: center;
+	}
+
+	/* Style northward tooltips differently */
+	.d3-tip.n:after {
+		margin: -1px 0 0 0;
+		top: 100%;
+		left: 0;
+	}
+</style>
+<body>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="./tooltip.js"></script>
+	<script>
+
+		var margin = {top: 60, right: 40, bottom: 80, left: 60},
+			width = 780 - margin.left - margin.right,
+			height = 400 - margin.top - margin.bottom;
+
+		var formatPercent = d3.format("");
+
+		var x = d3.scale.ordinal()
+		.rangeRoundBands([0, width], .1);
+
+		var y = d3.scale.linear()
+		.range([height, 0]);
+
+		var xAxis = d3.svg.axis()
+		.scale(x)
+		.orient("bottom");
+
+		var yAxis = d3.svg.axis()
+		.scale(y)
+		.orient("left")
+		.tickFormat(formatPercent);
+
+		var tip = d3.tip()
+		.attr('class', 'd3-tip')
+		.offset([-10, 0])
+		.html(function(d) {
+			return "<strong>Average Trips Per Day:</strong> <span style='color:#FFFFFF'>" + d.Trips + "</span>" + "<br> Total Precipitation Days: <span style='color:#FFFFFF'>" + d.days + "</span>";
+		})
+
+		var svg = d3.select("body").append("svg")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
+		.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+		svg.call(tip);
+
+		d3.csv("precip.csv", type, function(error, data) {
+			x.domain(data.map(function(d) { return d.precip; }));
+			y.domain([0, d3.max(data, function(d) { return d.Trips; })]);
+
+			svg.append("g")
+				.attr("class", "x axis")
+				.attr("transform", "translate(0," + height + ")")
+				.call(xAxis)
+				.selectAll("text")	
+				.style("text-anchor", "middle")
+				.attr("dx", "0em")
+				.attr("dy", "1em")
+				.attr("transform", function(d) {return "rotate(0)"});
+
+			svg.append("g")
+				.attr("class", "y axis")
+				.call(yAxis)
+				.append("text")
+				.attr("transform", "rotate(-90)")
+				.attr("y", 6)
+				.attr("dy", "-4.2em")
+				.style("font-size", "12px")
+				.style("text-anchor", "end")
+				.text("Average Trips");
+
+			svg.selectAll(".bar")
+				.data(data)
+				.enter().append("rect")
+				.attr("class", "bar")
+				.attr("x", function(d) { return x(d.precip); })
+				.attr("width", x.rangeBand())
+				.attr("y", function(d) { return y(d.Trips); })
+				.attr("height", function(d) { return height - y(d.Trips); })
+				.on('mouseover', tip.show)
+				.on('mouseout', tip.hide)
+
+			svg.append("text")      // text label for the x axis
+				.attr("x", width/2 )
+				.attr("y", 300 )
+				.style("font-size", "12px")
+				.style("text-anchor", "middle")
+				.text("Precipitation in Inches");
+
+		svg.append("text")
+			.attr("x", 0)             
+			.attr("y", -65 + (margin.top / 2))
+			.attr("text-anchor", "start")  
+			.style("font-size", "16px")
+			.style("font-weight", "bold")
+			.text("There is a 14.7% increase in trips during high precipitation days");
+
+		svg.append("text")
+			.attr("x", 0)             
+			.attr("y", -50 + (margin.top / 2))
+			.attr("text-anchor", "start")  
+			.style("font-size", "13px")
+			.style("font-weight", "bold")
+			.text("Average daily trips by precipitation range");
+
+
+			// add logo 
+
+			var imgs = svg
+			.append("svg:image")
+			.attr("xlink:href", "https://s27.postimg.org/h3xjrsnrn/dcpolicycenter.png")
+			.attr("x", width - 100)
+			.attr("y", height + 10)
+			.attr("width", "100")
+			.attr("height", "100");
+			// Add source
+
+			svg.append("g")
+				.attr("class", "x axis")
+				.append("text")
+				.attr("class", "label")
+				.attr("x", 0)
+				.attr("y", 320)
+				.style("text-anchor", "start")
+				.text("Source: D.C. Open Data, June 2015 to  August 2016");
+
+		});
+
+		function type(d) {
+			d.Trips = +d.Trips;
+			return d;
+		}
+
+</script>
