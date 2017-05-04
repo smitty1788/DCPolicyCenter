@@ -1,11 +1,12 @@
-library(sqldf)
-library(rgdal)
-library(lubridate)
-library(ggplot2)
 # Analysis of Taxi Trips in Washington D.C.
 # For: D.C. Policy Center
 # Author: Randy Smith
 
+
+library(sqldf)
+library(rgdal)
+library(lubridate)
+library(ggplot2)
 library(gridExtra)
 library(weatherData)
 library(zoo)
