@@ -1,0 +1,11 @@
+type,Count,AvgCO2Tons,AvgCO2KGSQFT
+College/University,37,5665,34.63
+Hotel,66,2599,11.04
+Office,433,2594,13.57
+Other,81,1788,10.11
+Worship Facility,10,961,11.05
+Multifamily Housing,327,811,5.01
+Distribution Center,6,562,4.97
+K-12 School,11,553,6.06
+Non-Refrigerated Warehouse,15,302,1.87
+Self-Storage Facility,7,138,1.46
