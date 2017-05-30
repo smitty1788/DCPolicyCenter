@@ -3,8 +3,6 @@
 # Author: Randy Smith
 
 library(doMC)
-library(hrbrthemes)
-library(gcookbook)
 library(tidyverse)
 library(lubridate)
 registerDoMC(cores = 4)
@@ -50,11 +48,6 @@ worldbank_ns <- worldbank %>%
   mutate(p_trips = trips / sum(trips) * 100) %>% 
   arrange(desc(p_trips))
 
-ggplot(usdi, aes(dHR)) +
-  geom_bar()
-
-ggplot(worldbank, aes(dHR)) +
-  geom_bar()
 
 # Write to csv for us in charts/maps
 write.csv(usdi, "Tab/Tidy/usdi.csv", row.names = FALSE)
