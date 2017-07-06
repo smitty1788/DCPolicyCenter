@@ -17,7 +17,7 @@ library(tidycensus)
 setwd("G:/DC Policy Center/Car_Free/Data")
 
 
-census_api_key("8b5d3a4726e6bd0e6c47ab773476281d0e653fce")
+census_api_key("API KEY HERE")
 
 # Load variable list
 dc15 <- load_variables(2015, "acs5", cache = TRUE)
