@@ -6,14 +6,15 @@ library(tidyverse)
 library(lubridate)
 
 # Set working Directory
-setwd("G:/DC Policy Center/Carbon Emmisions/Data")
+setwd("SET TO YOUR WORKING DIRECTORY/Data")
 
 # Read in Data
 # Original Dataset from 
 # http://opendata.dc.gov/datasets/2014-building-energy-and-water-performance-benchmarking
 # Due to inconsistent formating, much of the data cleanup
 # had to be done by hand 
-emissions <- read.csv('Tab/building_emissions.csv', stringsAsFactors = FALSE)
+emissions <- read.csv('https://raw.githubusercontent.com/smitty1788/DCPolicyCenter/master/May%202017/Building_Carbon_Emissions/Analysis/Tab/emissions.csv',
+                      stringsAsFactors = FALSE)
 
 # Addressing inconsistant naming schemes
 emissions$OWNEROFRECORD <- gsub("GEORGE WASHINGTON UNIVERSITY", "George Washington University", emissions$OWNEROFRECORD)
