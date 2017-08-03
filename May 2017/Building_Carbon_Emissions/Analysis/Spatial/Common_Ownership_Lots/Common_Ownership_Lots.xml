@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+<idinfo>
+<citation>
+<citeinfo>
+<origin/>
+<origin/>
+<origin/>
+<pubdate>unknown</pubdate>
+<title>DCGIS.OwnerPLY</title>
+<geoform>vector digital data</geoform>
+<pubinfo>
+<publish>DC GIS</publish>
+</pubinfo>
+<lworkcit>
+<citeinfo>
+<title>DC Geographic Information System</title>
+</citeinfo>
+</lworkcit>
+</citeinfo>
+</citation>
+<descript>
+<abstract>The common ownership lots dataset is a single polygon layer that is built from various polygon feature classes of the District's Vector Property Mapping database including the below. It represents all lands that are outside right-of-way.Record LotsTax LotsParcel LotsReservation LotsAll of which are found separately on http://data.dc.gov. The Office of Tax and Revenue maintains a database known as Information Tax System (ITS) that contains the accounts for the real property taxes. ITS records reference record lots, tax lots, parcels, condominiums and federally owned lands such as reservations. Information from ITS is conflated to Common Ownership Lot features by SSL (Square, Suffix and Lot). One of the major reasons for developing the Common Ownership Lot layer was to replace the “ownership points” layer. Note that this layer does not include condo records. These can be found in condo relate tables also found on http://data.dc.govThis layer is regenerated WEEKLY with an automated algorithm using the latest Pubic Extract information for attribution.</abstract>
+<purpose>The common ownership lots dataset is a single polygon layer that is built from various polygon feature classes of the District's Vector Property Mapping database.</purpose>
+<supplinf>The Owner Polygons layer or Common Ownership Layer (COL) as it was previously called is derived from the following Vector Property Map polygon layers (Air Rights Lots, Tax Lots, Historical Tax Lots (to support Condo relationship), Parcel Lots, Record Lots, and Reservations). The tax information (attribution) comes from OTR's Public Extract file. The creation of this layer is automated, occurs weekly, and uses the most currently available tax information. The date of the extract can be found in the EXTRACTDATfield in this layer.</supplinf>
+</descript>
+<status>
+<progress>In work</progress>
+<update>Weekly</update>
+</status>
+<spdom>
+<bounding>
+<westbc>-77.119414</westbc>
+<eastbc>-76.909258</eastbc>
+<northbc>38.995977</northbc>
+<southbc>38.801593</southbc>
+</bounding>
+</spdom>
+<keywords>
+<theme>
+<themekt>None</themekt>
+<themekey>location</themekey>
+<themekey>Property</themekey>
+<themekey>Lot</themekey>
+<themekey>Cadastral</themekey>
+<themekey>Land</themekey>
+<themekey>Square</themekey>
+</theme>
+<theme>
+<themekt>ISO 19115 Topic Categories</themekt>
+<themekey>location</themekey>
+<themekey>planningCadastre</themekey>
+</theme>
+<place>
+<placekt>None</placekt>
+<placekey>District of Columbia</placekey>
+<placekey>Washington</placekey>
+<placekey>D.C.</placekey>
+<placekey>DC</placekey>
+<placekey>DC GIS</placekey>
+<placekey>DCGIS</placekey>
+</place>
+</keywords>
+<accconst>Contact OCTO GIS. Any data obtained outside of OCTO GIS are unauthorized copies.</accconst>
+<useconst>This work is licensed under a Creative Commons Attribution 4.0 International License.</useconst>
+<ptcontac>
+<cntinfo>
+<cntorgp>
+<cntorg>Office of the Chief Technology Officer</cntorg>
+<cntper>GIS Data Coordinator</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>441 4th St NW, Suite 930 South</address>
+<city>Washington</city>
+<state>DC</state>
+<postal>20001</postal>
+<country>US</country>
+</cntaddr>
+<cntfax>202-727-5660</cntfax>
+<cntemail>dcgis@dc.gov</cntemail>
+<hours>8:30am - 5:30pm</hours>
+</cntinfo>
+</ptcontac>
+<datacred>Department of Consumer of Regulatory Affairs (DCRA) - Office of the Surveyor (OS), and Office of Tax and Revenue (OTR) - Real Property Tax Administration (RPTA) Office of Chief Technology Officer (OCTO) - DC GIS</datacred>
+<native>Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.1.4000</native>
+</idinfo>
+<dataqual>
+<attracc>
+<attraccr>Validated by source and/or responsible agency</attraccr>
+</attracc>
+<logic>Vector Property Map QA/QC 1.) Specifications: Projection Parameters: Coord. System - NAD83, StatePlane, MD, FIPS 1900, meters. Correct Extent and Mapping Tolerances: Mapping tolerances implicitly define accuracy and precision of the vector feature datasets. Min X: 389000, Max X: 408000, Min Y: 124700, Max Y: 147900 Precision: 92563.95 (close to 5 decimals of precision) Cluster Tolerance: .003048006 2.) QA/QC Steps Attribute Verification - Database Structure, Domain Values, Field Population Topological Consistency - Verified Topology against a list of rules, as follows: Source Checks Squares were reviewed against their respective source documents (Record Lots- Subdivision Plats, Tax Lots- A&amp;T Plats) and checked for the following: - Ensure all lots were captured for each square - Check all lot line dimensions and square footages - Check for missing building restriction lines on original source plats - Check for proper lot bearings - Insure correct units were captured Squares and Lots Best Fit - Check each squares best fit against the 2002 imagery and ground level features such as curb, sidewalk and buildings. Errors found during DC QC process were cycled back to vendor until all correction had been completed.</logic>
+<complete>Data is mostly complete with ongoing  maintenance. There are approximately 80 squares with remaining transactions that need to be completed to bring the entire dataset current thru this date. The following issues exist in the property data: 1.) Some squares contain COGO linework entered using degress, minutes, and seconds, as opposed to decimal degrees. This causes spatial inaccuracies that grow as the length of the line gets longer. 2.) Squares with alley/street closings/dedication transactions are currently being processed. 3.) Not all Parcels that reside outside of a Square(s) boundary have been processed/created. 4.) Not all Reservations have been processed/created. 5.) Individual edits that still need to be made are contained in the transaction table (VPM_Updates) which is available on DC Central's geospatial database. Other 1.) Alleys, Building restriction lines, Highway Plans, and Easements are captured if they were on the source material. Source material is active as of November 2002. It is known that not all of these features were captured. 2.) Street width is approximate. Users should rely on the published official street widths to set up property lines or determine right-of-way (this is from the DC Land Surveyors Hand Book). Likewise this should be taking into consideration when doing certain types of GIS analysis utilizing the VP data. 3.) Some Squares are divided by streets. That is, the same Square continues on the other side of the street. 4.) Not all of the fields are currently populated. The remainder of the attribution will be populated once the servers are returned from the vendor containing the source files. 5.) Efforts are being made to bring all layers current.</complete>
+<posacc>
+<horizpa>
+<horizpar>Since squares are islands and not generated from ground features, staff "best fit" each square to the Earth. Since there is no citywide Survey Coordinate System, squares are placed in their approximate location. Once a square was COGO'ed/created it became a "floating islands" without geographic positioning. Because of this, captured property data had to be positioned relative to other geospatial files that themselves are geo-referenced. Thus, they were fit to the digital ortho's and planimetrics compiled at a scale of 1:100 or 1" ='s 83.3ft. Squares were visually positioned over the appropriate area in of the orthophoto and planimetrics (ground level feature were primary source). For the "best fit" to ortho, 95% of features are within 2 meters of their true position on the 2002 orthophoto. Within a square, the property map relative accuracy is approximately 2 feet. - Each Square is an Island, alone unto itself. - Street width is approximate. The published official street widths to set up property lines or determine right-of-way are correct. There is digital scan information available from DDOT regarding Right-of-Way widths.</horizpar>
+</horizpa>
+<vertacc>
+<vertaccr>N/A</vertaccr>
+</vertacc>
+</posacc>
+<lineage>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20060101</pubdate>
+<title>subdivision map</title>
+</citeinfo>
+</srccite>
+<typesrc>hardcopy</typesrc>
+<srccitea>subdivision map</srccitea>
+<srccontr>location</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20060101</pubdate>
+<title>Assessment and Taxation plats</title>
+</citeinfo>
+</srccite>
+<typesrc>hardcopy</typesrc>
+<srccitea>Assessment and Taxation plats</srccitea>
+<srccontr>location</srccontr>
+</srcinfo>
+<procstep>
+<procdesc>Tax Assessment attribution for this layer was conflated from the most recent OTR Public Extract dated 06/28/09.</procdesc>
+</procstep>
+<procstep>
+<procdesc>Updated with January 23, 2009 Vector Property data using a 01/26/09 OTR Public Extract File</procdesc>
+</procstep>
+<procstep>
+<procdesc>Tax Assessment attribution for this layer was conflated from the most recent OTR Public Extract dated 11/28/09.</procdesc>
+</procstep>
+<procstep>
+<procdesc>The Office of Tax and Revenue (OTR), RPTA division's public extract was compared against the COL layer once all features were appended. Similarly, staff ran topology rules (must not overlap self, must not have gaps, area boundary must be covered by boundary of) to detect spatial discrepancies/errors for OS or RPTA to correct, if any errors or omissions are found. 1.) Staff opened a blank Arcmap document (.mxd) and loaded Tax, Parcel, and Record polygons from the VPM production environment. 2.) Staff created an empty COL feature class (FC) with all fields identified in the participating VPM layers (Tax, Parcel, and Record) as well as the public extract. 3.) Staff used the Object Loader command in Arcmap to initially append Tax and Parcel polygon features to the COL feature class. 4.) Staff performed multiple spatial queries against the COL and Record lot polygons where the layers were selected based on their location (i.e. are contained by, completely contain, are completely within, and contain). 5.) Staff opened the attribute tables of the Record layer and reverse/switch the selection. 6.) Once the reverse and switch selection was made, staff created a temporary field to populate (1 = take). This is so that staff can query only Record layer features that should be appended to the COL layer (Tax &amp; Parcel have already appended in step 3) by using the query builder inside of the Object Loader. 7.) Staff created an SSL field (12 character) to populate the SSL based on the truncation of the Square, Suffix, and Lot fields for Tax and Record. Reservations SSL should lead with "RES " + RESERVATION NUMBER + "0000". Parcels SSL should lead with "PAR " + PAR + LOT. SSL's in ITS are currently setup this way. 8.) Staff created a temporary field in OTR's ITS public extract so that non matches could be quantified (i.e. a user can select all records in the public extract that do not have a geospatial match. Similarly, an ITS Boolean field was also created in the COL layer so that ITS matches can be quantified, where 1 = true and 0 = false. 9.) Staff performed a random visual inspection to spot check and manually select omissions to append to the COL. This was also done to link the public extract to the various VPM layers to see if any new matches could be identified.</procdesc>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>Office of the Chief Technology Officer</cntorg>
+<cntper>GIS Data Coordinator</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>200 I Street SE, 5th Floor</address>
+<city>&lt;The city of the process Contact Person.&gt;</city>
+<state>&lt;The state or province of the process Contact Person.&gt;</state>
+<postal>&lt;The ZIP or other postal code of the process Contact Person.&gt;</postal>
+<country>&lt;The country of the process Contact Person.&gt;</country>
+</cntaddr>
+<cntfax>202-727-5660</cntfax>
+<cntemail>dcgis@dc.gov</cntemail>
+<hours>8:30am - 5:30pm</hours>
+</cntinfo>
+</proccont>
+</procstep>
+<procstep>
+<procdesc>Metadata imported. Updated with August 01, 2008 Vector Property data Recent updates include: - Creation of 667 new Record Lots, Retiring of 202 Record Lots - Creation of 167 new Tax Lots, Retiring of 18 Tax Lots - Creation of 4 new Air Rights Lots, Retiring of 1 Air Rights Lot - Corrections to data anomalies. - Updated Metadata - 16 Squares and their lots have been adjusted to better fit planimetrics. (0374, 1194, 1195, 2852, 5318, 5320, 5880, 5881, 5882, 5883, 5885, 5890, and 5956) - Several squares boundaries have been altered significantly because of incoming subdivisions; they include 5880, 5881, 5882, 5883, 5885, and 5890 - 3 new squares have been created because of incoming subdivisions, they are - 5881S, 5882W, and 5882E</procdesc>
+</procstep>
+<procstep>
+<procdesc>Another owner polygon was generated with the release of updated vector property map layers. The following items were done on the vector property map layers: -Corrections to some data anomalies -Approx. 283 of the 800 maintenance transactions completed to bring data current. This equates to the retiring of 614 tax and record lots (these are in the history feature classes) and the creation of 364 new tax and record lots. - 49 new Parcels -Updated Maintenance transaction table</procdesc>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>Office of the Chief Technology Officer</cntorg>
+<cntper>GIS Data Coordinator</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>200 I Street SE, 5th Floor</address>
+<city>Washington</city>
+<state>DC</state>
+<postal>20001</postal>
+<country>US</country>
+</cntaddr>
+<cntfax>202-727-5660</cntfax>
+<cntemail>dcgis@dc.gov</cntemail>
+<hours>8:30am - 5:30pm</hours>
+</cntinfo>
+</proccont>
+</procstep>
+<procstep>
+<procdesc>Tax Assessment attribution for this layer was conflated from the most recent OTR Public Extract dated 05/23/09.</procdesc>
+</procstep>
+<procstep>
+<procdesc>Metadata imported. Updated with May 22, 2008 Vector Property data</procdesc>
+</procstep>
+<procstep>
+<procdesc>Updated with October 3, 2008 Vector Property data using a 9/21/08 OTR Public Extract File - Creation of 514 new Record Lots, Retiring of 621 Record Lots - Creation of 201 new Tax Lots, Retiring of 188 Tax Lots - Creation of 16 new Air Rights Lots - Creation of 19 new Reservation Lots - Retiring of 8 Parcel Lots - Creation of 17 Alley or Street Closures - Corrections to data anomalies - Updated Metadata - 13 Squares and their contained features have been adjusted to better fit planimetrics. (0038, 0076, 0390, 0391, 0414, 0415, 0438, 0439, 0439-S, 0574, 5159, 5162, and 5643). - 6 Squares boundaries have been altered significantly because of incoming subdivisions (0705, 0767, 0768, 0769, 0771, and 0798). - 5 Squares and Lots have been retired do to incoming subdivisions (0702, 0703, 0704, 0706, and 0802).</procdesc>
+</procstep>
+<procstep>
+<procdesc>Metadata imported. Updated with Jan 04, 2008 Vector Property data</procdesc>
+</procstep>
+<procstep>
+<procdesc>Tax Assessment attribution for this layer was conflated from the most recent OTR Public Extract dated 04/26/09.</procdesc>
+</procstep>
+<procstep>
+<procdesc>Updated with March 27, 2009 Vector Property data using a 03/22/09 OTR Public Extract File</procdesc>
+</procstep>
+<procstep>
+<procdesc>Tax Assessment attribution for this layer was conflated from the most recent OTR Public Extract dated 08/14/09. In addition, 18 geometry issue were repaired on this layer.</procdesc>
+<procdate>20090811</procdate>
+<proctime>105900</proctime>
+</procstep>
+<procstep>
+<procdesc>Tax Assessment attribution for this layer was conflated from the most recent OTR Public Extract dated 10/02/09.</procdesc>
+<procdate>20091002</procdate>
+<proctime>091811</proctime>
+</procstep>
+</lineage>
+</dataqual>
+<spdoinfo>
+<direct>Vector</direct>
+<ptvctinf>
+<sdtsterm>
+<ptvctcnt>0</ptvctcnt>
+</sdtsterm>
+</ptvctinf>
+</spdoinfo>
+<eainfo>
+<detailed>
+<enttyp>
+<enttypl>DCGIS.OwnerPLY</enttypl>
+</enttyp>
+<attr>
+<attrlabl>PY4TXSALE</attrlabl>
+</attr>
+<attr>
+<attrlabl>MIX1LNDVAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY3COLL</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY8TXSALE</attrlabl>
+</attr>
+<attr>
+<attrlabl>CY2TOTDUE</attrlabl>
+</attr>
+<attr>
+<attrlabl>OBJECTID</attrlabl>
+<attrdef>Internal feature number.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+					<udom>Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>ACCOUNT_ID</attrlabl>
+<attrdef>Acoount identifier</attrdef>
+</attr>
+<attr>
+<attrlabl>CY2BAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>CONV_TOLERANCE_RESOLUTION</attrlabl>
+<attrdef>This field stores the explanation of how type 2 and type 3 closure tolerances were resolved.</attrdef>
+</attr>
+<attr>
+<attrlabl>CLASS3</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY3FEE</attrlabl>
+</attr>
+<attr>
+<attrlabl>OWNNAME2</attrlabl>
+</attr>
+<attr>
+<attrlabl>MIX1CLASS</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY3BAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>TXSALEDESC</attrlabl>
+</attr>
+<attr>
+<attrlabl>BLDG_NUM</attrlabl>
+<attrdef>Building Number</attrdef>
+</attr>
+<attr>
+<attrlabl>PY2FEE</attrlabl>
+</attr>
+<attr>
+<attrlabl>RECORD_AREA_SF</attrlabl>
+<attrdef>Area in square foot as recorded with the deed.</attrdef>
+</attr>
+<attr>
+<attrlabl>CY1YEAR</attrlabl>
+</attr>
+<attr>
+<attrlabl>IS_REAR_OF</attrlabl>
+<attrdef>Lot is Rear Of Code</attrdef>
+</attr>
+<attr>
+<attrlabl>ACCEPTCODE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY10PEN</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY10TAX</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY10YEAR</attrlabl>
+</attr>
+<attr>
+<attrlabl>EFFECTIVETAXYEAR</attrlabl>
+<attrdef>Effective tax year</attrdef>
+</attr>
+<attr>
+<attrlabl>SQUARE</attrlabl>
+<attrdef>Square value from the SSL identifier.</attrdef>
+</attr>
+<attr>
+<attrlabl>OP_YN</attrlabl>
+<attrdef>Flag if related ownerpoint record was found for source date of COL.</attrdef>
+</attr>
+<attr>
+<attrlabl>PY8BAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>CAPPROP</attrlabl>
+</attr>
+<attr>
+<attrlabl>UNDERLIES_CONDO</attrlabl>
+<attrdef>A positive (Yes=1) means that this record lot is an underlying lot for Condo(s).</attrdef>
+<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>No</edomvd>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>OLDTOTAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>NEWTOTAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>NBHDNAME</attrlabl>
+</attr>
+<attr>
+<attrlabl>CY2YEAR</attrlabl>
+</attr>
+<attr>
+<attrlabl>SHAPE.LEN</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY8PEN</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY8INT</attrlabl>
+</attr>
+<attr>
+<attrlabl>STREETCODE</attrlabl>
+</attr>
+<attr>
+<attrlabl>SUBNBHD</attrlabl>
+</attr>
+<attr>
+<attrlabl>CY2FEE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY5TAX</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY4YEAR</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY6TOTDUE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY3TAX</attrlabl>
+</attr>
+<attr>
+<attrlabl>ADDRESS2</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY1INT</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY5INT</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY7TXSALE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY7TOTDUE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY6BAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY2PEN</attrlabl>
+</attr>
+<attr>
+<attrlabl>CY1COLL</attrlabl>
+</attr>
+<attr>
+<attrlabl>ABTLOTCODE</attrlabl>
+</attr>
+<attr>
+<attrlabl>RESERVATIONPLYID</attrlabl>
+<attrdef>Reservation polygon identifier</attrdef>
+</attr>
+<attr>
+<attrlabl>RES</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY6CR</attrlabl>
+</attr>
+<attr>
+<attrlabl>QDRNTNAME</attrlabl>
+</attr>
+<attr>
+<attrlabl>SQUAREPLYID</attrlabl>
+<attrdef>Square Polygon Identifier</attrdef>
+</attr>
+<attr>
+<attrlabl>DEEDS</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY4TAX</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY3CR</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY3TXSALE</attrlabl>
+</attr>
+<attr>
+<attrlabl>NBHD</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY10BAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>CY1TAX</attrlabl>
+</attr>
+<attr>
+<attrlabl>MIX2BLDVAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>ARN</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY1YEAR</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY1BAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY2INT</attrlabl>
+</attr>
+<attr>
+<attrlabl>SURVEYED_AREA_SF</attrlabl>
+<attrdef>The area from a survey plat in Square Feet</attrdef>
+</attr>
+<attr>
+<attrlabl>MIX2BLDPCT</attrlabl>
+</attr>
+<attr>
+<attrlabl>PARCELPLYID</attrlabl>
+<attrdef>Parcel polygon identifier</attrdef>
+</attr>
+<attr>
+<attrlabl>PY6COLL</attrlabl>
+</attr>
+<attr>
+<attrlabl>PHASELAND</attrlabl>
+</attr>
+<attr>
+<attrlabl>MIX2CLASS</attrlabl>
+</attr>
+<attr>
+<attrlabl>CITYSTZIP</attrlabl>
+</attr>
+<attr>
+<attrlabl>ZIP4</attrlabl>
+<attrdef>Zip + 4 Value</attrdef>
+</attr>
+<attr>
+<attrlabl>PY5YEAR</attrlabl>
+</attr>
+<attr>
+<attrlabl>CY1TOTDUE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY6YEAR</attrlabl>
+</attr>
+<attr>
+<attrlabl>PAR</attrlabl>
+<attrdef>Parcel Number</attrdef>
+</attr>
+<attr>
+<attrlabl>MIX2TXTYPE</attrlabl>
+</attr>
+<attr>
+<attrlabl>LOT</attrlabl>
+<attrdef>The Lot value of SSL identifier.</attrdef>
+</attr>
+<attr>
+<attrlabl>PY4PEN</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY1TOTDUE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY10INT</attrlabl>
+</attr>
+<attr>
+<attrlabl>OLDIMPR</attrlabl>
+</attr>
+<attr>
+<attrlabl>DELCODE</attrlabl>
+</attr>
+<attr>
+<attrlabl>OWNOCCT</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY8TAX</attrlabl>
+</attr>
+<attr>
+<attrlabl>MORTGAGECO</attrlabl>
+</attr>
+<attr>
+<attrlabl>VACLNDUSE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY7YEAR</attrlabl>
+</attr>
+<attr>
+<attrlabl>ANNUALTAX</attrlabl>
+</attr>
+<attr>
+<attrlabl>CY1CR</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY2YEAR</attrlabl>
+</attr>
+<attr>
+<attrlabl>ADDRESS_ID</attrlabl>
+<attrdef>Address Identifier</attrdef>
+</attr>
+<attr>
+<attrlabl>EXTRACTDAT</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY4FEE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY1TAX</attrlabl>
+</attr>
+<attr>
+<attrlabl>CY2INT</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY6TAX</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY5PEN</attrlabl>
+</attr>
+<attr>
+<attrlabl>SHAPE</attrlabl>
+<attrdef>Feature geometry.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>PARTPART</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY6PEN</attrlabl>
+</attr>
+<attr>
+<attrlabl>MIX2LNDPCT</attrlabl>
+</attr>
+<attr>
+<attrlabl>CAPCURR</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY3INT</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY1CR</attrlabl>
+</attr>
+<attr>
+<attrlabl>PAGE_NUM</attrlabl>
+<attrdef>Page Number</attrdef>
+</attr>
+<attr>
+<attrlabl>COOPUNITS</attrlabl>
+</attr>
+<attr>
+<attrlabl>ASSESSMENT</attrlabl>
+</attr>
+<attr>
+<attrlabl>CY1INT</attrlabl>
+</attr>
+<attr>
+<attrlabl>SUFFIX</attrlabl>
+<attrdef>Suffix value from the SSL identifier.</attrdef>
+</attr>
+<attr>
+<attrlabl>PY4TOTDUE</attrlabl>
+</attr>
+<attr>
+<attrlabl>MIX2RATE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY2TXSALE</attrlabl>
+</attr>
+<attr>
+<attrlabl>HSTDCODE</attrlabl>
+</attr>
+<attr>
+<attrlabl>ZIP5</attrlabl>
+<attrdef>Zip Code</attrdef>
+</attr>
+<attr>
+<attrlabl>CY2COLL</attrlabl>
+</attr>
+<attr>
+<attrlabl>PROPTYPE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY6TXSALE</attrlabl>
+</attr>
+<attr>
+<attrlabl>MIX1RATE</attrlabl>
+</attr>
+<attr>
+<attrlabl>CY1BAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>MIX1BLDVAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>BLDG_NUM_END_RANGE</attrlabl>
+<attrdef>Building Number End Range</attrdef>
+</attr>
+<attr>
+<attrlabl>PY1TXSALE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY7COLL</attrlabl>
+</attr>
+<attr>
+<attrlabl>PCHILDCODE</attrlabl>
+</attr>
+<attr>
+<attrlabl>GIS_ID</attrlabl>
+<attrdef>OCTO GIS Identifier</attrdef>
+</attr>
+<attr>
+<attrlabl>PY2BAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>CLASSTYPE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY10FEE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY10TXSALE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY9CR</attrlabl>
+</attr>
+<attr>
+<attrlabl>CLASS3EX</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY10COLL</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY8CR</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY9YEAR</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY9TOTDUE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY9COLL</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY9TXSALE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY9TAX</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY5TOTDUE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY8COLL</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY8FEE</attrlabl>
+</attr>
+<attr>
+<attrlabl>SSL</attrlabl>
+<attrdef>Lot Square Suffix and Lot</attrdef>
+</attr>
+<attr>
+<attrlabl>MIX1LNDPCT</attrlabl>
+</attr>
+<attr>
+<attrlabl>PHASEBUILD</attrlabl>
+</attr>
+<attr>
+<attrlabl>CONV_TOLERANCE_TYPE</attrlabl>
+</attr>
+<attr>
+<attrlabl>CONDO_BOOK_NUM</attrlabl>
+</attr>
+<attr>
+<attrlabl>OLDLAND</attrlabl>
+</attr>
+<attr>
+<attrlabl>SALEDATE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY2TOTDUE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY2COLL</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY4INT</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY7BAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>COL</attrlabl>
+<attrdef>Part of common ownership layer</attrdef>
+</attr>
+<attr>
+<attrlabl>MIX1BLDPCT</attrlabl>
+</attr>
+<attr>
+<attrlabl>QUADRANT</attrlabl>
+<attrdef>DC Quadrant Value</attrdef>
+</attr>
+<attr>
+<attrlabl>PY5BAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY4BAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY7PEN</attrlabl>
+</attr>
+<attr>
+<attrlabl>SALETYPE</attrlabl>
+</attr>
+<attr>
+<attrlabl>COMPUTED_AREA_SF</attrlabl>
+<attrdef>The area computed by the system.in Square Feet</attrdef>
+</attr>
+<attr>
+<attrlabl>MIX1TXTYPE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY7CR</attrlabl>
+</attr>
+<attr>
+<attrlabl>OWNERNAME</attrlabl>
+</attr>
+<attr>
+<attrlabl>LOWNUMBER</attrlabl>
+</attr>
+<attr>
+<attrlabl>MIX2LNDVAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>BOOK_NUM</attrlabl>
+<attrdef>Book Number</attrdef>
+</attr>
+<attr>
+<attrlabl>PY1FEE</attrlabl>
+</attr>
+<attr>
+<attrlabl>HIGHNUMBER</attrlabl>
+</attr>
+<attr>
+<attrlabl>BLDG_EXT_END_RANGE</attrlabl>
+<attrdef>Building Exterior End Range</attrdef>
+</attr>
+<attr>
+<attrlabl>LOT_TYPE</attrlabl>
+<attrdef>Denotes the type of lot.</attrdef>
+<attrdomv>
+					<edom>
+						<edomv>3</edomv>
+						<edomvd>Air Rights</edomvd>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>OF_LOT_SEQ</attrlabl>
+<attrdef>Of Lot Sequence Number</attrdef>
+</attr>
+<attr>
+<attrlabl>PY5COLL</attrlabl>
+</attr>
+<attr>
+<attrlabl>CY2CR</attrlabl>
+</attr>
+<attr>
+<attrlabl>BLDG_NUM_EXT</attrlabl>
+<attrdef>Exterior Building Number</attrdef>
+</attr>
+<attr>
+<attrlabl>RECORDLOTSPLYID</attrlabl>
+<attrdef>Record Lot Polygon Identifier</attrdef>
+</attr>
+<attr>
+<attrlabl>CY2TAX</attrlabl>
+</attr>
+<attr>
+<attrlabl>ADDRESS1</attrlabl>
+</attr>
+<attr>
+<attrlabl>TAXLOTSPLYID</attrlabl>
+<attrdef>Tax lot polygon identifier</attrdef>
+</attr>
+<attr>
+<attrlabl>PY3PEN</attrlabl>
+</attr>
+<attr>
+<attrlabl>CONV_TOLERANCE_VALUE</attrlabl>
+<attrdef>Amount of closure error in meters</attrdef>
+</attr>
+<attr>
+<attrlabl>CY1TXSALE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY5TXSALE</attrlabl>
+</attr>
+<attr>
+<attrlabl>CY2PEN</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY4COLL</attrlabl>
+</attr>
+<attr>
+<attrlabl>INSTNO</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY10TOTDUE</attrlabl>
+</attr>
+<attr>
+<attrlabl>SHAPE.AREA</attrlabl>
+</attr>
+<attr>
+<attrlabl>CONDOLOT</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY10CR</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY9BAL</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY9FEE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY9PEN</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY9INT</attrlabl>
+</attr>
+<attr>
+<attrlabl>CONDO_PAGE_NUM</attrlabl>
+</attr>
+<attr>
+<attrlabl>CONDO_REGIME_NUM</attrlabl>
+<attrdef>Condominium regime number</attrdef>
+</attr>
+<attr>
+<attrlabl>PY8TOTDUE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY7TAX</attrlabl>
+</attr>
+<attr>
+<attrlabl>CY2TXSALE</attrlabl>
+</attr>
+<attr>
+<attrlabl>IS_THEORETICAL_LOT</attrlabl>
+<attrdef>A true value (Yes=1) means that this tax lot was created from a plat of computation as a theoratical lot.</attrdef>
+<attrdomv>
+					<edom>
+						<edomv>1</edomv>
+						<edomvd>Yes</edomvd>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>CY1FEE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY7INT</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY2CR</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY6INT</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY5FEE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PREMISEADD</attrlabl>
+</attr>
+<attr>
+<attrlabl>USECODE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY7FEE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY2TAX</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY8YEAR</attrlabl>
+</attr>
+<attr>
+<attrlabl>NEWIMPR</attrlabl>
+</attr>
+<attr>
+<attrlabl>CAREOFNAME</attrlabl>
+</attr>
+<attr>
+<attrlabl>TAXRATE</attrlabl>
+</attr>
+<attr>
+<attrlabl>UNITNUMBER</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY1COLL</attrlabl>
+</attr>
+<attr>
+<attrlabl>DEEDSTATUS</attrlabl>
+</attr>
+<attr>
+<attrlabl>ASRNAME</attrlabl>
+</attr>
+<attr>
+<attrlabl>CY1PEN</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY1PEN</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY3YEAR</attrlabl>
+</attr>
+<attr>
+<attrlabl>PRMSWARD</attrlabl>
+</attr>
+<attr>
+<attrlabl>MIXEDUSE</attrlabl>
+</attr>
+<attr>
+<attrlabl>Shape</attrlabl>
+<attrdef>Feature geometry</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>PY4CR</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY3TOTDUE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY6FEE</attrlabl>
+</attr>
+<attr>
+<attrlabl>LANDAREA</attrlabl>
+</attr>
+<attr>
+<attrlabl>NEWLAND</attrlabl>
+</attr>
+<attr>
+<attrlabl>TRIGROUP</attrlabl>
+</attr>
+<attr>
+<attrlabl>SALEPRICE</attrlabl>
+</attr>
+<attr>
+<attrlabl>PY5CR</attrlabl>
+</attr>
+<attr>
+<attrlabl>STREETNAME</attrlabl>
+</attr>
+</detailed>
+</eainfo>
+<distinfo>
+<distrib>
+<cntinfo>
+<cntorgp>
+<cntorg>DC Office of the Chief Technology Officer</cntorg>
+<cntper>GIS Data Coordinator</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>200 I Street SE, 5th Floor</address>
+<city>Washington</city>
+<state>DC</state>
+<postal>20001</postal>
+<country>US</country>
+</cntaddr>
+<cntfax>(202) 727-5660</cntfax>
+<cntemail>dcgis@dc.gov</cntemail>
+<hours>8:30 am - 5:30 pm</hours>
+</cntinfo>
+</distrib>
+<distliab>For data terms and conditions, go to http://dc.gov/page/terms-and-conditions-use-district-data</distliab>
+<custom>All data is available at http://opendata.dc.gov</custom>
+</distinfo>
+<metainfo>
+<metd>20110325</metd>
+<metrd>1/15/2010</metrd>
+<metc>
+<cntinfo>
+<cntorgp>
+<cntorg>D.C. Office of the Chief Technology Officer</cntorg>
+<cntper>GIS Data Coordinator</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>200 I Street SE, 5th Floor</address>
+<city>Washington</city>
+<state>DC</state>
+<postal>20001</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>REQUIRED: The telephone number by which individuals can speak to the organization or individual.</cntvoice>
+<cntfax>(202) 727-5660</cntfax>
+<cntemail>dcgis@dc.gov</cntemail>
+<hours>8:30 am - 5 pm</hours>
+</cntinfo>
+</metc>
+<metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+<metstdv>FGDC-STD-001-1998</metstdv>
+<mettc>local time</mettc>
+</metainfo>
+</metadata>

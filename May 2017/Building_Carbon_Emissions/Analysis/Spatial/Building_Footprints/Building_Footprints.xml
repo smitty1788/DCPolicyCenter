@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+<idinfo>
+<citation>
+<citeinfo>
+<origin/>
+<pubdate>20160328</pubdate>
+<title>Building</title>
+<geoform>vector digital data</geoform>
+<pubinfo>
+<publish>DC GIS</publish>
+</pubinfo>
+</citeinfo>
+</citation>
+<descript>
+<abstract>Building. The dataset contains polygons representing planimetric buildings, created as part of the DC Geographic Information System (DC GIS) for the D.C. Office of the Chief Technology Officer (OCTO). This is a complete new capture from aerial photography flown in mid to Late April, completed on April 24, 2015. This is part of a comprehensive sensor collection effort to sychronize orthophotos, oblique imagery, LiDAR, and basemap layers. The following planimetric layers were updated: - Barrier Lines- Building Polygons- Bridge and Tunnel Polygons- Curb Lines- Grate Points- Horizontal and Vertical Control Points- Hydrography Lines- Obscured Area Polygons- Railroad Lines- Road, Parking, and Driveway Polygons- Sidewalk and Stair Polygons- Swimming Pools- Water PolygonsDUE TO THE LOW ALTITUDE FLOWN TO CAPTURE THE COMPLETE IMAGERY FOR THE 2015 SENSOR FLIGHT, THERE IS INCOMPLETE AERIAL PHOTOGRAPHY COVERAGE AROUND THE WHITE HOUSE AND CAPITOL. FOR THESE AREAS, 2013 PLANIMETRIC FEATURES WERE SEEMLESSLY MERGED INTO THE 2015 DATA.</abstract>
+<purpose>This data is used for the planning and management of Washington, D.C. by local government agencies.</purpose>
+</descript>
+<timeperd>
+<timeinfo>
+<sngdate>
+<caldate>20150424</caldate>
+</sngdate>
+</timeinfo>
+<current>ground condition</current>
+</timeperd>
+<status>
+<progress>Complete</progress>
+<update>Unknown</update>
+</status>
+<keywords>
+<theme>
+<themekt>None</themekt>
+<themekey>structure</themekey>
+<themekey>building</themekey>
+<themekey>Planimetrics</themekey>
+</theme>
+<theme>
+<themekt>ISO 19115 Topic Categories</themekt>
+<themekey>structure</themekey>
+</theme>
+<place>
+<placekt>Geographic Names Information System</placekt>
+<placekey>D.C.</placekey>
+<placekey>Washington</placekey>
+<placekey>D.C.</placekey>
+<placekey>District of Columbia</placekey>
+<placekey>United States of America (USA)</placekey>
+</place>
+</keywords>
+<accconst>None</accconst>
+<useconst>This work is licensed under a Creative Commons Attribution 4.0 International License.</useconst>
+<ptcontac>
+<cntinfo>
+<cntorgp>
+<cntorg>D.C. Office of the Chief Technology Officer</cntorg>
+<cntper>GIS Data Coordinator</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>441 4th St NW, Suite 930 South</address>
+<city>Washington</city>
+<state>D.C.</state>
+<postal>20001</postal>
+<country>US</country>
+</cntaddr>
+<cntfax>(202)727-5660</cntfax>
+<cntemail>dcgis@dc.gov</cntemail>
+<hours>8:30 AM - 5:30 PM</hours>
+</cntinfo>
+</ptcontac>
+<datacred>D.C. Office of the Chief of Technology Officer (OCTO)</datacred>
+<native>Microsoft Windows Server 2003 R2 Version 5.2 (Build 3790) Service Pack 2; Esri ArcGIS 10.2.0.3348</native>
+</idinfo>
+<dataqual>
+<logic>OCTO developed and operated a QA/QC program to check the deliverables. Generally, the program consists of various types of processes grouped into visual checks, automated procedures, edge-matching routines, specialized checks, and field verification. Through the application of these processes, the data's spatial and attribute accuracy, usability, data documentation adherence, and specialized characteristics are checked. Staff identified issues in a shapfile with appropriate descriptions for the vendor to fix. The data was delivered in preliminary format for a thorough review and identification of issues. The vendor fixed the data and delivered final data which OCTO checked to ensure the vendor made the fixes appropriately.</logic>
+<complete>Building structures include parking garages, ruins, monuments, and buildings under construction along with residential, commercial, industrial, apartment, townhouses, duplex etc…   Buildings equal to or larger than 9.29 sq m (100 sq feet) will be captured.  Firewalls or roof breaks will be digitized to show individual adjacent structures within them, when it can be determined that it is a separate unit, for apartments, townhouses, and duplexes.  If there is any uncertainty about individual units, no firewall or roof break will be shown.  All buildings must be compiled as complete polygons and squared accordingly.  No other feature can make a side for a building.  Legacy data in areas without change will not be updated. 
+
+For CAPTUREACTION, if a building is new it will be coded as ‘Add’, if the feature changes shape due to renovations it will be coded as ‘Update’, and if it no longer exists it will be coded as ‘Delete’, but the feature will not be deleted.  All existing features at the beginning of the project will be populated with ‘Existing’; if a feature is not modified or deleted it will keep the ‘Existing’ value.
+
+Building:  Delineate around roof line showing the building "footprint."  Roof breaks and rooflines, such as between individual residences in row houses or separate spaces in office structures, will be captured to partition building footprints.  This includes capturing all sheds, garages, or other non-addressable buildings over 100 square feet throughout the City. Atriums, courtyards, and other “holes” in buildings created as part of demarcating the building outline will not be part of the building capture.  This includes construction trailers greater than 100 square feet.
+
+As a guide, use the ownerply lot lines to assist in delineating roof breaks for those buildings where visual indentification is difficult.  This layer should be relied on heavily outside the downtown areas to capture roofbreaks.  Within the downtown area, ownerply will serve as a guide for areas where roofbreak delineation is not clear.  Aerial photography will be used as the primary source.
+
+Memorials: Delineate around roof line showing the building "footprint."  A list of memorials will be provided for capture and coding.  DC GIS will provide a list of memorials to use as the source.
+
+Bleachers:  Delineate around the base of connected sets of bleachers.
+
+Parking Garage: Capture this multi-story structure for parking as a parking garage. Delineate the perimeter of the parking garage including ramps.  Parking garages sharing a common boundary with linear features must have the common segment captured once. A parking garage will only be attributes as such if there is rooftop parking.  Not all rooftop parking is a parking garage, however.  There are structures that only have rooftop parking but serve as a business.   Those should be captured as buildings.
+
+Fountains:  Delineate around the base of fountain structures..</complete>
+<lineage>
+<srcinfo>
+<srccite>
+<citeinfo>
+<title>Aerial Photography of Washington, D.C.</title>
+</citeinfo>
+</srccite>
+<typesrc>None</typesrc>
+<srctime>
+<timeinfo>
+<sngdate>
+<caldate>20050404</caldate>
+</sngdate>
+</timeinfo>
+<srccurr>ground condition</srccurr>
+</srctime>
+<srccitea>Aerial Photography of Washington, D.C.</srccitea>
+<srccontr>Sanborn has successfully completed the aerial triangulation (AT) task for the aerial photography acquired April 1st through April 24th, 2015 for the DC OCTO project.
+
+Using fully analytical aerial triangulation (FAAT) methods incorporating automatic analytical aerial triangulation (AAAT) procedures, Sanborn determined ground coordinates for each exposure by flying at an average altitude of 1100m AMSL covering the project area.
+
+The results of the final adjustment are sufficient to enable Sanborn to produce orthophoto imagery and planimetric stereo collected data that meets project accuracy requirements (ASPRS Class 1 for 1”=100‟ mapping; RMSE 30cm).</srccontr>
+</srcinfo>
+<procstep>
+<procdesc>All planimetric data within the scope of the 2015 project was newly collected by Sanborn using DAT/EM Summit Evolution digital photogrammetric workstations, with the exception of StreetCenterlineLn_2015 (street centerlines) and GeoControlPt_2015 (ground control.) 
+
+The photogrammetric supervisor established the data collection conventions to be used for data capture, including the data schema, global origin and working units to be used for data collection.  The vendor assigned collection areas to stereo-compilation technicians based on OCTO’s orthophoto tile layout. They collected and saved planimetric data to the designated network subdirectory.
+
+After the data for the tile was collected, the technician visually reviewed the planimetric information for completeness and accuracy. The data was then passed on to GIS staff.
+
+GIS staff performed a preliminary review of the planimetric data. Omissions or errors that were found were communicated to stereo-compilation staff, who then updated the corresponding stereo-compilation file. The corrected data was then passed on to GIS staff.
+GIS staff then merged all data per delivery block. Polyline features that were required by OCTO not to have pseudo nodes were dissolved. 
+
+Following the dissolve, all point and polyline features were appended to a template geodatabase in their respective feature classes and attributed as defined in OCTO’s Data Dictionary.
+
+Polylines that participated in building polygons were placed into a working dataset, and topology built to locate gaps in the lines where polygons would not properly build. A technician closed those gaps. Then, polygons were built from these polylines in a working feature class. Based on centroids collected during the stereo-compilation process, polygons were then assigned their appropriate feature code based on OCTO’s Data Dictionary. Once all polygons were assigned their feature codes based on their corresponding centroid codes, the polygons remaining were then checked against the 2015 orthophoto imagery. Any unclassified polygons that were erroneously not given a feature code (because the stereo-compiler omitted a centroid that was not caught in a previous review) were then coded with the proper feature code. Also, at this point an additional review for proper code was performed, and incorrect codes changed to correct codes. Then, all remaining un-coded polygons were removed from the working polygon feature class.
+
+Polygons for each feature class were selected from the working feature class and appended to their appropriate feature classes based on OCTO’s Data Dictionary specifications.
+
+Once all features were put into their proper location in the geodatabase and attribution populated, a topology was established to locate geometry errors. GIS technicians corrected errors then removed the topology from the geodatabase. The geodatabase was then compacted.
+
+There are two isolated pockets of data that were not collected by Sanborn in the 2015 project, which are located around the White House and Capitol. Much of these two pockets have no 2015 stereo-photo coverage because the flying height required to collect imagery suitable for 3” pixel resolution orthophotos was too low relative to the no-fly zones over these areas. To avoid splitting a large number of planimetric features between differing imagery dates, the stereo-imagery voids were generally expanded to the center of the closest street (coincident with street centerlines where possible) to  produce the final void areas. Inside these voids in the 2015 data, OCTO’s existing planimetrics (updated in 2013) were appended to the 2015 data for all feature classes except BarrierLn and CurbLn.</procdesc>
+<procdate>20160328</procdate>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>EarthData International, Inc</cntorg>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>200 I Street SE, 5th Floor</address>
+<city>Frederick</city>
+<state>MD</state>
+<postal>21704</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>(301)948-8550</cntvoice>
+<cntfax>(301)963-2064</cntfax>
+<cntemail>metadata@earthdata.com</cntemail>
+<hours>8:30 Am - 5:00 PM Mon - Fri</hours>
+</cntinfo>
+</proccont>
+</procstep>
+</lineage>
+</dataqual>
+<spdoinfo>
+<direct>Vector</direct>
+<ptvctinf>
+<sdtsterm>
+<sdtstype>GT-polygon composed of chains</sdtstype>
+<ptvctcnt>0</ptvctcnt>
+</sdtsterm>
+</ptvctinf>
+</spdoinfo>
+<eainfo>
+<detailed>
+<enttyp>
+<enttypl>DCGIS.BldgPly</enttypl>
+</enttyp>
+<attr>
+<attrlabl>OBJECTID</attrlabl>
+<attrdef>Internal feature number.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+					<udom>Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>SHAPE</attrlabl>
+<attrdef>Feature geometry.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>GIS_ID</attrlabl>
+<attrdef>OCTO GIS sequential identifier</attrdef>
+</attr>
+<attr>
+<attrlabl>FEATURECODE</attrlabl>
+<attrdef>Building Feature Code</attrdef>
+</attr>
+<attr>
+<attrlabl>DESCRIPTION</attrlabl>
+<attrdef>Building Description</attrdef>
+</attr>
+<attr>
+<attrlabl>CAPTUREYEAR</attrlabl>
+<attrdef>Building Capture Date</attrdef>
+</attr>
+<attr>
+<attrlabl>CAPTUREACTION</attrlabl>
+<attrdef>Type of edit performed on the feature</attrdef>
+<attrdomv>
+					<edom>
+						<edomv>A</edomv>
+						<edomvd>Add</edomvd>
+						<edomvds>This is a new building.</edomvds>
+					</edom>
+				</attrdomv>
+</attr>
+<attr>
+<attrlabl>SHAPE.AREA</attrlabl>
+</attr>
+<attr>
+<attrlabl>SHAPE.LEN</attrlabl>
+</attr>
+</detailed>
+</eainfo>
+<distinfo>
+<distrib>
+<cntinfo>
+<cntorgp>
+<cntorg>D.C. Office of the Chief Technology</cntorg>
+<cntper>GIS Data Coordinator</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>200 I Street SE, 5th Floor</address>
+<city>Washington</city>
+<state>D.C.</state>
+<postal>20001</postal>
+<country>US</country>
+</cntaddr>
+<cntemail>dcgis@dc.gov</cntemail>
+<hours>8:30 am - 5:00 pm</hours>
+</cntinfo>
+</distrib>
+<distliab>See access and use constraints information.</distliab>
+<stdorder>
+<digform>
+<digtopt>
+<onlinopt>
+<computer>
+<networka>
+<networkr>http://opendata.dc.gov</networkr>
+</networka>
+</computer>
+</onlinopt>
+</digtopt>
+</digform>
+</stdorder>
+</distinfo>
+<metainfo>
+<metd>20160405</metd>
+<metrd>4/5/16</metrd>
+<metc>
+<cntinfo>
+<cntorgp>
+<cntorg>D.C. Office of the Chief Technology</cntorg>
+<cntper>GIS Data Coordinator</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>200 I Street SE, 5th Floor</address>
+<city>Washington</city>
+<state>D.C.</state>
+<postal>20001</postal>
+<country>US</country>
+</cntaddr>
+<cntfax>(202)727-5660</cntfax>
+<cntemail>dcgis@dc.gov</cntemail>
+<hours>8:30 am - 5:00 pm</hours>
+</cntinfo>
+</metc>
+<metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+<metstdv>FGDC-STD-001-1998</metstdv>
+<mettc>local time</mettc>
+</metainfo>
+</metadata>
