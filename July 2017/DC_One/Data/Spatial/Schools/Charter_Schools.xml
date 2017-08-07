@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+<idinfo>
+<citation>
+<citeinfo>
+<origin/>
+<origin/>
+<pubdate>20140704</pubdate>
+<title>Charter School</title>
+<geoform>vector digital data</geoform>
+<pubinfo>
+<publish>DC GIS</publish>
+</pubinfo>
+<lworkcit>
+<citeinfo>
+<title>DC Geographic Information System</title>
+</citeinfo>
+</lworkcit>
+</citeinfo>
+</citation>
+<descript>
+<abstract>Charter Schools. This layer contains points representing locations for charter schools, created as part of the DC Geographic Information System (DC GIS) for the D.C. Office of the Chief Technology Officer (OCTO) and participating D.C. government agencies. School locations were identified from public records and heads-up digitized from the 2010 orthophotographs.</abstract>
+<purpose> This layer contains points representing locations for charter schools.</purpose>
+</descript>
+<timeperd>
+<timeinfo>
+<sngdate>
+<caldate>20140704</caldate>
+</sngdate>
+</timeinfo>
+<current>publication date</current>
+</timeperd>
+<status>
+<progress>Complete</progress>
+<update>As needed</update>
+</status>
+<spdom>
+<bounding>
+<westbc>-180</westbc>
+<eastbc>180</eastbc>
+<northbc>90</northbc>
+<southbc>-90</southbc>
+</bounding>
+</spdom>
+<keywords>
+<theme>
+<themekt>None</themekt>
+<themekey>education</themekey>
+<themekey>society</themekey>
+<themekey>Schools</themekey>
+<themekey>Charter Schools</themekey>
+</theme>
+<theme>
+<themekt>ISO 19115 Topic Categories</themekt>
+<themekey>society</themekey>
+</theme>
+<place>
+<placekt>None</placekt>
+<placekey>District of Columbia</placekey>
+<placekey>DCGIS</placekey>
+<placekey>Washington</placekey>
+<placekey>D.C.</placekey>
+<placekey>DC GIS</placekey>
+<placekey>DC</placekey>
+</place>
+</keywords>
+<accconst>Contact OCTO GIS. Any data obtained outside of OCTO GIS are unauthorized copies.</accconst>
+<useconst>This work is licensed under a Creative Commons Attribution 4.0 International License.</useconst>
+<ptcontac>
+<cntinfo>
+<cntorgp>
+<cntorg>D.C. Office of the Chief Technology Officer</cntorg>
+<cntper>GIS Data Coordinator</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>441 4th St NW, Suite 930 South</address>
+<city>Washington</city>
+<state>DC</state>
+<postal>20001</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>(202) 727-1761</cntvoice>
+<cntfax>(202) 727-5660</cntfax>
+<cntemail>dcgis@dc.gov</cntemail>
+<hours>8:30 am - 5:00 pm</hours>
+</cntinfo>
+</ptcontac>
+<datacred>DC Public Charter School Board</datacred>
+<native>Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.1.4000</native>
+</idinfo>
+<dataqual>
+<attracc>
+<attraccr>Data believed to be complete and accurate as of the time period cited. Subject to change. Digital version compared with original source data for accuracy and completeness. Validated by source and/or responsible agency.</attraccr>
+</attracc>
+<logic>In process of validation by source and/or responsible agency.</logic>
+<complete>Data believed to be complete and accurate, subject to change. Digital version compared with original source data for accuracy and completeness. In process of validation by source and/or responsible agency.</complete>
+<posacc>
+<horizpa>
+<horizpar>Points geocoded to the MAR which places points at the visual center of buildings in most cases.</horizpar>
+</horizpa>
+<vertacc>
+<vertaccr>N/A</vertaccr>
+</vertacc>
+</posacc>
+<lineage>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20070101</pubdate>
+<title>FOCUS</title>
+</citeinfo>
+</srccite>
+<typesrc>None</typesrc>
+<srccitea>FOCUS</srccitea>
+<srccontr>location and attributes</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20040101</pubdate>
+<title>Education Center</title>
+</citeinfo>
+</srccite>
+<typesrc>None</typesrc>
+<srccitea>Education Center</srccitea>
+<srccontr>location and attributes</srccontr>
+</srcinfo>
+<srcinfo>
+<srccite>
+<citeinfo>
+<pubdate>20040101</pubdate>
+<title>Charter School Listing</title>
+</citeinfo>
+</srccite>
+<typesrc>None</typesrc>
+<srccitea>Charter School Listing</srccitea>
+<srccontr>location and attributes</srccontr>
+</srcinfo>
+<procstep>
+<procdesc>This dataset was updated in the spring of 2007 by DC GIS. Charter School location and status were verified through public records obtained from DCPS and the D.C. Public Charter School Board. School locations and attributes were added or updated using the Master Address Repository (MAR). Current for the 2006-07 school year.</procdesc>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>Office of the Chief Technology Officer</cntorg>
+<cntper>GIS Data Coordinator</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>441 4th St NW, Suite 930 South</address>
+<city>Washington</city>
+<state>DC</state>
+<postal>20001</postal>
+<country>US</country>
+</cntaddr>
+<cntfax>202-727-5660</cntfax>
+<cntemail>dcgis@dc.gov</cntemail>
+<hours>8:30am - 5:30pm</hours>
+</cntinfo>
+</proccont>
+</procstep>
+<procstep>
+<procdesc>This dataset was updated in the fall of 2004 by DC GIS. Charter School location and status were verified through public records obtained from DCPS and the D.C. State Education Office. School locations and attributes were added or updated through heads up digitizing from the 2003 aerial photography and through manual data entry. Current for the 2004-05 school year.</procdesc>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>OCTO</cntorg>
+</cntorgp>
+<cntaddr>
+<addrtype>unknown</addrtype>
+<country>AF</country>
+</cntaddr>
+</cntinfo>
+</proccont>
+</procstep>
+<procstep>
+<procdesc>Charter schools were identified from lists published by the D.C. Public Charter School website and the D.C. Government. A point shapefile was created by geocoding the addresses. These points were compared to the 1995 orthophotographs, the building footprint layer, and the D.C. Real Property Tax owner points for address and ownership information. The square suffix lot attribute was retained as the link to the data from the D.C. Office of Tax and Revenue. A link to the appropriate website was provided for reference. The geocoded points were then moved to the center of the corresponding buildings and core attributes were added. All DC GIS data is stored and exported in Maryland State Plane coordinates NAD 83 meters.</procdesc>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>D.C. Office of the Chief Technology Officer</cntorg>
+<cntper>GIS Data Coordinator</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>441 4th St NW, Suite 930 South</address>
+<city>Washington</city>
+<state>DC</state>
+<postal>20001</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>(202) 727-1761</cntvoice>
+<cntfax>(202) 727-5660</cntfax>
+<cntemail>dcgis@dc.gov</cntemail>
+<hours>8:30 am - 5:00 pm</hours>
+</cntinfo>
+</proccont>
+</procstep>
+<procstep>
+<procdesc>Dataset updated in September 2003 to reflect two new charter schools in DC for the 2004 school year.</procdesc>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>OCTO</cntorg>
+<cntper>GID Data Coordinator</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>unknown</addrtype>
+<country>AF</country>
+</cntaddr>
+<cntvoice>202-727-1761</cntvoice>
+<cntfax>202-727-5660</cntfax>
+<cntemail>dcgis@dc.gov</cntemail>
+<hours>8:30am - 5pm</hours>
+</cntinfo>
+</proccont>
+</procstep>
+<procstep>
+<procdesc>Dataset moved.</procdesc>
+</procstep>
+<procstep>
+<procdesc>Dataset updated in June 2003 to reflect additions and subtractions to charter schools in DC for the 2004 school year.</procdesc>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>OCTO</cntorg>
+<cntper>GIS Data Coordinator</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>unknown</addrtype>
+<country>AF</country>
+</cntaddr>
+<cntvoice>202-727-1761</cntvoice>
+<cntfax>202-727-5660</cntfax>
+<cntemail>dcgis@dc.gov</cntemail>
+<hours>8:30am - 5pm</hours>
+</cntinfo>
+</proccont>
+</procstep>
+<procstep>
+<procdesc>Using the 2003-04 School year Public Charter School layer, staff updated the location and attributes using DC State Education Office records and the Education Center listings on the DC portal. These reflect updates for the 2004-2005 school year. A year suffix was added to the layer name to reflect the representative school year. For new schools, these locations were compared to the 2002 orthophotographs, the building footprint layer, and the D.C. Real Property Tax owner points for address and ownership information. A link to the appropriate website was provided for reference. The geocoded points were then moved to the center of the corresponding buildings and core attributes were added.</procdesc>
+<procdate>20041005</procdate>
+<proctime>170421</proctime>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>OCTO</cntorg>
+</cntorgp>
+<cntaddr>
+<addrtype>unknown</addrtype>
+<country>AF</country>
+</cntaddr>
+</cntinfo>
+</proccont>
+</procstep>
+<procstep>
+<procdesc>Staff updated charter schools for the 2007/2008 school year using the Public Charter School Board and Focus web sites.</procdesc>
+<procdate>20070910</procdate>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>Office of the Chief Technology Officer</cntorg>
+<cntper>GIS Data Coordinator</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>441 4th St NW, Suite 930 South</address>
+<city>Washington</city>
+<state>DC</state>
+<postal>20001</postal>
+<country>US</country>
+</cntaddr>
+<cntfax>202-727-5660</cntfax>
+<cntemail>dcgis@dc.gov</cntemail>
+<hours>8:30am - 5:30pm</hours>
+</cntinfo>
+</proccont>
+</procstep>
+<procstep>
+<procdesc>Staff updated charter schools for the 2009/2010 school year using the Public Charter School Board web site, geocoding locations to the DC MAR.</procdesc>
+<procdate>20091001</procdate>
+</procstep>
+<procstep>
+<procdesc>Staff updated charter schools for the 20010/2011 school year using the Public Charter School Board web site, geocoding locations to the DC MAR.</procdesc>
+<procdate>20100806</procdate>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>OCTO</cntorg>
+</cntorgp>
+<cntaddr>
+<addrtype>unknown</addrtype>
+<country>AF</country>
+</cntaddr>
+</cntinfo>
+</proccont>
+</procstep>
+<procstep>
+<procdesc>Staff updated charter schools for the 20010/2011 school year using the Public Charter School Board web site, geocoding locations to the DC MAR.</procdesc>
+<procdate>20110907</procdate>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>OCTO</cntorg>
+</cntorgp>
+<cntaddr>
+<addrtype>unknown</addrtype>
+<country>AF</country>
+</cntaddr>
+</cntinfo>
+</proccont>
+</procstep>
+<procstep>
+<procdesc>Staff updated charter schools for the 2012/2013 school year using the Public Charter School Board web site, geocoding locations to the DC MAR</procdesc>
+<procdate>20120915</procdate>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>OCTO</cntorg>
+</cntorgp>
+<cntaddr>
+<addrtype>unknown</addrtype>
+<country>AF</country>
+</cntaddr>
+</cntinfo>
+</proccont>
+</procstep>
+<procstep>
+<procdesc>Staff updated charter schools for the 2013/2014 school year using the Public Charter School Board web site, geocoding locations to the DC MAR</procdesc>
+<procdate>20131123</procdate>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>OCTO</cntorg>
+</cntorgp>
+<cntaddr>
+<addrtype>unknown</addrtype>
+<country>AF</country>
+</cntaddr>
+</cntinfo>
+</proccont>
+</procstep>
+<procstep>
+<procdesc>staff updated the list from public charter school board website. added grade levels and charter schools for adults and vocational training to the list.</procdesc>
+<procdate>20140704</procdate>
+<proccont>
+<cntinfo>
+<cntorgp>
+<cntorg>OCTO</cntorg>
+</cntorgp>
+<cntaddr>
+<addrtype>unknown</addrtype>
+<country>AF</country>
+</cntaddr>
+</cntinfo>
+</proccont>
+</procstep>
+</lineage>
+</dataqual>
+<spdoinfo>
+<direct>Vector</direct>
+<ptvctinf>
+<sdtsterm>
+<ptvctcnt>0</ptvctcnt>
+</sdtsterm>
+</ptvctinf>
+</spdoinfo>
+<distinfo>
+<distrib>
+<cntinfo>
+<cntorgp>
+<cntorg>D.C. Office of the Chief Technology Officer</cntorg>
+<cntper>GIS Data Coordinator</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>441 4th St NW, Suite 930 South</address>
+<city>Washington</city>
+<state>DC</state>
+<postal>20001</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>(202) 727-1761</cntvoice>
+<cntfax>(202) 727-5660</cntfax>
+<cntemail>dcgis@dc.gov</cntemail>
+<hours>8:30 am - 5:00 pm</hours>
+</cntinfo>
+</distrib>
+<distliab>Acknowledgment of the DC Geographic Information Systems Program (DC GIS). The District of Columbia Government makes no claims as to the completeness, accuracy or content of any data contained hereon, and makes no representation of any kind, including, but not limited to, the warranty of the accuracy or fitness for a particular use, nor are any such warranties to be implied or inferred with respect to the information or data furnished herein.</distliab>
+<custom>Most DC GIS datasets can be downloaded from "http://dcgis.dc.gov" on the data center page. Orders can also be made by contacting OCTO GIS at "dcgis@dc.gov", especially for datasets not available for download.</custom>
+</distinfo>
+<metainfo>
+<metd>20131122</metd>
+<metc>
+<cntinfo>
+<cntorgp>
+<cntorg>D.C. Office of the Chief Technology Officer</cntorg>
+<cntper>GIS Data Coordinator</cntper>
+</cntorgp>
+<cntaddr>
+<addrtype>mailing and physical</addrtype>
+<address>441 4th St NW, Suite 930 South</address>
+<city>Washington</city>
+<state>DC</state>
+<postal>20001</postal>
+<country>US</country>
+</cntaddr>
+<cntvoice>(202) 727-1761</cntvoice>
+<cntfax>(202) 727-5660</cntfax>
+<cntemail>dcgis@dc.gov</cntemail>
+<hours>8:30 am - 5:00 pm</hours>
+</cntinfo>
+</metc>
+<metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+<metstdv>FGDC-STD-001-1998</metstdv>
+<mettc>local time</mettc>
+</metainfo>
+</metadata>

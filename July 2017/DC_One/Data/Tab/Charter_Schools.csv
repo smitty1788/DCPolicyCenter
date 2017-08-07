@@ -1,0 +1,134 @@
+﻿OBJECTID,NAME,ADDRESS,DIRECTOR,PHONE,AUTHORIZER,GRADES,ENROLLMENT,GIS_ID,WEB_URL,ADDRID,X,Y,AUTHORIZAT,MYSCHOOL
+1,Center City PCS – Shaw,711 N STREET NW,Russ Williams,202-234-1093,,PK-4-8,0,chrt_116,http://www.centercitypcs.org/campuses/shaw/,290191,398034.11,137731.91,0,Y
+2,Center City PCS – Trinidad,1217 WEST VIRGINIA AVENUE NE,Russ Williams,202-397-1614,,PK-4-8,0,chrt_117,http://www.centercitypcs.org/campuses/trinidad/,285938,400763.1,137493.55,0,Y
+3,Harmony DC PCS – School of Excellence,62 T STREET NE,,,,K-6,0,chrt_43,http://www.harmonydc.org,299982,399421.3,138682.56,0,Y
+4,District of Columbia International School,3220 16TH STREET NW,Mary Shaffner,202-459-4790,,6-8,0,chrt_44,http://dcinternationalschool.org,301528,396808.36,140381.96,0,Y
+5,Bridges PCS - Sharpe Campus,4300 13TH STREET NW,Olivia Smith,202-545-0515,,PK-3-1,0,chrt_45,http://bridgespcs.org,255254,397358.67,141731.76,0,N
+6,Friendship PCS – Southeast Elementary Academy,645 MILWAUKEE PLACE SE,Kimberly Campbell,202-562-1980,,PK-3-5,0,chrt_46,http://www.friendshipschools.org/apps/pages/index.jsp?type=d&uREC_ID=211307&pREC_ID=469659,1655,400259.75,131109.73,0,Y
+7,Friendship PCS – Technology Preparatory High School Academy,2705 MARTIN LUTHER KING JR AVENUE SE,Kimberly Campbell,202-562-1681,,9-12,0,chrt_134,http://www.friendshipschools.org/apps/pages/index.jsp?type=d&uREC_ID=211308&pREC_ID=469660,289904,400331.09,131166.09,0,Y
+8,Friendship PCS – Woodridge Elementary,2959 CARLTON AVENUE NE,Kimberly Campbell,202-635-6500,,PK-3-3,0,chrt_48,http://www.friendshipschools.org/apps/pages/index.jsp?type=d&uREC_ID=211309&pREC_ID=469661,42808,402903.45,140185.72,0,Y
+9,Hope Community PCS – Lamond,6200 KANSAS AVENUE NE,Michael DePass,202-722-4421,,PK-3-5,0,chrt_49,http://imaginehopelamond.com/,304055,399254.07,144200.69,0,Y
+10,Hope Community PCS – Tolson,2917 8TH STREET NE,Michael DePass,202-832-7370,,PK-3-8,0,chrt_50,http://www.hopecommunitycs.org,43392,400466.83,139897.04,0,Y
+11,Howard University Middle School of Mathematics and Science PCS,405 HOWARD PLACE NW,Yohance C. Maqubela,202-806-7725,,6-8,0,chrt_51,http://www.howard.edu/ms2,291490,398341.18,139441.04,0,Y
+12,IDEA PCS,1027 45TH STREET NE,John Goldman,202-399-4750,,9-12,0,chrt_52,http://www.ideapcs.org,75296,405455.53,137412.11,0,Y
+13,KIPP DC – AIM Academy PCS,2600 DOUGLASS ROAD SE,Susan Schaeffler,202-678-5477,,5-8,0,chrt_53,http://www.kippdc.org/our-schools/kipp-dc-aim-academy/,311456,401037.32,132090.08,0,Y
+14,KIPP DC – College Preparatory PCS,1405 BRENTWOOD PARKWAY NE,Susan Schaeffler,202-678-2527,,9-12,0,chrt_54,http://www.kippdc.org/our-schools/kipp-dc-college-preparatory/,311606,400556.62,137970.76,0,Y
+15,KIPP DC – Discover Academy PCS,2600 DOUGLASS ROAD SE,Susan Schaeffler,202-678-7735,,PK-3-K,0,chrt_55,http://www.kippdc.org/our-schools/kipp-dc-discover-academy/,311456,401037.32,132090.08,0,Y
+16,KIPP DC – Grow Academy PCS,421 P STREET NW,Susan Schaeffler,202-986-4769,,PK-3-K,0,chrt_56,http://www.kippdc.org/our-schools/kipp-dc-grow-academy/,294487,398428.65,138002.89,0,Y
+17,KIPP DC – KEY Academy PCS,4801 BENNING ROAD SE,Susan Schaeffler,202-582-5477,,5-8,0,chrt_58,http://www.kippdc.org/our-schools/kipp-dc-key-academy/,17421,405692.28,134978.83,0,Y
+18,KIPP DC – Lead Academy PCS,421 P STREET NW,Susan Schaeffler,202-223-4505,,1-4,0,chrt_59,http://www.kippdc.org/our-schools/kipp-dc-lead-academy/,294487,398428.65,138002.89,0,Y
+19,KIPP DC – LEAP Academy PCS,4801 BENNING ROAD SE,Susan Schaeffler,202-582-5327,,PK-3-K,0,chrt_60,http://www.kippdc.org/our-schools/kipp-dc-leap-academy/,17421,405692.28,134978.83,0,Y
+20,Meridian Public Charter School - Middle School,3029 14TH STREET NW,Kimberly Moore,202-387-9830,,6-8,0,chrt_69,http://www.meridian-dc.org,284556,397205.49,140057.46,0,Y
+21,Cesar Chavez PCS for Public Policy – Capitol Hill,709 12TH STREET SE,Jeff Cooper,202-547-3424,,9-12,0,chrt_118,http://www.chavezschools.org/our-schools/capitol-hill-high-school/,76726,400812.11,134762.27,0,Y
+22,Cesar Chavez PCS for Public Policy – Chavez Prep,770 KENYON STREET NW,Jeff Cooper,202-723-3975,,6-9,0,chrt_119,http://www.chavezschools.org/our-schools/chavez-prep-middle-school/,285409,397756.37,140192.11,0,Y
+23,Cesar Chavez PCS for Public Policy – Parkside High School,3701 HAYES STREET NE,Jeff Cooper,202-398-2230,,9-12,0,chrt_120,http://www.chavezschools.org/our-schools/parkside-high-school/,304053,404418.2,137066.13,0,Y
+24,KIPP DC – Northeast Academy PCS,1375 MOUNT OLIVET ROAD NE,John Barnhardt,202-398-5477,,5-7,0,chrt_122,http://www.kippdc.org/our-schools/kipp-dc-northeast-academy/,286108,401636.15,137801.71,0,Y
+25,Friendship PCS – Chamberlain Middle,1345 POTOMAC AVENUE SE,Kimberly Campbell,202-547-5800,,PK-3-3,0,chrt_128,http://www.friendshipschools.org/apps/pages/index.jsp?type=d&uREC_ID=211305&pREC_ID=469656,66334,401145.15,134616.92,0,Y
+26,Friendship PCS – Woodridge Middle,2959 CARLTON AVENUE NE,Kimberly Campbell,202-635-6500,,PK-3-3,0,chrt_129,http://www.friendshipschools.org/apps/pages/index.jsp?type=d&uREC_ID=301377&pREC_ID=695977,42808,402903.45,140185.72,0,Y
+27,KIPP DC – Valor Academy PCS,5300 BLAINE STREET NE,Susan Schaeffler,202-398-6811,,5-6,0,chrt_130,http://www.kippdc.org/our-schools/kipp-dc-valor-academy/,304054,406537.33,136014.15,0,Y
+28,Two Rivers PCS at Young,820 26TH STREET NE,Jessica Wodatch,202-543-8477,,PK-3-1,0,chrt_131,http://www.tworiverspcs.org,294499,402496.78,137030.93,0,Y
+29,Friendship PCS - Blow-Pierce Middle,725 19TH STREET NE,Kimberly Campbell,202-572-1070,,PK-3-3,0,chrt_132,http://www.friendshipschools.org/apps/pages/index.jsp?type=d&uREC_ID=211304&pREC_ID=469655,288919,402040.17,136663.58,0,Y
+30,Rocketship Rise Academy PCS,2335 RAYNOLDS PLACE SE,Jacque Patterson,202-750-7177,,PK-3-2,0,chrt_133,http://www.rsed.org/dc,48301,402240.59,131976.61,0,Y
+31,Washington Global Public Charter School,525 SCHOOL STREET SW, ,202-534-7901, ,6-7,0,chrt_127,http://www.washingtonglobal.org/,11149,398304.38,135142.48,0,Y
+32,The Children's Guild DC Public Charter School,2146 24TH PLACE NE, , , ,K-8,0,chrt_126,http://tcgdc.org/,51191,402412.62,139203.19,0,Y
+33,Ingenuity Prep PCS,4600 LIVINGSTON ROAD SE,,202-374-8458,,PK-3-2,0,chrt_1,http://www.ingenuityprep.org,294600,399731.95,128458.05,0,Y
+34,Inspired Teaching Demonstration PCS,200 DOUGLAS STREET NE,Deborah Dantzler Williams,202-248-6825,,PK-3-4,0,chrt_2,http://www.inspiredteachingschool.org,240295,399760.28,139534.59,0,Y
+35,Cesar Chavez PCS for Public Policy – Parkside Middle School,3701 HAYES STREET NE,Jeff Cooper,202-398-2230,,6-8,0,chrt_3,http://www.chavezschools.org/our-schools/parkside-middle-school/,304053,404418.2,137066.13,0,Y
+36,Friendship PCS - Armstrong Elementary,1400 1ST STREET NW,Brenda Bethea,202-332-6565,,PK-3-5,0,chrt_6,http://www.friendshipschools.org/apps/pages/index.jsp?type=d&uREC_ID=353178&pREC_ID=765305,238253,398853.47,137913.33,0,Y
+37,Community College Preparatory Academy PCS,2405 MARTIN LUTHER KING JR AVENUE SE,C. Vanessa Spinner,202-506-8758,,Adult/Voc Ed,0,chrt_7,http://www.ccprepacademy.com,38404,400639.64,132770.45,0,N
+38,Creative Minds International PCS,3700 NORTH CAPITOL STREET NW,"Golnar Abedin, Ph.D.",202-588-0370,,PK-3-5,0,chrt_8,http://www.creativemindspcs.org,233551,399397.09,140962.44,0,Y
+39,DC Bilingual PCS,33 RIGGS ROAD NE,Tehani Collazo,202-332-4200,,PK-3-5,0,chrt_9,http://www.dcbilingual.org,155991,399424.65,143002.17,0,Y
+40,DC Prep - Central Office,707 EDGEWOOD STREET NE,Rick Cruz,202-635-4590,,PK-3-3,0,chrt_10,http://www.dcprep.org,289577,400369.83,139600.22,0,N
+41,DC Prep PCS – Benning Elementary,100 41ST STREET NE,Rick Cruz,202-398-2838,,PK-3-3,0,chrt_11,http://www.dcprep.org/Benning_Elementary_Campus,294468,404787,135910.06,0,Y
+42,DC Prep PCS – Benning Middle,100 41ST STREET NE,,202-398-2838,,4,0,chrt_12,http://www.dcprep.org/Benning_Middle_Campus,294468,404787,135910.06,0,Y
+43,DC Prep PCS – Edgewood Elementary,707 EDGEWOOD STREET NE,Rick Cruz,202-635-4411,,PK-3-3,0,chrt_13,http://www.dcprep.org/Edgewood_Elementary_Campus,289577,400369.83,139600.22,0,Y
+44,DC Prep PCS – Edgewood Middle,701 EDGEWOOD STREET NE,Rick Cruz,202-832-5700,,4-8,0,chrt_14,http://www.dcprep.org/Edgewood_Middle_Campus,289579,400346.07,139651.51,0,Y
+45,DC Scholars PCS,5601 EAST CAPITOL STREET SE,Lars Beck,202-559-6138,,PK-3-6,0,chrt_15,http://www.dcscholars.org,294610,406789.33,135740.32,0,Y
+46,E.L. Haynes PCS - Georgia Avenue,4501 KANSAS AVENUE NW,Jennie Niles,202-667-4446,,PK-3-10,0,chrt_16,http://www.elhaynes.org,306085,398056.76,141967.7,0,N
+47,E.L. Haynes PCS – High School,4501 KANSAS AVENUE NW,Jennie Niles,202-706-5838,,9-11,0,chrt_17,http://www.elhaynes.org,284930,398056.76,141967.7,0,Y
+48,KIPP DC – Connect Academy PCS,1375 MOUNT OLIVET ROAD NE,,202-265-5477,,PK-3-K,0,chrt_63,http://www.kippdc.org/our-schools/kipp-dc-connect-academy/,286108,401636.15,137801.71,0,Y
+49,KIPP DC – Spring Academy PCS,1375 MOUNT OLIVET ROAD NE,,202-265-5477,,1-2,0,chrt_64,http://www.kippdc.org/our-schools/kipp-dc-spring-academy/,286108,401636.15,137801.71,0,Y
+50,Latin American Montessori Bilingual (LAMB) PCS,1600 TAYLOR STREET NE,Diane  Cottman,202-726-6200,,PK-3-,0,chrt_65,http://www.lambpcs.org,286330,401542.99,141454.77,0,N
+51,Latin American Montessori Bilingual (LAMB) PCS,1375 MISSOURI AVENUE NW,Diane  Cottman,202-726-6200,,PK-3-5,0,chrt_66,http://www.lambpcs.org,284010,397192.03,143806.16,0,N
+52,Mary McLeod Bethune Day Academy PCS,1404 JACKSON STREET NE,Linda McKay,202-459-4710 ext. 600,,PK-3-8,0,chrt_67,http://www.mmbethune.org,294522,401138.94,140191.85,0,N
+53,Maya Angelou PCS – High School,5600 EAST CAPITOL STREET NE,"Heather Wathington, Ph.D.",202-379-4335,,9-12,0,chrt_68,http://www.seeforever.org,289793,406885.34,135830.53,0,N
+54,Meridian Public Charter School - Elementary School,2120 13TH STREET NW,Kimberly Moore,202-387-9830,,PK-3-5,0,chrt_69,http://www.meridian-dc.org,310205,397402.4,138987.03,0,Y
+55,Mundo Verde Bilingual PCS,30 P STREET NW,Kristin Scotchmer,202-630-8373,,PK-3-4,0,chrt_70,http://www.mundoverdepcs.org,301528,399105.74,137949.35,0,Y
+56,National Collegiate Preparatory Public Charter High School,4600 LIVINGSTON ROAD SE,Jennifer L. Ross,202-832-7737,,9-12,0,chrt_71,http://www.nationalprepdc.org,294600,399731.95,128458.05,0,Y
+57,Options PCS Academy- Middle School,702 15TH STREET NE,"Donna Montgomery, Ed.D.",202-232-4627,,6-1,0,chrt_72,http://www.optionsschool.org,56,401391.3,136810.44,0,N
+58,Options PCS,1375 E STREET NE,"Donna Montgomery, Ed.D.",202-547-1028,,6-12,0,chrt_73,http://www.optionsschool.org,286107,401195.97,136444.7,0,Y
+59,Paul PCS - Middle School,5800 8TH STREET NW,Jami Dunham,202-291-7499,,6-8,0,chrt_74,http://www.paulcharter.org,294613,397857.27,143717.65,0,Y
+60,Perry Street Preparatory PCS,1800 PERRY STREET NE,Shadwick Jenkins,202-529-4400,,PK-3-8,0,chrt_75,http://www.pspdc.org,294529,401855.75,140990.2,0,Y
+61,Potomac Preparatory PCS,4401 8TH STREET NE,Mike Ronan,202-526-6003,,PK-3-8,0,chrt_76,http://www.lighthouse-academies.org,22543,400474.03,141675.39,0,Y
+62,Richard Wright PCS for Journalism and Media Arts,770 M STREET SE,"Marco Clark, Ph.D.",202-388-1011,,8-12,0,chrt_77,http://www.richardwrightpcs.org,288946,400383.82,134351.84,0,Y
+63,Roots PCS,15 KENNEDY STREET NW,"Bernida Thompson, Ed.D.",202-882-8073,,PK-3-8,0,chrt_78,http://www.rootspcs.org,259404,399106.42,143217.68,0,Y
+64,Two Rivers PCS at 4th Street,1227 4TH STREET NE,Jessica Wodatch,202-543-8477,,PK-3-8,0,chrt_80,http://www.tworiverspcs.org,70272,399974.01,137654.97,0,Y
+65,Washington Latin PCS – Middle School,5200 2ND STREET NW,Martha Cutts,202-223-1111,,5-8,0,chrt_81,http://www.latinpcs.org,294608,398802.19,142887.49,0,Y
+66,Washington Latin PCS – Upper School,5200 2ND STREET NW,Martha Cutts,202-541-1591,,9-12,0,chrt_82,http://www.latinpcs.org,294608,398802.19,142887.49,0,Y
+67,Washington Yu Ying PCS,220 TAYLOR STREET NE,Maquita Alexander,202-635-1950,,PK-3-5,0,chrt_84,http://www.washingtonyuying.org,50738,399680.78,141482.69,0,Y
+68,City Arts and Prep PCS,705 EDGEWOOD STREET NE,,202-269-4646,,PK-3-8,0,chrt_85,http://www.wedjschool.us,289576,400359.57,139530.04,0,Y
+69,Roots PCS,6222 NORTH CAPITOL STREET NW,"Bernida Thompson, Ed.D.",202-882-8073,,6-8,0,chrt_86,http://www.rootspcs.org,277484,399182.01,144257.74,0,N
+70,SEED Public Charter School of Washington DC,4300 C STREET SE,Charles Adams,202-248-7773,,6-12,0,chrt_87,http://www.seedschooldc.org,288154,404658.72,135477.99,0,Y
+71,Sela PCS,6015 CHILLUM PLACE NE,,202-905-3012,,PK-3-3,0,chrt_88,http://www.selapcs.org,288763,399361.73,143995.95,0,Y
+72,Shining Stars Montessori Academy PCS,1240 RANDOLPH STREET NE,Ayize Sabater,202-319-2307,,PK-3-4,0,chrt_89,http://shiningstarsdc.org,69931,400961.05,141190.1,0,Y
+73,Somerset Preparatory Academy PCS,3301 WHEELER ROAD SE,,301-775-0537,,6-10,0,chrt_90,http://www.somersetdc.com,294563,400512.16,130413.48,0,Y
+74,Breakthrough Montessori PCS,1244 TAYLOR STREET NW,Edwin Strickland,202-810-5603,,PK-3-8,0,chrt_135,http://www.breakthroughmontessori.org/,283962,397541.67,141419.28,0,Y
+75,E.L. Haynes PCS – Elementary School,4501 KANSAS AVENUE NW,Jennie Niles,202-706-5828,,PK-3-4,0,chrt_18,http://www.elhaynes.org,284930,398056.76,141967.7,0,Y
+76,Eagle Academy PCS – Congress Heights,3400 WHEELER ROAD SE,Cassandra S. Pinkney,202-544-2646,,PK-3-3,0,chrt_20,http://www.eagleacademypcs.org/apps/pages/index.jsp?type=d&uREC_ID=258657&pREC_ID=588577,294566,400604.46,130274.71,0,Y
+77,Early Childhood Academy PCS,4025 9TH STREET SE,Wendy Edwards,202-373-0035,,PK-3-3,0,chrt_21,http://www.ecapcs.org,278471,400822.11,129329.27,0,Y
+78,Early Childhood Academy PCS - Walter Washington,4301 9TH STREET SE,Wendy Edwards,202-373-0035,,PK-3-3,0,chrt_22,http://www.ecapcs.org,298086,400902.69,129245.01,0,N
+79,Elsie Whitlow Stokes Community Freedom PCS,3700 OAKVIEW TERRACE NE,"Linda Moore, Ed.D.",202-265-7237,,PK-3-5,0,chrt_23,http://www.ewstokes.org,289754,400859.44,140789.48,0,Y
+80,Excel Academy PCS,2501 MARTIN LUTHER KING JR AVENUE SE,Kaye Savage,202-373-0097,,PK-3-7,0,chrt_24,http://www.excelpcs.org,278172,400403.19,132438.56,0,Y
+81,Friendship PCS - Blow-Pierce Elementary,725 19TH STREET NE,Kimberly Campbell,202-572-1070,,PK-3-3,0,chrt_25,http://www.friendshipschools.org/apps/pages/index.jsp?type=d&uREC_ID=211304&pREC_ID=469655,288919,402040.17,136663.58,0,Y
+82,Friendship PCS – Chamberlain Elementary,1345 POTOMAC AVENUE SE,Kimberly Campbell,202-547-5800,,PK-3-3,0,chrt_26,http://www.friendshipschools.org/apps/pages/index.jsp?type=d&uREC_ID=211305&pREC_ID=469656,66334,401145.15,134616.92,0,Y
+83,Academy of Hope PCS - Northeast,601 EDGEWOOD STREET NE,Lecester Johnson,202-269-6623,,Adult/Voc Ed,0,chrt_28,http://www.aohdc.org,289571,400216.99,139558.38,0,N
+84,Academy of Hope PCS - Southeast,3700 9TH STREET SE,Lecester Johnson,202-373-0246,,Adult/Voc Ed,0,chrt_29,http://www.aohdc.org,278421,400493.92,129785,0,N
+85,Maya Angelou PCS - Young Adult Learning Center,5600 EAST CAPITOL STREET NE,Sarah Navarro,202-289-8898,,Adult/Voc Ed,0,chrt_30,http://www.seeforever.org/maya-angelou-public-charter-schools/young-adult-learning-center/,289793,406885.34,135830.53,0,N
+86,Next Step PCS,1419 COLUMBIA ROAD NW,,,,"GED, Adult/Voc Ed",0,chrt_31,http://www.nextsteppcs.org,234363,397107.54,139988.13,0,N
+87,Friendship PCS - Online,1351 NICHOLSON STREET NW,Tracy Slone,,,PK-3-5,0,chrt_32,http://fpcso.k12.com/,257768,397261.57,143623.99,0,Y
+88,Achievement Prep PCS – Wahler Place Middle,908 WAHLER PLACE SE,Susan Canon,202-562-1214,,4-8,0,chrt_33,http://achievementprep.org,294502,400671.25,129615.24,0,Y
+89,Carlos Rosario International PCS - Northwest,1100 HARVARD STREET NW,Ryan Monroe,202-797-4700,,Adult/Voc Ed,0,chrt_34,http://www.carlosrosario.org,300733,397610.44,139843.33,0,N
+90,YouthBuild PCS (LAYC),3014 14TH STREET NW,Arthur Dade,202-319-0141,,Adult/Voc Ed,0,chrt_35,http://www.youthbuildpcs.org,302258,397159.96,139985.56,0,N
+91,LAYC Career Academy PCS,3047 15TH STREET NW,Lori Kaplan,202-319-2228,,Adult/Voc Ed,0,chrt_36,http://www.laycca.org,243343,396892.23,140071.02,0,N
+92,Carlos Rosario International PCS - Northeast,514 V STREET NE,Jorge Delgado,202-734-4900,,Adult/Voc Ed,0,chrt_37,http://www.carlosrosario.org,156315,400103,138937.35,0,N
+93,Paul PCS - International High School,5800 8TH STREET NW,Jami Dunham,202-291-7499,,9-12,0,chrt_38,http://www.paulcharter.org,294613,397857.27,143717.65,0,Y
+94,E.L. Haynes PCS – Middle School,3600 GEORGIA AVENUE NW,,202-667-4446,,5-8,0,chrt_39,http://www.elhaynes.org,306085,397898.05,140715.53,0,Y
+95,Briya PCS - Northwest,2333 ONTARIO ROAD NW,,202-232-7777,,PK-3- Adult/Voc Ed,0,chrt_40,http://briya.org,284370,396548.08,139234.16,0,N
+96,Briya PCS - Northwest,1755 NEWTON STREET NW,,202-797-7337,,PK-3 Adult/Voc Ed,0,chrt_41,http://briya.org,294528,396483.93,140715.67,0,N
+97,Briya PCS,3912 GEORGIA AVENUE NW,,202-545-2020,,PK-3 Adult/Voc Ed,0,chrt_42,http://briya.org,224825,397823.06,141262.62,0,N
+98,KIPP DC – Promise Academy PCS,4801 BENNING ROAD SE,Susan Schaeffler,202-582-1390,,1-4,0,chrt_61,http://www.kippdc.org/our-schools/kipp-dc-promise-academy/,17421,405692.28,134978.83,0,Y
+99,KIPP DC – WILL Academy PCS,421 P STREET NW,Susan Schaeffler,202-328-9455,,5-8,0,chrt_62,http://www.kippdc.org/our-schools/kipp-dc-will-academy/,294487,398428.65,138002.89,0,Y
+100,KIPP DC – Heights Academy PCS,2600 DOUGLASS ROAD SE,Susan Schaeffler,202-610-5323,,1-4,0,chrt_57,http://www.kippdc.org/our-schools/kipp-dc-heights-academy/,311456,401037.32,132090.08,0,Y
+101,Thurgood Marshall Academy PCS,2427 MARTIN LUTHER KING JR AVENUE SE,Alexandra Pardo,202-563-6862,,9-12,0,chrt_91,http://www.thurgoodmarshallacademy.org,278159,400548.01,132717.75,0,Y
+102,St. Coletta Special Education PCS,1901 INDEPENDENCE AVENUE SE,,202-350-8680,,PK-3- Adult/Voc Ed,0,chrt_93,http://www.stcoletta.org,302511,402023.67,135486.49,0,N
+103,Democracy Prep Congress Heights PCS,3100 MARTIN LUTHER KING JR AVENUE SE,Sean Reidy,,,PK-3-7,0,chrt_95,http://democracyprep.org,301280,400161.23,130633.04,0,Y
+104,Lee Montessori PCS,3025 4TH STREET NE,Chris Pencikowski,202-888-6336,,PK-3-2,0,chrt_96,http://www.leemontessori.org,302681,400098.47,140017.95,0,Y
+105,The Next Step/ El Prόximo Paso PCS,3047 15TH STREET NW,Julie Meyer,202-319-2249,,Adult/Voc Ed,0,chrt_97,http://www.nextsteppcs.org,243343,396892.23,140071.02,0,N
+106,Achievement Prep PCS – Wahler Place Elementary,908 WAHLER PLACE SE,Shantelle Wright,202-562-1214,,K-3,0,chrt_98,http://www.aprepacademy.org,294502,400671.25,129615.24,0,Y
+107,AppleTree Early Learning PCS – Southwest,801 7TH STREET SW,Michaele Samuel,202-646-0094,,"PK-3, PK-4",0,chrt_99,http://www.appletreeinstitute.org/campuses/southwest/,276812,398012.08,134671.03,0,Y
+108,AppleTree Early Learning PCS – Columbia Heights,2750 14TH STREET NW,Michaele Samuel,202-667-9490,,"PK-3, PK-4",0,chrt_100,http://www.appletreeinstitute.org/campuses/columbia-heights/,297626,397160.68,139708.07,0,Y
+109,AppleTree Early Learning PCS – Parklands (Southeast),2011 SAVANNAH STREET SE,Michaele Samuel,202-629-4525,,"PK-3, PK-4",0,chrt_101,http://www.appletreeinstitute.org/campuses/parklands/,278045,402190.85,130971.03,0,Y
+110,AppleTree Early Learning PCS – Lincoln Park,138 12TH STREET NE,Michaele Samuel,202-621-6581,,"PK-3, PK-4",0,chrt_102,http://www.appletreeinstitute.org/campuses/lincoln-park/,65489,400821.07,135963.23,0,Y
+111,AppleTree Early Learning PCS – Oklahoma Ave,330 21ST STREET NE,Michaele Samuel,202-525-7807,,"PK-3, PK-4",0,chrt_103,http://www.appletreeinstitute.org/campuses/oklahoma-avenue/,307321,402118.19,136305.64,0,Y
+112,AppleTree Early Learning PCS – Douglas Knoll (Southeast),2017 SAVANNAH TERRACE SE,Michaele Samuel,202-889-0643,,"PK-3, PK-4",0,chrt_104,http://www.appletreeinstitute.org/campuses/douglas-knoll/,278066,402177.09,131217.9,0,Y
+113,KIPP DC – Arts and Technology Academy PCS,5300 BLAINE STREET NE,Allison Artis,202-398-6811,,PK-3-K,0,chrt_105,http://www.kippdc.org/our-schools/kipp-dc-arts-technology-academy/,304054,406537.33,136014.15,0,Y
+114,BASIS DC PCS,410 8TH STREET NW,Carolyn McGarvy,202-393-5437,,5-11,0,chrt_106,http://www.basisdc.org,279758,397985.56,136374.28,0,Y
+115,Bridges PCS,100 GALLATIN STREET NE,Olivia Smith,202-545-0515,,PK-3-3,0,chrt_107,http://www.bridgespcs.org,294470,399351.72,142773.48,0,Y
+116,Capital City PCS – Lower School,100 PEABODY STREET NW,Karen Dresden,202-808-9800,,PK-3-4,0,chrt_108,http://www.ccpcs.org,277545,398884.8,143806.18,0,Y
+117,Washington Mathematics Science Technology PCHS,1920 BLADENSBURG ROAD NE,"N'Deye Diagne, Ph.D.",202-636-8011,,9-12,0,chrt_83,http://www.wmstpchs.org,286539,402273.07,138728.17,0,Y
+118,Capital City PCS – High School,100 PEABODY STREET NW,Karen Dresden,202-808-9800,,9-12,0,chrt_109,http://www.ccpcs.org,277545,398884.8,143806.18,0,Y
+119,Capital City PCS – Middle School,100 PEABODY STREET NW,Karen Dresden,202-808-9800,,5-8,0,chrt_110,http://www.ccpcs.org,277545,398884.8,143806.18,0,Y
+120,Cedar Tree Academy PCS,701 HOWARD ROAD SE,Dr. Latonya Henderson,202-610-4193,,PK-3-K,0,chrt_111,http://www.cedartree-dc.org,300872,400069.95,132932.97,0,Y
+121,Center City PCS – Brightwood,6008 GEORGIA AVENUE NW,Russ Williams,202-723-3322,,PK-4-8,0,chrt_112,http://www.centercitypcs.org/campuses/brightwood-campus/,253198,397544.85,143920.5,0,Y
+122,Center City PCS – Capitol Hill,1503 EAST CAPITOL STREET SE,Russ Williams,202-547-7556,,PK-4-8,0,chrt_113,http://www.centercitypcs.org/campuses/capitol-hill/,295125,401448.44,135742.68,0,Y
+123,Center City PCS – Petworth,510 WEBSTER STREET NW,Russ Williams,202-726-9212,,PK-4-8,0,chrt_115,http://www.centercitypcs.org/campuses/petworth/,303332,398187.59,141775.54,0,Y
+124,Ideal Academy PCS,6130 NORTH CAPITOL STREET NW,"George H. Rutherford II, Ph.D.",202-729-6660,,PK-4-8,0,chrt_121,http://www.iapcs.com,285311,399139.13,144111.98,0,Y
+125,KIPP DC – Quest Academy PCS,5300 BLAINE STREET NE,Cherese Brauer,,,1-4,0,chrt_123,http://www.kippdc.org/our-schools/kipp-dc-quest-academy/,304054,406537.33,136014.15,0,Y
+126,Center City PCS – Congress Heights,220 HIGHVIEW PLACE SE,Russ Williams,202-562-7070,,PK-4-8,0,chrt_114,http://www.centercitypcs.org/campuses/congress-heights/,303702,399614.14,130420.96,0,Y
+127,DC Prep PCS – Anacostia Elementary,1409 V STREET SE, , , ,PK-3-4,0,chrt_125,http://www.dcprep.org/Anacostia_Elementary_Campus,301493,401325.02,132980.84,0,Y
+128,Eagle Academy PCS – Capitol Riverfront,1017 NEW JERSEY AVENUE SE,Cassandra S. Pinkney,202-459-6825,,PK-3-1,0,chrt_19,http://www.eagleacademypcs.org/apps/pages/index.jsp?type=d&uREC_ID=258658&pREC_ID=588576,276169,399558.98,134445.1,0,Y
+129,Friendship PCS – Collegiate Academy,4095 MINNESOTA AVENUE NE,Kimberly Campbell,202-396-5500,,9-12,0,chrt_27,http://www.friendshipschools.org/apps/pages/index.jsp?type=d&uREC_ID=211306&pREC_ID=469657,288100,404654.26,136634.64,0,Y
+130,Friendship PCS – Technology Preparatory Middle School Academy,2705 MARTIN LUTHER KING JR AVENUE SE,Kimberly Campbell,202-562-1681,,6-8,0,chrt_47,http://www.friendshipschools.org/apps/pages/index.jsp?type=d&uREC_ID=211308&pREC_ID=469660,289904,400331.09,131166.09,0,Y
+131,Washington Leadership Academy PCS,3015 4TH STREET NE,,240-580-3371,,,,chrt_136,http://washingtonleadershipacademy.org/,289740,400115.34,139998.5,,Y
+132,Kingsman Academy PCS,1375 E STREET NE,Shannon Hodge,202-547-1028,,,,chrt_137,http://www.kingsmanacademy.org/,286107,401195.97,136444.7,,Y
+133,Rocketship DC PCS – Ward 7,5600 EAST CAPITOL STREET NE,Jacque Patterson,,,,0,chrt_138,http://www.rsed.org/dc,289793,406885.34,135830.53,0,Y

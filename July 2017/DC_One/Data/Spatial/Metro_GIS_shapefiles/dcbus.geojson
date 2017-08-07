@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "dcbus",
+"features": [
+{ "type": "Feature", "properties": { "MEAN_X": 207165.55817566035, "MEAN_Y": 157462.52595827074, "UID": "Blue" }, "geometry": { "type": "Point", "coordinates": [ 207165.558175660349661, 157462.525958270736737 ] } },
+{ "type": "Feature", "properties": { "MEAN_X": 196624.96875991987, "MEAN_Y": 158168.6821111287, "UID": "Yellow" }, "geometry": { "type": "Point", "coordinates": [ 196624.968759919865988, 158168.682111128699034 ] } },
+{ "type": "Feature", "properties": { "MEAN_X": 216065.11122052846, "MEAN_Y": 177051.15893869023, "UID": "Green" }, "geometry": { "type": "Point", "coordinates": [ 216065.111220528458944, 177051.158938690234208 ] } },
+{ "type": "Feature", "properties": { "MEAN_X": 204325.66084352887, "MEAN_Y": 173379.30558981295, "UID": "Orange" }, "geometry": { "type": "Point", "coordinates": [ 204325.660843528865371, 173379.305589812953258 ] } },
+{ "type": "Feature", "properties": { "MEAN_X": 139356.98366374837, "MEAN_Y": 185040.03013854101, "UID": "Silver" }, "geometry": { "type": "Point", "coordinates": [ 139356.98366374836769, 185040.030138541013002 ] } },
+{ "type": "Feature", "properties": { "MEAN_X": 194050.91349075848, "MEAN_Y": 203068.82101680778, "UID": "Red" }, "geometry": { "type": "Point", "coordinates": [ 194050.913490758481203, 203068.821016807778506 ] } }
+]
+}
