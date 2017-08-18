@@ -12,13 +12,13 @@ DC = 'G:\GIS DATA\USA\District of Columbia\Census_Geography\census.gdb\Census_Tr
 
 
 
-def landsat_temp(Band10, Band11, Area):
-	B10_Rad = ScratchGDB + '\B10_Rad.tif'
-	B11_Rad = ScratchGDB + '\B11_Rad.tif'
-	B10_Temp = ScratchGDB + '\B10_Temp.tif'
-	B11_Temp = ScratchGDB + '\B11_Temp.tif'
-	Temperature = ScratchGDB + '\Temperature.tif'
-	Clip_Temp = ScratchGDB + '\Final_Temperature.tif'
+def landsat_temp(Band10, Band11, Area, OutputGDB):
+	B10_Rad = OutputGDB + '\B10_Rad.tif'
+	B11_Rad = OutputGDB + '\B11_Rad.tif'
+	B10_Temp = OutputGDB + '\B10_Temp.tif'
+	B11_Temp = OutputGDB + '\B11_Temp.tif'
+	Temperature = OutputGDB + '\Temperature.tif'
+	Clip_Temp = OutputGDB + '\Final_Temperature.tif'
 	
 	# Band 10 to Radiance
 	arcpy.gp.RasterCalculator_sa("0.0003342 * " + Band10 + " + 0.1", B10_Rad)
@@ -41,4 +41,4 @@ def landsat_temp(Band10, Band11, Area):
 	arcpy.AddSpatialIndex_management(Clip_Temp)
 	
 	
-landsat_temp(Band_10, Band_11, DC)	
+landsat_temp(Band_10, Band_11, DC, ScratchGDB)	
